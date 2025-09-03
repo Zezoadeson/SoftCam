@@ -105,94 +105,114 @@
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,5)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
-                        <item>
-                            <label>Anis 1 M</label>
+						<item>
+                            <label>Wafi 1</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,6)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 2 M</label>
+                            <label>Wafi 2</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,7)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 3 M</label>
+                            <label>Wafi 3</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,8)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 4 M</label>
+                            <label>Wafi 4</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,9)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 5 M</label>
+                            <label>Anis 1 M</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,10)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 1 L</label>
+                            <label>Anis 2 M</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,11)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 2 L</label>
+                            <label>Anis 3 M</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,12)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 3 L</label>
+                            <label>Anis 4 M</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,13)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 4 L</label>
+                            <label>Anis 5 M</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,14)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 5 L</label>
+                            <label>Anis 1 L</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,15)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 1 old</label>
+                            <label>Anis 2 L</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,16)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 2 old</label>
+                            <label>Anis 3 L</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,17)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 3 old</label>
+                            <label>Anis 4 L</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,18)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 4 old</label>
+                            <label>Anis 5 L</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,19)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Anis 5 old</label>
+                            <label>Anis 1 old</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,20)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Abou Saif 1</label>
+                            <label>Anis 2 old</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,21)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>Abou Saif 2</label>
+                            <label>Anis 3 old</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,22)</onclick>
                             <icon>/storage/.config/ipaudio/icon/anis.png</icon>
                         </item>
                         <item>
-                            <label>ON Sport</label>
+                            <label>Anis 4 old</label>
                             <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,23)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 5 old</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,24)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Abou Saif 1</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,25)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Abou Saif 2</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,26)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>ON Sport</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,27)</onclick>
                             <icon>/storage/.config/ipaudio/icon/on.png</icon>
                         </item>
                     </content>
