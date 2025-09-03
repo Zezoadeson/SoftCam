@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window id="1133" type="window">
+    <defaultcontrol always="true">1000</defaultcontrol>
+    <controls>
+        <include>DefaultBackground</include>
+        <include>CommonBackground</include>
+        <control type="group">
+            <control type="group">
+                <left>100</left>
+                <top>-5</top>
+                <control type="image">
+                    <left>-32</left>
+                    <top>148</top>
+                    <width>450</width>
+                    <height>784</height>
+                    <texture colordiffuse="$VAR[ThemePanelColor]">/storage/.config/ipaudio/icon/1.png</texture>
+                </control>
+                <control type="list" id="1000">
+                    <top>175</top>
+                    <width>400</width>
+                    <height>706</height>
+                    <onup>1000</onup>
+                    <ondown>1000</ondown>
+                    <pagecontrol>50</pagecontrol>
+                    <scrolltime tween="quadratic" easing="in">0</scrolltime>
+                    <itemlayout height="88" width="390">
+                        <control type="image">
+                            <left>15</left>
+                            <top>8</top>
+                            <width>90</width>
+                            <height>75</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <colordiffuse>grey</colordiffuse>
+                        </control>
+                        <control type="label">
+                            <left>135</left>
+                            <top>-10</top>
+                            <width>240</width>
+                            <height>75</height>
+                            <font>font30</font>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>red</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                            <animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="90" width="415">
+                        <control type="image">
+                            <left>0</left>
+                            <top>5</top>
+                            <width>415</width>
+                            <height>90</height>
+                            <texture colordiffuse="$VAR[HighlightBarColor]">/storage/.config/ipaudio/icon/2.png</texture>
+                            <visible>Control.HasFocus(1000)</visible>
+                        </control>
+                        <control type="image">
+                            <left>15</left>
+                            <top>8</top>
+                            <width>90</width>
+                            <height>75</height>
+                            <aspectratio>keep</aspectratio>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="label">
+                            <left>135</left>
+                            <top>-10</top>
+                            <width>240</width>
+                            <height>75</height>
+                            <font>font30</font>
+                            <textcolor>grey</textcolor>
+                            <shadowcolor>red</shadowcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                            <animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item>
+                            <label>Stop</label>
+                            <onclick>System.Execwait(&quot;/storage/.config/ipaudio/stop&quot;)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/stop.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 1</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,1)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 2</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,2)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 3</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,3)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 4</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,4)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 5</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,5)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 1 M</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,6)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 2 M</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,7)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 3 M</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,8)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 4 M</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,9)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 5 M</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,10)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 1 L</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,11)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 2 L</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,12)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 3 L</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,13)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 4 L</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,14)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 5 L</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,15)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 1 old</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,16)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 2 old</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,17)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 3 old</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,18)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 4 old</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,19)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis 5 old</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,20)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Abou Saif 1</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,21)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>Abou Saif 2</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,22)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/anis.png</icon>
+                        </item>
+                        <item>
+                            <label>ON Sport</label>
+                            <onclick>RunScript(/storage/.config/ipaudio/ipaudio.py,23)</onclick>
+                            <icon>/storage/.config/ipaudio/icon/on.png</icon>
+                        </item>
+                    </content>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
