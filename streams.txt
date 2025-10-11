@@ -25,3 +25,8 @@
 25:http://radio.abusaif.work/abu-saif-sat-4K-1/mpegts
 26:http://radio.abusaif.work/abu-saif-sat-4K-2/mpegts
 27:http://carina.streamerr.co:8108/stream
+28:http://radio.best-audio.org/shabanAudio1/mpegts
+29:http://radio.best-audio.org/shabanAudio2/mpegts
+30:http://radio.best-audio.org/shabanAudio3/mpegts
+31:http://radio.best-audio.org/shabanAudio4/mpegts
+32:http://radio.best-audio.org/shabanAudio5/mpegts
