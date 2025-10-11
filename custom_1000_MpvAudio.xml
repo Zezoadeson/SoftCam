@@ -215,6 +215,31 @@
                             <onclick>RunScript(/storage/.kodi/userdata/ipaudio/ipaudio.py,27)</onclick>
                             <icon>/storage/.kodi/userdata/ipaudio/icon/core.png</icon>
                         </item>
+                        <item>
+                            <label>Best Audio 1</label>
+                            <onclick>RunScript(/storage/.kodi/userdata/ipaudio/ipaudio.py,28)</onclick>
+                            <icon>/storage/.kodi/userdata/ipaudio/icon/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Audio 2</label>
+                            <onclick>RunScript(/storage/.kodi/userdata/ipaudio/ipaudio.py,29)</onclick>
+                            <icon>/storage/.kodi/userdata/ipaudio/icon/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Audio 3</label>
+                            <onclick>RunScript(/storage/.kodi/userdata/ipaudio/ipaudio.py,30)</onclick>
+                            <icon>/storage/.kodi/userdata/ipaudio/icon/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Audio 4</label>
+                            <onclick>RunScript(/storage/.kodi/userdata/ipaudio/ipaudio.py,31)</onclick>
+                            <icon>/storage/.kodi/userdata/ipaudio/icon/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Audio 5</label>
+                            <onclick>RunScript(/storage/.kodi/userdata/ipaudio/ipaudio.py,32)</onclick>
+                            <icon>/storage/.kodi/userdata/ipaudio/icon/core.png</icon>
+                        </item>
                     </content>
                 </control>
             </control>
