@@ -299,6 +299,41 @@
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,43)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
+						<item>
+                            <label>Anis  Max 1</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,44)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis  Max 2</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,45)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis  Max 3</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,46)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 1</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,47)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 2</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,48)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 1 Low</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,49)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 2 Low</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,50)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
                     </content>
                 </control>
             </control>
