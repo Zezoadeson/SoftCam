@@ -29,7 +29,7 @@
                             <top>8</top>
                             <width>90</width>
                             <height>75</height>
-							<aspectratio>keep</aspectratio>
+                            <aspectratio>keep</aspectratio>
                             <align>center</align>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                             <colordiffuse>grey</colordiffuse>
@@ -43,7 +43,7 @@
                             <textcolor>grey</textcolor>
                             <shadowcolor>red</shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
-							<align>center</align>
+                            <align>center</align>
                             <animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
                         </control>
                     </itemlayout>
@@ -62,7 +62,7 @@
                             <width>90</width>
                             <height>75</height>
                             <aspectratio>keep</aspectratio>
-							<align>center</align>
+                            <align>center</align>
                             <texture background="true">$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
@@ -74,14 +74,14 @@
                             <textcolor>grey</textcolor>
                             <shadowcolor>red</shadowcolor>
                             <label>$INFO[ListItem.Label]</label>
-							<align>center</align>
+                            <align>center</align>
                             <animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
                         </control>
                     </focusedlayout>
                     <content>
                         <item>
                             <label>Stop</label>
-                            <onclick>System.Execwait("/storage/.kodi/addons/service.ipaudio/resources/modules/stop")</onclick>
+                            <onclick>System.Execwait(&quot;/storage/.kodi/addons/service.ipaudio/resources/modules/stop&quot;)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/stop.png</icon>
                         </item>
                         <item>
@@ -153,8 +153,8 @@
                             <label>Best Audio 5</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,14)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>                        
-						<item>
+                        </item>
+                        <item>
                             <label>Best Xtra 1</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,15)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
@@ -218,13 +218,13 @@
                             <label>Best AD 2</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,27)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item> 						
-						<item>
+                        </item>
+                        <item>
                             <label>ON Sport</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,28)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>						
-						<item>
+                        </item>
+                        <item>
                             <label>Anis 1 M</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,29)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
@@ -297,6 +297,41 @@
                         <item>
                             <label>Anis 5 old</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,43)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis  Max 1</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,44)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis  Max 2</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,45)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Anis  Max 3</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,46)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 1</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,47)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 2</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,48)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 1 Low</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,49)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Best Max 2 Low</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,50)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                     </content>
