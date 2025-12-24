@@ -41,3 +41,10 @@
 41:http://anisfm3.ddns.net
 42:http://anisfm4.ddns.net
 43:http://anisfm5.ddns.net
+44:http://anisfm.pp.ua/Mx1
+45:http://anisfm.pp.ua/Mx2
+46:http://anisfm.pp.ua/MxFR
+47:http://radio.best-audio.org/Best-Max1/mpegts
+48:http://radio.best-audio.org/Best-Max2/mpegts
+49:http://radio.best-audio.org/Best-Max1-Low/mpegts
+50:http://radio.best-audio.org/Best-Max2-Low/mpegts
