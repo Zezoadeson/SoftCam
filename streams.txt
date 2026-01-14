@@ -48,3 +48,8 @@
 48:http://radio.best-audio.org/Best-Max2/mpegts
 49:http://radio.best-audio.org/Best-Max1-Low/mpegts
 50:http://radio.best-audio.org/Best-Max2-Low/mpegts
+51:http://tv.omargbr.shop/1/omar
+52:http://tv.omargbr.shop/2/omar
+53:http://tv.omargbr.shop/3/omar
+54:http://tv.omargbr.shop/4/omar
+55:http://tv.omargbr.shop/5/omar
