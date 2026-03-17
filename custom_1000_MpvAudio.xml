@@ -81,7 +81,7 @@
                     <content>
                         <item>
                             <label>Stop</label>
-                            <onclick>System.Execwait(&quot;/storage/.kodi/addons/service.ipaudio/resources/modules/stop&quot;)</onclick>
+                            <onclick>System.Execwait("/storage/.kodi/addons/service.ipaudio/resources/modules/stop")</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/stop.png</icon>
                         </item>
                         <item>
@@ -130,233 +130,83 @@
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Audio 1</label>
+                            <label>ON Sport</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,10)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Audio 2</label>
+                            <label>Anis 1 M</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,11)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Audio 3</label>
+                            <label>Anis 2 M</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,12)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Audio 4</label>
+                            <label>Anis 3 M</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,13)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Audio 5</label>
+                            <label>Anis 4 M</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,14)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Xtra 1</label>
+                            <label>Anis 5 M</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,15)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Xtra 2</label>
+                            <label>Anis 1 L</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,16)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Xtra 3</label>
+                            <label>Anis 2 L</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,17)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Xtra 4</label>
+                            <label>Anis 3 L</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,18)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Xtra 5</label>
+                            <label>Anis 4 L</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,19)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Xtra 6</label>
+                            <label>Anis 5 L</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,20)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Alkass 5</label>
+                            <label>Anis 1 old</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,21)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Alkass 6</label>
+                            <label>Anis 2 old</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,22)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Alkass 7</label>
+                            <label>Anis 3 old</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,23)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Alkass 8</label>
+                            <label>Anis 4 old</label>
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,24)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                         <item>
-                            <label>Best Serie A</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,25)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Best AD 1</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,26)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Best AD 2</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,27)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>ON Sport</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,28)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 1 M</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,29)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 2 M</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,30)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 3 M</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,31)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 4 M</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,32)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 5 M</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,33)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 1 L</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,34)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 2 L</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,35)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 3 L</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,36)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 4 L</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,37)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 5 L</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,38)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 1 old</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,39)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 2 old</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,40)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 3 old</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,41)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis 4 old</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,42)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
                             <label>Anis 5 old</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,43)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis  Max 1</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,44)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis  Max 2</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,45)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Anis  Max 3</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,46)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Best Max 1</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,47)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Best Max 2</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,48)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Best Max 1 Low</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,49)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Best Max 2 Low</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,50)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-                        <item>
-                            <label>Omar 1</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,51)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-						<item>
-                            <label>Omar 2</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,52)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-						<item>
-                            <label>Omar 3</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,53)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-						<item>
-                            <label>Omar 4</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,54)</onclick>
-                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
-                        </item>
-						<item>
-                            <label>Omar 5</label>
-                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,55)</onclick>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,25)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
                     </content>
