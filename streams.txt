@@ -32,3 +32,11 @@
 32:http://anisfm3.ddns.net
 33:http://anisfm4.ddns.net
 34:http://anisfm5.ddns.net
+35:http://yahia1.audix.ggff.net/live1
+36:http://yahia2.audix.ggff.net/live2
+37:http://62.138.18.147:11000/play/live/bb1.ts?uid=ipaudio&delay=-1
+38:http://62.138.18.147:11000/play/live/bb2.ts?uid=ipaudio&delay=-1
+39:http://62.138.18.147:11000/play/live/bb3.ts?uid=ipaudio&delay=-1
+40:http://62.138.18.147:11000/play/live/bb4.ts?uid=ipaudio&delay=-1
+41:http://62.138.18.147:11000/play/live/bb5.ts?uid=ipaudio&delay=-1
+42:http://62.138.18.147:11000/play/live/bb6.ts?uid=ipaudio&delay=-1
