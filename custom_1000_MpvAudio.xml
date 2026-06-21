@@ -294,6 +294,26 @@
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,42)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
+                        <item>
+                            <label>Fox Fm 4K 1</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,43)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Fox Fm 4K 2</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,44)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Fox Fm 4K 3</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,45)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Fox Fm 4K 4</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,46)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
                     </content>
                 </control>
             </control>
