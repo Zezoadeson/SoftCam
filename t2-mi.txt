@@ -1,1 +1,42 @@
-zezo
+python3 /storage/.kodi/userdata/epg/epgen1.py
+python3 /storage/.kodi/userdata/pip/pip.py
+python3 /storage/.kodi/userdata/Tools/SubtitleServer/MpvSubtitleServer.py
+python3 /storage/.kodi/userdata/Tools/SubtitleServer/CoreelecSubtitleServer.py
+python3 /storage/.kodi/userdata/Tools/SubtitleServer/EnableSubtitleServer.sh
+python3 /storage/.kodi/addons/plugin.program.tvheadend.setup/resources/modules/Adapter.pyc
+python3 /storage/Website.analysis.py
+python3 /storage/.config/mpv/subtitles.py
+python3 /storage/2.py
+python3 /storage/auto_number_all.py
+python3 /storage/auto_name_all.py
+python3 /storage/fec.py
+python3 /storage/fec.py
+python3 /storage/.kodi/addons/plugin.program.tvh.manager/resources/modules/Recording.py
+python3 /storage/.kodi/addons/plugin.program.tvh.manager/resources/modules/Muxes.py.py
+python3 /storage/.kodi/addons/plugin.program.tvh.manager/resources/modules/Channel.py
+python3 /storage/test/modules/Recording.py
+python3 /storage/test/Clearepg.py
+python3 /storage/test/Backup.py
+
+
+chmod +x /storage/test/setup.sh
+./test/setup.sh
+
+./.kodi/userdata/Tools/SubtitleServer/EnableSubtitleServer.sh
+
+kodi-send --action="RunScript(script.subtitles)"
+kodi-send --action="RunScript(/storage/.kodi/addons/plugin.program.abertis/fix_mux_names.py)"
+kodi-send --action="RunScript(/storage/.kodi/userdata/Trailer/trailer.py)"
+kodi-send --action="RunScript(/storage/.kodi/userdata/copy.py)"
+
+chmod +x /storage/.kodi/userdata/Tools/SubtitleServer/EnableSubtitleServer.sh
+chmod +x /storage/11.py
+kodi-send --action="RunScript(/storage/.kodi/userdata/pip/pip.py)"
+kodi-send --action="RunScript(/storage/.kodi/userdata/ipaudio/wrapper.py,13)"
+kodi-send --action="ActivateWindow(fullscreenvideo)"
+
+systemctl stop kodi
+systemctl start kodi
+systemctl restart service.tvheadend43
+
+/storage/.config/acestream.engine/acestream.start
