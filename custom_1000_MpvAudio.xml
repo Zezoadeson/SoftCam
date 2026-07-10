@@ -81,7 +81,7 @@
                     <content>
                         <item>
                             <label>Stop</label>
-                            <onclick>System.Execwait(&quot;/storage/.kodi/addons/service.ipaudio/resources/modules/stop&quot;)</onclick>
+                            <onclick>System.Execwait("/storage/.kodi/addons/service.ipaudio/resources/modules/stop")</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/stop.png</icon>
                         </item>
                         <item>
@@ -314,7 +314,27 @@
                             <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,46)</onclick>
                             <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
                         </item>
-                    </content>
+                        <item>
+                            <label>Fox Fm ALI 1</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,47)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Fox Fm ALI 2</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,48)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Fox Fm ALI 3</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,49)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+                        <item>
+                            <label>Fox Fm ALI 4</label>
+                            <onclick>RunScript(/storage/.kodi/addons/service.ipaudio/resources/modules/ipaudio.py,50)</onclick>
+                            <icon>/storage/.kodi/addons/service.ipaudio/resources/media/core.png</icon>
+                        </item>
+</content>
                 </control>
             </control>
         </control>
