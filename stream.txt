@@ -44,3 +44,7 @@
 44:http://foxfm.xyz:2052/4K-2/mpegts#
 45:http://foxfm.xyz:2052/4K-3/mpegts#
 46:http://foxfm.xyz:2052/4K-4/mpegts#
+47:http://radio.foxfm.xyz:2052/4K1-ALI/mpegts#
+48:http://radio.foxfm.xyz:2052/4K2-ALI/mpegts#
+49:http://radio.foxfm.xyz:2052/4K3-ALI/mpegts#
+50:http://radio.foxfm.xyz:2052/4K4-ALI/mpegts#
