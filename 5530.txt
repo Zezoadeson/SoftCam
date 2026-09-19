@@ -1,0 +1,3349 @@
+[    0.000000@0] Booting Linux on physical CPU 0x0
+[    0.000000@0] Linux version 4.9.113 (acer@acer-Aspire-ES1-572) (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16)) ) #1 SMP PREEMPT Sat Sep 19 20:31:43 EEST 2026
+[    0.000000@0] Boot CPU: AArch64 Processor [411fd050]
+[    0.000000@0] efi: Getting EFI parameters from FDT:
+[    0.000000@0] efi: UEFI not found.
+[    0.000000@0] 	07400000 - 07500000,     1024 KB, ramoops@0x07400000
+[    0.000000@0] __reserved_mem_alloc_size, start:0x0000000005000000, end:0x0000000005400000, len:4 MiB
+[    0.000000@0] 	05000000 - 05400000,     4096 KB, linux,secmon
+[    0.000000@0] __reserved_mem_alloc_size, start:0x00000000df800000, end:0x00000000e0000000, len:8 MiB
+[    0.000000@0] 	df800000 - e0000000,     8192 KB, linux,meson-fb
+[    0.000000@0] 	e8800000 - f0800000,   131072 KB, linux,ion-dev
+[    0.000000@0] 	e4400000 - e6c00000,    40960 KB, linux,di_cma
+[    0.000000@0] Reserved memory: created DMA memory pool at 0x00000000f0900000, size 0 MiB
+[    0.000000@0] 	f0900000 - f0900000,        0 KB, linux,ppmgr
+[    0.000000@0] 	c4800000 - df800000,   442368 KB, linux,codec_mm_cma
+[    0.000000@0] 	f0900000 - f0900000,        0 KB, linux,codec_mm_reserved
+[    0.000000@0] 	e2400000 - e4400000,    32768 KB, linux,vm0_cma
+[    0.000000@0] cma: Reserved 32 MiB at 0x00000000e0400000
+[    0.000000@0] On node 0 totalpages: 985088
+[    0.000000@0]   DMA zone: 15392 pages used for memmap
+[    0.000000@0]   DMA zone: 0 pages reserved
+[    0.000000@0]   DMA zone: 985088 pages, LIFO batch:31
+[    0.000000@0] psci: probing for conduit method from DT.
+[    0.000000@0] psci: PSCIv1.0 detected in firmware.
+[    0.000000@0] psci: Using standard PSCI v0.2 function IDs
+[    0.000000@0] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000@0] psci: SMC Calling Convention v1.1
+[    0.000000@0] percpu: Embedded 26 pages/cpu @ffffffc0f0825000 s68952 r8192 d29352 u106496
+[    0.000000@0] pcpu-alloc: s68952 r8192 d29352 u106496 alloc=26*4096
+[    0.000000@0] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000@0] Detected VIPT I-cache on CPU0
+[    0.000000@0] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 969696
+[    0.000000@0] Kernel command line: init=/init console=ttyS0,115200 no_console_suspend earlyprintk=aml-uart,0xff803000 ramoops.pstore_en=1 ramoops.record_size=0x8000 ramoops.console_size=0x4000 hdr_policy=0 hdr_priority= otg_device=0 reboot_mode_android=normal logo=osd0,loaded,0x3d800000 fb_width=1920 fb_height=1080 display_bpp=16 outputmode=1080p60hz vout=1080p60hz,enable panel_type=lcd_1 lcd_ctrl=0x00000000 hdmitx=,444,8bit hdmimode=1080p60hz hdmichecksum=0x40250000 dolby_vision_on=0 frac_rate_policy=1 hdmi_read_edid=1 cvbsmode=576cvbs osd_reverse=0 video_reverse=0 irq_check_en=0 androidboot.selinux=permissive androidboot.firstboot=0 jtag=disable androidboot.rebootmode=normal androidboot.hardware=amlogic androidboot.bootloader=U-Boot 2015.01 androidboot.build.expect.baseband=N/A androidboot.serialno=1234567890 mac=0C:55:32:01:7A:0A androidboot.mac=0C:55:32:01:7A:0A androidboot.oem.key1=ATV00104319 BOOT_IMAGE=kernel.img boot=LABEL=COREELEC disk=LABEL=STORAGE console=ttyS0,115200 console=t
+[    0.000000@0] fb: osd0
+[    0.000000@0] fb: loaded
+[    0.000000@0] fb: 0x3d800000
+[    0.000000@0] fb: logo_info.fb_width=1920
+[    0.000000@0] fb: logo_info.fb_height=1080
+[    0.000000@0] vout: 1080p60hz
+[    0.000000@0] vout: enable: 1
+[    0.000000@0] lcd: panel_type: lcd_1
+[    0.000000@0] lcd: lcd_ctrl: 0x00000000
+[    0.000000@0] vout: get hdmimode: 1080p60hz
+[    0.000000@0] vout: get hdmi checksum: 0x40250000
+[    0.000000@0] get_dolby_on: 0
+[    0.000000@0] hdmitx: hdmitx boot frac_rate_policy: 1
+[    0.000000@0] vout: get cvbsmode: 576cvbs
+[    0.000000@0] vpp_axis_reverse: bootargs is 0
+[    0.000000@0] DI: di_read_canvas_reverse: bootargs is 0.
+[    0.000000@0] vdin_get_video_reverse: bootargs is 0.
+[    0.000000@0] phlock_phase_config: bootargs is 0.
+[    0.000000@0] vout: 1080p60hz
+[    0.000000@0] vout: en: 1
+[    0.000000@0] fb: osd0
+[    0.000000@0] fb: loaded
+[    0.000000@0] fb: 0x3d800000
+[    0.000000@0] hdmitx: hdmitx boot frac_rate_policy: 0
+[    0.000000@0] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000@0] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[    0.000000@0] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000@0] Memory: 3110536K/3940352K available (14844K kernel code, 2076K rwdata, 8944K rodata, 5568K init, 1558K bss, 137592K reserved, 692224K cma-reserved)
+[    0.000000@0] Virtual kernel memory layout:
+[    0.000000@0]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+[    0.000000@0]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+[    0.000000@0]       .text : 0xffffff8009080000 - 0xffffff8009f00000   ( 14848 KB)
+[    0.000000@0]     .rodata : 0xffffff8009f00000 - 0xffffff800a7d0000   (  9024 KB)
+[    0.000000@0]       .init : 0xffffff800a7d0000 - 0xffffff800ad40000   (  5568 KB)
+[    0.000000@0]       .data : 0xffffff800ad40000 - 0xffffff800af47200   (  2077 KB)
+[    0.000000@0]        .bss : 0xffffff800af47200 - 0xffffff800b0ccb3c   (  1559 KB)
+[    0.000000@0]     fixed   : 0xffffffbefe7fd000 - 0xffffffbefec00000   (  4108 KB)
+[    0.000000@0]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+[    0.000000@0]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+[    0.000000@0]               0xffffffbf00004000 - 0xffffffbf03c24000   (    60 MB actual)
+[    0.000000@0]     memory  : 0xffffffc000100000 - 0xffffffc0f0900000   (  3848 MB)
+[    0.000000@0] can't find symbol:arm_dma_alloc
+[    0.000000@0] can't find symbol:__alloc_from_contiguous
+[    0.000000@0] can't find symbol:cma_allocator_alloc
+[    0.000000@0] can't fuzzy match:new_slab
+[    0.000000@0]  0, addr:ffffff8009b42724 +  140, aml_cma_alloc_post_hook
+[    0.000000@0]  1, addr:ffffff80095d66a0 +   80, dma_alloc_from_contiguous
+[    0.000000@0]  2, addr:ffffff8009222994 +  3dc, cma_alloc
+[    0.000000@0]  3, addr:ffffff8009212ea0 +  2f4, __kmalloc_track_caller
+[    0.000000@0]  4, addr:ffffff800920f780 +  2b0, kmem_cache_alloc
+[    0.000000@0]  5, addr:ffffff800920f410 +  2b0, kmem_cache_alloc_trace
+[    0.000000@0]  6, addr:ffffff800920f0f4 +  31c, __kmalloc
+[    0.000000@0]  7, addr:ffffff800920f030 +   c4, __slab_alloc.constprop.0
+[    0.000000@0]  8, addr:ffffff800920e960 +  6d0, ___slab_alloc.constprop.0
+[    0.000000@0]  9, addr:ffffff8009200280 +   e0, vzalloc
+[    0.000000@0] 10, addr:ffffff80091fffd0 +   e0, vmalloc
+[    0.000000@0] 11, addr:ffffff80091ffc00 +  100, __vmalloc_node_range
+[    0.000000@0] 12, addr:ffffff80091e33c0 +  120, kmalloc_order_trace
+[    0.000000@0] 13, addr:ffffff80091e3240 +  180, kmalloc_order
+[    0.000000@0] 14, addr:ffffff80091c2dd0 +   90, alloc_pages_exact
+[    0.000000@0] 15, addr:ffffff80091c2d74 +   5c, get_zeroed_page
+[    0.000000@0] 16, addr:ffffff80091c2c10 +  164, __alloc_page_frag
+[    0.000000@0] 17, addr:ffffff80091c2bb4 +   5c, __get_free_pages
+[    0.000000@0] 18, addr:ffffff80091c1dc0 +  df4, __alloc_pages_nodemask
+[    0.000000@0] 19, addr:ffffff800909b9b0 +  220, __dma_alloc
+[    0.000000@0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000@0] Preemptible hierarchical RCU implementation.
+[    0.000000@0] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000@0] 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000@0] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=4
+[    0.000000@0] NR_IRQS:64 nr_irqs:64 0
+[    0.000000@0] irq_meson_gpio: 100 to 8 gpio interrupt mux initialized
+[    0.000000@0] g12a_aoclkc_init: register ao clk ok!
+[    0.000000@0] Meson chip version = RevB (2B:B - 2:0)
+[    0.000000@0] meson_g12a_sdemmc_init: register amlogic sdemmc clk
+[    0.000000@0] meson_g12a_sdemmc_init: register amlogic sdemmc clk
+[    0.000000@0] meson_g12a_gpu_init: register meson gpu clk
+[    0.000000@0] meson_g12a_media_init: register meson media clk
+[    0.000000@0] meson_g12a_misc_init: register amlogic g12a misc clks
+[    0.000000@0] meson_g12a_misc_init: done.
+[    0.000000@0] g12a_clkc_init initialization complete
+[    0.000000@0] sm1 clk probe ok
+[    0.000000@0] arm_arch_timer: Architected cp15 timer(s) running at 24.00MHz (phys).
+[    0.000000@0] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000005@0] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000041@0] meson_bc_timer: mclk->mux_reg =ffffff800800c190,mclk->reg =ffffff800800e194
+[    0.000483@0] Console: colour dummy device 80x25
+[    0.000581@0] console [tty0] enabled
+[    0.000597@0] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=96000)
+[    0.000609@0] pid_max: default: 32768 minimum: 301
+[    0.000658@0] thread_stack_cache_init, vmap:ffffffc00017b780, bitmap:ffffffc000174000, cache page:1a0
+[    0.000667@0] thread_stack_cache_init, allocation vm area:ffffffc000181b00, addr:ffffff8020000000, size:20001000
+[    0.000672@0] cpu 0, vmap_stack:[ffffffc0f082fae0-ffffffc0f0833ad0]
+[    0.000676@0] cpu 0, irq_stack: [ffffffc0f0825060-ffffffc0f0829050]
+[    0.000679@0] cpu 1, vmap_stack:[ffffffc0f0849ae0-ffffffc0f084dad0]
+[    0.000682@0] cpu 1, irq_stack: [ffffffc0f083f060-ffffffc0f0843050]
+[    0.000685@0] cpu 2, vmap_stack:[ffffffc0f0863ae0-ffffffc0f0867ad0]
+[    0.000688@0] cpu 2, irq_stack: [ffffffc0f0859060-ffffffc0f085d050]
+[    0.000691@0] cpu 3, vmap_stack:[ffffffc0f087dae0-ffffffc0f0881ad0]
+[    0.000694@0] cpu 3, irq_stack: [ffffffc0f0873060-ffffffc0f0877050]
+[    0.000756@0] Security Framework initialized
+[    0.000800@0] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.000809@0] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.001560@0] ftrace: allocating 45641 entries in 179 pages
+[    0.101417@0] sched-energy: CPU device node has no sched-energy-costs
+[    0.101434@0] CPU0: update cpu_capacity 1024
+[    0.101452@0] ASID allocator initialised with 65536 entries
+[    0.148947@0] secmon: can't fine clear_range
+[    0.149728@0] EFI services will not be available.
+[    0.198091@1] Detected VIPT I-cache on CPU1
+[    0.198145@1] CPU1: update cpu_capacity 1024
+[    0.198151@1] CPU1: Booted secondary processor [411fd050]
+[    0.230174@2] Detected VIPT I-cache on CPU2
+[    0.230211@2] CPU2: update cpu_capacity 1024
+[    0.230214@2] CPU2: Booted secondary processor [411fd050]
+[    0.262281@3] Detected VIPT I-cache on CPU3
+[    0.262313@3] CPU3: update cpu_capacity 1024
+[    0.262317@3] CPU3: Booted secondary processor [411fd050]
+[    0.262438@0] Brought up 4 CPUs
+[    0.262448@0] SMP: Total of 4 processors activated.
+[    0.262458@0] CPU features: detected feature: Privileged Access Never
+[    0.262467@0] CPU features: detected feature: User Access Override
+[    0.262476@0] CPU features: detected feature: Virtualization Host Extensions
+[    0.262485@0] CPU features: detected feature: 32-bit EL0 Support
+[    0.262692@0] CPU: All CPU(s) started at EL2
+[    0.262718@0] alternatives: patching kernel code
+[    0.264672@0] addr:ffffff802008be16 is in kernel, size fix 4096->10, data:mode=0755
+[    0.264838@0] devtmpfs: initialized
+[    0.290902@0] DMI not present or invalid.
+[    0.291281@0] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.291306@0] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.291561@0] pinctrl core: initialized pinctrl subsystem
+[    0.292867@0] NET: Registered protocol family 16
+[    0.294219@0] schedtune: init normalization constants...
+[    0.294230@0] schedtune: no energy model data
+[    0.294239@0] schedtune: disabled!
+[    0.306090@0] cpuidle: using governor menu
+[    0.306182@0] register canvas platform driver
+[    0.306225@0] register rdma platform driver
+[    0.307489@0] vdso: 2 pages (1 code @ ffffff8009f07000, 1 data @ ffffff800ad45000)
+[    0.307510@0] hw-breakpoint: found 6 breakpoint and 2 watchpoint registers.
+[    0.307932@0] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.308268@0] clkmsr: clkmsr: driver init
+[    0.308276@0] codec_mm_module_init
+[    0.308338@0] media_configs_system_init
+[    0.308724@0] aml_watch_point_probe, in, wp:2
+[    0.309265@0] pstore: using zlib compression
+[    0.309389@0] console [pstore-1] enabled
+[    0.309665@0] pstore: Registered ramoops as persistent store backend
+[    0.309676@0] ramoops: attached 0x100000@0x7400000, ecc: 0/0
+[    0.309687@0] ramoops: ramoops_io_en:0 1 old:0x0 ftrace_size:0x80000
+[    0.313177@0] aml_iomap: amlogic iomap probe done
+[    0.314035@0] vpu: driver version: v20190329(10-sm1)
+[    0.314050@0] vpu: load vpu_clk: 666666667Hz(7)
+[    0.314311@0] vpu: clktree_init
+[    0.314399@0] vpu: vpu_probe OK
+[    0.321773@0] clkmsr: msr_clk_reg0=ffffff80081a8004,msr_clk_reg2=ffffff80081aa00c
+[    0.321794@0] clkmsr: msr_ring_reg0=ffffff80081ac5fc
+[    0.326546@0] audio_clocks: audio_clocks_probe done
+[    0.330108@0] aml_snd_reg_map[0], reg:ff661000, size:400
+[    0.330151@0] aml_snd_reg_map[1], reg:ff660000, size:1000
+[    0.330198@0] aml_snd_reg_map[2], reg:ff661400, size:400
+[    0.330262@0] aml_snd_reg_map[3], reg:ff662000, size:1000
+[    0.330303@0] aml_snd_reg_map[4], reg:ffd01000, size:1000
+[    0.330341@0] aml_snd_reg_map[5], reg:ff661800, size:400
+[    0.330380@0] aml_snd_reg_map[6], reg:ff661c00, size:104
+[    0.330419@0] aml_snd_reg_map[7], reg:ff664000, size:104
+[    0.330429@0] amlogic auge_snd_iomap probe done
+[    0.332811@0] aml_vdac_config_probe: cpu_id:6, name:meson-sm1-vdac
+[    0.333066@0] aml_vdac_probe: ok
+[    0.333312@0] canvas_probe reg=00000000ff638000,size=2000
+[    0.333342@0] canvas maped reg_base =ffffff80081c0000
+[    0.344159@0] rdma_probe,cpu_type:1, ver:0, len:8
+[    0.344400@0] rdma_register, rdma_table_addr ffffff80081e1000 rdma_table_addr_phy e0440000 reg_buf ffffffc0c0198000
+[    0.344412@0] rdma_register success, handle 1 table_size 32768
+[    0.344423@0] set_rdma_handle video rdma handle = 1.
+[    0.344451@0] classs created ok
+[    0.344471@0] classs file created ok
+[    0.350034@0] codec_mm codec_mm: assigned reserved memory node linux,codec_mm_cma
+[    0.350156@0] codec_mm codec_mm: assigned reserved memory node linux,codec_mm_cma
+[    0.350165@0] codec_mm_probe ok
+[    0.648808@0] vgaarb: loaded
+[    0.649148@0] SCSI subsystem initialized
+[    0.649459@0] usbcore: registered new interface driver usbfs
+[    0.649534@0] usbcore: registered new interface driver hub
+[    0.649654@0] usbcore: registered new device driver usb
+[    0.649785@0] Linux video capture interface: v2.00
+[    0.649857@0] pps_core: LinuxPPS API ver. 1 registered
+[    0.649867@0] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.649888@0] PTP clock support registered
+[    0.650258@0] dmi: Firmware registration failed.
+[    0.650701@0] secmon: reserve_mem_size:0x300000
+[    0.650787@0] secmon secmon: assigned reserved memory node linux,secmon
+[    0.651008@0] secmon: get page:ffffffbf00140000, 5000
+[    0.651020@0] secmon: share in base: 0xffffffc0050fe000, share out base: 0xffffffc0050ff000
+[    0.651029@0] secmon: phy_in_base: 0x50fe000, phy_out_base: 0x50ff000
+[    0.651738@0] fb: osd_init_module
+[    0.652481@0] fb: viu vsync irq: 35
+[    0.652513@0] fb: viu2 vsync irq: 48
+[    0.652668@0] 0x000000d8:Y=d8,U=0,V=0
+[    0.652677@0] 0x000000d9:Y=d9,U=0,V=0
+[    0.652686@0] 0x000000da:Y=da,U=0,V=0
+[    0.652695@0] 0x000000db:Y=db,U=0,V=0
+[    0.652702@0] 0x000000dc:Y=dc,U=0,V=0
+[    0.652711@0] 0x000000dd:Y=dd,U=0,V=0
+[    0.653010@0] fb: osd_rdma_init: rdma_table p=0xe0448000,op=0xe0448000 , v=0xffffff80081ea000
+[    0.653052@0] rdma_register, rdma_table_addr ffffff80081ec000 rdma_table_addr_phy e0449000 reg_buf ffffffc00038e000
+[    0.653063@0] rdma_register success, handle 2 table_size 4096
+[    0.653072@0] fb: osd_rdma_init:osd rdma handle = 2.
+[    0.653095@0] fb: mem_size: 0x800000
+[    0.653103@0] fb: mem_size: 0x4b80000
+[    0.653110@0] fb: mem_size: 0x100000
+[    0.653117@0] fb: mem_size: 0x100000
+[    0.653125@0] fb: mem_size: 0x800000
+[    0.653199@0] meson-fb fb: assigned reserved memory node linux,meson-fb
+[    0.653210@0] fb: reserved memory base:0x00000000df800000, size:800000
+[    0.653488@0] vout: error: invalid vinfo1. current vmode is not supported
+[    0.653528@0] fb: init fbdev bpp is:32
+[    0.655396@0] fb: set osd0 reverse as NONE
+[    0.655419@0] vout: error: invalid vinfo1. current vmode is not supported
+[    0.657998@0] fb: osd probe OK
+[    0.659245@0] hdmitx: system: amhdmitx_probe start
+[    0.659255@0] hdmitx: system: Ver: 20190815
+[    0.659320@0] hdmitx: system: hdmitx_device.chip_type : 12
+[    0.659370@0] hdmitx: system: not find match pwr-ctl
+[    0.659426@0] hdmitx: system: not find drm_amhdmitx
+[    0.659474@0] hdmitx: system: hpd irq = 34
+[    0.659600@0] hdmitx: system: hdcp22_tx_skp failed to probe
+[    0.659612@0] hdmitx: system: hdcp22_tx_esm failed to probe
+[    0.660204@0] vout: vout1: register server: hdmitx_vout_server
+[    0.660216@0] vout: vout2: register server: hdmitx_vout2_server
+[    0.661038@0] hdmitx: hdmitx20: Mapped PHY: 0xffd00000
+[    0.661057@0] hdmitx: hdmitx20: Mapped PHY: 0xff634400
+[    0.661078@0] hdmitx: hdmitx20: Mapped PHY: 0xff900000
+[    0.661097@0] hdmitx: hdmitx20: Mapped PHY: 0xff800000
+[    0.661111@0] hdmitx: hdmitx20: Mapped PHY: 0xff63c000
+[    0.661123@0] hdmitx: hdmitx20: Mapped PHY: 0xffd00000
+[    0.661137@0] hdmitx: hdmitx20: Mapped PHY: 0xff608000
+[    0.661155@0] hdmitx: hdmitx20: Mapped PHY: 0xff600000
+[    0.661168@0] hdmitx: hdmitx20: Mapped PHY: 0xffe01000
+[    0.661183@0] hdmitx: hw: alread display in uboot 0x10
+[    0.661223@0] hdmitx: hw: avmute set to 1
+[    0.661384@0] hdmitx: system: amhdmitx_probe end
+[    0.661918@0] hdmitx: system: irq 80000002 0
+[    0.663016@0] vout: create vout attribute OK
+[    0.663206@0] vout: vout_fops_create OK
+[    0.663218@0] vout: vout1: register server: nulldisp_vout_server
+[    0.663396@0] vout: tvout monitor interval:500(ms), timeout cnt:20
+[    0.663424@0] hdmitx: hdmitx_set_current_vmode[4204]
+[    0.663434@0] hdmitx: system: recalc before 1080p60hz 60 1
+[    0.663445@0] hdmitx: system: recalc after 1080p60hz 60 1
+[    0.663452@0] hdmitx: alread display in uboot
+[    0.663461@0] vout: init mode 1080p60hz set ok
+[    0.663469@0] vout: aml_tvout_mode_monitor
+[    0.663493@0] vout: error: refresh_tvout_mode: no matched cur_mode: 576cvbs, force to invalid
+[    0.663530@0] vout: refresh_tvout_mode: mode chang to invalid
+[    0.663540@0] vout: vmode set to invalid
+[    0.663576@0] fb: current vmode=1080p60hz, cmd: 0x10000
+[    0.663629@0] vout: new mode invalid set ok
+[    0.663638@0] fb: current vmode=invalid, cmd: 0x20000
+[    0.663667@0] vout: aml_vout_probe OK
+[    0.666016@0] chip type:0x2b
+[    0.666708@0] MEMORY:[100000+f0800000]
+[    0.666723@0] ramdump_probe, storage device:data
+[    0.666732@0] NO valid ramdump args:0 0
+[    0.666754@0] ramdump_probe, set sticky to 8f09
+[    0.667602@0] Advanced Linux Sound Architecture Driver Initialized.
+[    0.668345@0] Bluetooth: Core ver 2.22
+[    0.668398@0] NET: Registered protocol family 31
+[    0.668407@0] Bluetooth: HCI device and connection manager initialized
+[    0.668430@0] Bluetooth: HCI socket layer initialized
+[    0.668449@0] Bluetooth: L2CAP socket layer initialized
+[    0.668510@0] Bluetooth: SCO socket layer initialized
+[    0.670831@0] clocksource: Switched to clocksource arch_sys_counter
+[    0.787566@3] VFS: Disk quotas dquot_6.6.0
+[    0.787683@3] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.787974@3] FS-Cache: Loaded
+[    0.804847@2] NET: Registered protocol family 2
+[    0.805810@2] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.806004@2] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    0.806636@2] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.806769@2] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.806881@2] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.807186@2] NET: Registered protocol family 1
+[    0.808049@1] RPC: Registered named UNIX socket transport module.
+[    0.808055@1] RPC: Registered udp transport module.
+[    0.808059@1] RPC: Registered tcp transport module.
+[    0.808063@1] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.808078@1] PCI: CLS 0 bytes, default 64
+[    0.811068@1] wifi: power_on_pin_OD = 0;
+[    0.811090@1] aml_wifi wifi: [wifi_dev_probe] no power_on_pin2
+[    0.811269@1] aml_wifi wifi: [pwm_double_channel_conf_dt] wifi pwm dt ok
+[    0.811294@1] aml_wifi wifi: [pwm_double_channel_conf] wifi pwm conf ok
+[    0.811306@1] aml_wifi wifi: [wifi_dev_probe] dhd_static_buf setup
+[    0.811315@1] Wifi: bcmdhd_init_wlan_mem: bcmdhd_init_wlan_mem(): 100.10.545.3
+[    0.812045@1] Wifi: bcmdhd_init_wlan_mem: bcmdhd_init_wlan_mem prealloc ok
+[    0.812060@1] aml_wifi wifi: [wifi_dev_probe] interrupt_pin=483
+[    0.812070@1] aml_wifi wifi: [wifi_dev_probe] irq_num=0, irq_trigger_type=1
+[    0.812079@1] aml_wifi wifi: [wifi_dev_probe] power_on_pin=482
+[    0.812088@1] aml_wifi wifi: [wifi_dev_probe] clock_32k_pin=0
+[    0.812510@3] aml_wifi wifi: [wifi_setup_dt] wifi_setup_dt
+[    0.812672@3] aml_wifi wifi: [wifi_setup_dt] irq num is:(67)
+[    0.812683@3] aml_wifi wifi: [wifi_setup_dt] interrupt_pin(483)
+[    0.812715@3] aml_wifi wifi: [wifi_setup_dt] power_on_pin(482)
+[    0.814663@3] Trying to unpack rootfs image as initramfs...
+[    1.039550@3] Freeing initrd memory: 4188K
+[    1.042978@3] hw perfevents: clusterb_enabled = 0
+[    1.042996@3] hw perfevents: cpumasks 0xf, 0x0
+[    1.043053@3] hw perfevents: cluster A irq = 10
+[    1.043216@3] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    1.049301@1] workingset: timestamp_bits=46 max_order=20 bucket_order=0
+[    1.063968@1] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.064346@1] exFAT: Version 1.2.9
+[    1.067560@1] NFS: Registering the id_resolver key type
+[    1.067605@1] Key type id_resolver registered
+[    1.067614@1] Key type id_legacy registered
+[    1.067635@1] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    1.069068@1] ntfs: driver 2.1.32 [Flags: R/O].
+[    1.069480@1] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    1.070242@3] fuse init (API version 7.26)
+[    1.077417@1] NET: Registered protocol family 38
+[    1.077441@1] Key type asymmetric registered
+[    1.077451@1] Asymmetric key parser 'x509' registered
+[    1.077832@1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[    1.077845@1] io scheduler noop registered (default)
+[    1.077855@1] io scheduler deadline registered
+[    1.078085@1] io scheduler cfq registered
+[    1.093958@2] random: fast init done
+[    1.094019@2] random: crng init done
+[    1.094519@1] Unable to detect cache hierarchy for CPU 0
+[    1.109985@1] brd: module loaded
+[    1.119260@1] loop: module loaded
+[    1.120416@1] zram: Added device: zram0
+[    1.120854@1] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    1.122410@1] libphy: Fixed MDIO Bus: probed
+[    1.122680@1] tun: Universal TUN/TAP device driver, 1.6
+[    1.122688@1] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.123658@3]  REG0:Addr = ffffff8008406540
+[    1.123688@3]  ee eth reset:Addr = ffffff80084fa008
+[    1.123711@3] MAC wol not set
+[    1.123723@3] wzh pll 9c0040a 927e0000 ac5f49e5
+[    1.123965@3] wzh analog 20200000 c000 23
+[    1.134488@2] meson6-dwmac ff3f0000.ethernet: no reset control found
+[    1.134525@2] stmmac - user ID: 0x11, Synopsys ID: 0x37
+[    1.134534@2]  Ring mode enabled
+[    1.134544@2]  DMA HW capability register supported
+[    1.134552@2]  Normal descriptors
+[    1.134559@2]  RX Checksum Offload Engine supported
+[    1.134567@2] 	COE Type 2
+[    1.134574@2]  TX Checksum insertion supported
+[    1.134581@2]  Wake-Up On Lan supported
+[    1.134667@2]  Enable RX Mitigation via HW Watchdog Timer
+[    1.138196@3] libphy: stmmac: probed
+[    1.138215@3] eth%d: PHY ID 01803301 at 8 IRQ POLL (stmmac-0:08) active
+[    1.140520@3] PPP generic driver version 2.4.2
+[    1.140896@2] PPP BSD Compression module registered
+[    1.140908@2] PPP Deflate Compression module registered
+[    1.140948@2] PPP MPPE Compression module registered
+[    1.140959@2] NET: Registered protocol family 24
+[    1.141108@2] usbcore: registered new interface driver asix
+[    1.141243@2] usbcore: registered new interface driver ax88179_178a
+[    1.141329@2] usbcore: registered new interface driver cdc_ether
+[    1.141394@2] usbcore: registered new interface driver net1080
+[    1.141457@2] usbcore: registered new interface driver cdc_subset
+[    1.141518@2] usbcore: registered new interface driver zaurus
+[    1.141614@2] usbcore: registered new interface driver cdc_ncm
+[    1.142635@2] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.142644@2] ehci-pci: EHCI PCI platform driver
+[    1.142721@2] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.142768@2] ohci-pci: OHCI PCI platform driver
+[    1.143603@2] usbcore: registered new interface driver cdc_acm
+[    1.143612@2] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.143695@2] usbcore: registered new interface driver usb-storage
+[    1.144387@3] mousedev: PS/2 mouse device common for all mice
+[    1.144770@3] usbcore: registered new interface driver xpad
+[    1.144955@2] i2c /dev entries driver
+[    1.145284@2] IR NEC protocol handler initialized
+[    1.145293@2] IR RC5(x/sz) protocol handler initialized
+[    1.145301@2] IR RC6 protocol handler initialized
+[    1.145309@2] IR JVC protocol handler initialized
+[    1.145317@2] IR Sony protocol handler initialized
+[    1.145324@2] IR SANYO protocol handler initialized
+[    1.145332@2] IR Sharp protocol handler initialized
+[    1.145340@2] IR MCE Keyboard/mouse protocol handler initialized
+[    1.145348@2] IR XMP protocol handler initialized
+[    1.145460@2] usbcore: registered new interface driver uvcvideo
+[    1.145468@2] USB Video Class driver (1.1.1)
+[    1.145542@2] usbcore: registered new interface driver cx231xx
+[    1.145554@2] md: linear personality registered for level -1
+[    1.146133@1] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[    1.146150@1] Bluetooth: HCI UART driver ver 2.3
+[    1.146162@1] Bluetooth: HCI UART protocol H4 registered
+[    1.146170@1] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    1.150150@1] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.151144@1] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.151690@3] usbcore: registered new interface driver usbhid
+[    1.151699@3] usbhid: USB HID core driver
+[    1.151976@2] ashmem: initialized
+[    1.153375@2] value of voltage_tolerance 0
+[    1.153387@2] meson_cpufreq_init:don't find the node <dynamic_gp1_clk>
+[    1.153434@2] value of gp1_clk_target 0
+[    1.155595@2] cpu cpu0: meson_cpufreq_init: CPU 0 initialized
+[    1.158916@2] ff803000.serial: clock gate not found
+[    1.159072@2] meson_uart ff803000.serial: ==uart0 reg addr = ffffff80084fe000
+[    1.159157@2] ff803000.serial: ttyS0 at MMIO 0xff803000 (irq = 20, base_baud = 1500000) is a meson_uart
+[    1.159180@2] meson_uart ff803000.serial: ttyS0 use xtal(24M) 24000000 change 0 to 115200
+[    1.171486@0] hdmitx: system: plugin
+[    1.258307@2] console [ttyS0] enabled
+[    1.259617@1] meson_uart ffd24000.serial: ==uart1 reg addr = ffffff800868a000
+[    1.259684@1] ffd24000.serial: ttyS1 at MMIO 0xffd24000 (irq = 33, base_baud = 1500000) is a meson_uart
+[    1.262077@1] amlogic-new-usb2-v2 ffe09000.usb2phy: USB2 phy probe:phy_mem:0xffe09000, iomap phy_base:0xffffff800868c000
+[    1.262757@1] amlogic-new-usb3-v2 ffe09080.usb3phy: USB3 phy probe:phy_mem:0xffe09080, iomap phy_base:0xffffff80086c9080
+[    1.267506@1] aml_dma ff63e000.aml_dma: Aml dma
+[    1.271459@1] aml_aes_dma ff63e000.aml_dma:aml_aes: Aml AES_dma
+[    1.276384@1] aml_sha_dma ff63e000.aml_dma:aml_sha: Aml SHA1/SHA224/SHA256 dma
+[    1.277123@1] gpio-keypad ff800000.gpio_keypad: power key(116) registed.
+[    1.277304@1] input: gpio_keypad as /devices/platform/ff800000.gpio_keypad/input/input0
+[    1.278025@1] meson-remote: Driver init
+[    1.278412@1] meson-remote: remote_probe
+[    1.278429@1] meson-remote ff808040.rc: protocol = 0x1
+[    1.278439@1] meson-remote ff808040.rc: led_blink = 1
+[    1.278448@1] meson-remote ff808040.rc: led_blink_frq  = 100
+[    1.278485@1] meson-remote ff808040.rc: platform_data irq =60
+[    1.278557@1] meson-remote ff808040.rc: custom_number = 3
+[    1.278589@1] meson-remote ff808040.rc: ptable->map_size = 43
+[    1.278597@1] meson-remote ff808040.rc: ptable->custom_name = amlogic-remote-1
+[    1.278605@1] meson-remote ff808040.rc: ptable->custom_code = 0x6e00
+[    1.278614@1] meson-remote ff808040.rc: ptable->release_delay = 80
+[    1.278658@1] meson-remote ff808040.rc: ptable->map_size = 42
+[    1.278666@1] meson-remote ff808040.rc: ptable->custom_name = amlogic-remote-2
+[    1.278673@1] meson-remote ff808040.rc: ptable->custom_code = 0xfc03
+[    1.278681@1] meson-remote ff808040.rc: ptable->release_delay = 80
+[    1.278713@1] meson-remote ff808040.rc: ptable->map_size = 54
+[    1.278721@1] meson-remote ff808040.rc: ptable->custom_name = amlogic-remote-3
+[    1.278728@1] meson-remote ff808040.rc: ptable->custom_code = 0x4fb0
+[    1.278735@1] meson-remote ff808040.rc: ptable->release_delay = 80
+[    1.278758@1] meson-remote ff808040.rc: default protocol = 0x1 and id = 0
+[    1.278767@1] meson-remote ff808040.rc: reg=0x0, val=0x1f40190
+[    1.278775@1] meson-remote ff808040.rc: reg=0x4, val=0x12c00c8
+[    1.278781@1] meson-remote ff808040.rc: reg=0x8, val=0x960050
+[    1.278787@1] meson-remote ff808040.rc: reg=0xc, val=0x480028
+[    1.278793@1] meson-remote ff808040.rc: reg=0x10, val=0x70fa0013
+[    1.278799@1] meson-remote ff808040.rc: reg=0x18, val=0x8616800
+[    1.278805@1] meson-remote ff808040.rc: reg=0x1c, val=0x9f00
+[    1.278811@1] meson-remote ff808040.rc: reg=0x20, val=0x0
+[    1.278845@1] meson-remote ff808040.rc: reg=0x24, val=0x0
+[    1.278851@1] meson-remote ff808040.rc: reg=0x28, val=0x0
+[    1.279738@1] input: aml_keypad as /devices/platform/ff808040.rc/input/input1
+[    1.280971@1] meson-remote: IR XMP protocol handler initialized
+[    1.284463@1] ion_dev soc:ion_dev: assigned reserved memory node linux,ion-dev
+[    1.285071@1] ge2d: ge2d_init_module
+[    1.285358@1] ge2d: ge2d_dev major:237
+[    1.285601@1] ge2d: clock source clk_ge2d_gate ffffffc02f44b380
+[    1.285632@1] ge2d: clock clk_ge2d source ffffffc02f44b400
+[    1.285651@1] ge2d: clock source clk_vapb_0 ffffffc02f44b480
+[    1.285661@1] ge2d: ge2d init clock is 500000000 HZ, VPU clock is 666666656 HZ
+[    1.285781@1] ge2d: ge2d clock is 499 MHZ
+[    1.285803@1] ge2d: find address resource
+[    1.285821@1] ge2d: map io source 0x00000000ff940000,size=65536 to 0xffffff80086e0000
+[    1.285828@1] ge2d: reserved mem init failed
+[    1.285835@1] ge2d: ge2d: pdev=ffffffc0c0167800, irq=39, clk=ffffffc02f44b380
+[    1.285899@1] ge2d: ge2d start monitor
+[    1.285992@2] ge2d: ge2d workqueue monitor start
+[    1.286508@1] tsync: new_arch=0 chip=0x2b
+[    1.286599@1] [tsync_pcr_init]init success.
+[    1.286906@1] amvideom vsync irq: 35
+[    1.286942@1] create_ge2d_work_queue video task ok
+[    1.287674@1] hdmitx: hdcp: hdmitx_hdcp_init
+[    1.288396@1] vout: vout2: create vout2 attribute OK
+[    1.288521@1] vout: vout2: vout2_fops_create OK
+[    1.288697@1] vout: vout2: clktree_init
+[    1.288705@1] vout: vout2: register server: nulldisp_vout2_server
+[    1.288819@1] vout: vout2: init mode null set ok
+[    1.288826@1] vout: vout2: aml_vout2_probe OK
+[    1.289010@1] DI: di_module_init ok.
+[    1.289279@1] DI: di_probe:
+[    1.289286@1] DI: di_probe: major 511
+[    1.289471@1] deinterlace deinterlace: assigned reserved memory node linux,di_cma
+[    1.289482@1] di:flag_cma=1
+[    1.289490@1] DI: CMA size 0x2800000.
+[    1.289519@1] pre_irq:57
+[    1.289536@1] post_irq:58
+[    1.289543@1] DI: di_probe allocate rdma channel 0.
+[    1.289552@1] di_get_vpu_clkb: get clk vpu error.
+[    1.289592@1] DI: vpu clkb <334000000, 667000000>
+[    1.289626@1] get clkb rate:333333328
+[    1.289638@1] DI:enable vpu clkb.
+[    1.289669@1] 0x000000e1:Y=e1,U=0,V=0
+[    1.289675@1] 0x000000e2:Y=e2,U=0,V=0
+[    1.289681@1] 0x000000e3:Y=e3,U=0,V=0
+[    1.289686@1] 0x000000f0:Y=f0,U=0,V=0
+[    1.289691@1] 0x000000f1:Y=f1,U=0,V=0
+[    1.289696@1] 0x000000f2:Y=f2,U=0,V=0
+[    1.289702@1] 0x000000f3:Y=f3,U=0,V=0
+[    1.289707@1] 0x000000f4:Y=f4,U=0,V=0
+[    1.289713@1] 0x000000f5:Y=f5,U=0,V=0
+[    1.289719@1] 0x000000f6:Y=f6,U=0,V=0
+[    1.289734@1] 0x000000f7:Y=f7,U=0,V=0
+[    1.289740@1] 0x000000f8:Y=f8,U=0,V=0
+[    1.289745@1] 0x000000f9:Y=f9,U=0,V=0
+[    1.289750@1] 0x000000fa:Y=fa,U=0,V=0
+[    1.289755@1] 0x000000fb:Y=fb,U=0,V=0
+[    1.289760@1] 0x000000fc:Y=fc,U=0,V=0
+[    1.289775@1] 0x000000fd:Y=fd,U=0,V=0
+[    1.289780@1] 0x000000fe:Y=fe,U=0,V=0
+[    1.289784@1] 0x000000ff:Y=ff,U=0,V=0
+[    1.289789@1] 0x0000003a:Y=3a,U=0,V=0
+[    1.289794@1] 0x0000003b:Y=3b,U=0,V=0
+[    1.289799@1] 0x0000003c:Y=3c,U=0,V=0
+[    1.289809@1] 0x0000003d:Y=3d,U=0,V=0
+[    1.289814@1] 0x0000003e:Y=3e,U=0,V=0
+[    1.289818@1] 0x0000003f:Y=3f,U=0,V=0
+[    1.289825@1] DI: support multi decoding 61~62~63.
+[    1.290046@1] DI: di_probe:Di use HRTIMER
+[    1.290226@1] DI: di_probe:ok
+[    1.290321@1] dim:dim_module_init
+[    1.290728@1] dim:dim_module_init finish
+[    1.290734@1] dil:dil_init.
+[    1.291031@1] dil:dil_init ok.
+[    1.291060@1] vdin_drv_init: major 510
+[    1.291316@1] vdin_drv_init: vdin driver init done
+[    1.291322@1] [viuin..]viuin_init_module viuin module init
+[    1.291663@1] [viuin..]viuin_probe probe ok.
+[    1.292239@1] [RX]-hdmirx: hdmirx_init.
+[    1.292245@1] ESM HLD: Initializing...
+[    1.293151@1] amvdec_csi module: init.
+[    1.293160@1] amvdec_csi_init_module:major 508
+[    1.293393@1] amvdec_csi module: init. ok
+[    1.293400@1] amlvid:info: amlvideo_init called
+[    1.293406@1] amlvid:info: amlvideo_create_instance called
+[    1.293412@1] amlvid:info: v4l2_dev.name=:amlvideo-000
+[    1.293563@1] amlvideo-000: V4L2 device registered as video10
+[    1.293569@1] amlvid:info: amlvideo_create_instance called
+[    1.293575@1] amlvid:info: v4l2_dev.name=:amlvideo-001
+[    1.293697@1] amlvideo-001: V4L2 device registered as video23
+[    1.293940@1] amlvideo2 probe called
+[    1.293980@1] amlvideo2_create_node
+[    1.294142@1] amlvideo2: V4L2 device registered as video11
+[    1.294187@1] amlvideo2 probe called
+[    1.295761@1] amlvideo2_create_node
+[    1.295916@1] amlvideo2: V4L2 device registered as video12
+[    1.295999@1] PPMGRDRV: warn: ppmgr module init func called
+[    1.296288@1] PPMGRDRV: info: ppmgr_driver_probe called
+[    1.296355@1] Reserved memory: failed to init DMA memory pool at 0x00000000f0900000, size 0 MiB
+[    1.303170@0] hdmitx: edid: EDID Parser:
+[    1.303174@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303176@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303179@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303186@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303190@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303193@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303199@0] hdmitx: hdmitx: reach vesa idx MAX
+[    1.303206@0] [RX]-up_phy_addr = 1
+[    1.303219@0] hdmitx: edid: get dtd0 vic: 5
+[    1.303223@0] hdmitx: hdmitx: get PMT vic: 16
+[    1.303227@0] hdmitx: edid: find IEEEOUT
+[    1.303252@0] hdmitx: edid: check sum valid
+[    1.303254@0] hdmitx: edid: check sum valid
+[    1.303258@0] hdmitx: edid: check sum valid
+[    1.303261@0] hdmitx: edid: check sum valid
+[    1.303267@0] hdmitx: edid: blk0 raw data
+[    1.303289@0] hdmitx: edid: 
+[    1.303289@0] 00ffffffffffff001e6d0100010101010119010380a05a780aee91a3544c9926
+[    1.303289@0] 0f5054a1080031404540614071408180010101010101023a801871382d40582c
+[    1.303289@0] 4500a05a0000001e662150b051001b3040703600a05a0000001e000000fd003a
+[    1.303289@0] 3e1e5310000a202020202020000000fc004c472054560a202020202020200140
+[    1.303289@0] 
+[    1.303289@0] 
+[    1.303293@0] hdmitx: edid: blk1 raw data
+[    1.303314@0] hdmitx: edid: 
+[    1.303314@0] 020322f14e109f0413051403021220212215012615075009570767030c001000
+[    1.303314@0] 801e011d8018711c1620582c250020c23100009e011d007251d01e206e285500
+[    1.303314@0] 20c23100001e023a801871382d40582c4500a05a0000001e011d00bc52d01e20
+[    1.303314@0] b8285540c48e2100001e00000000000000000000000000000000000000000025
+[    1.303314@0] 
+[    1.303314@0] 
+[    1.303321@0] hdmitx: system: update physcial size: 1600 900
+[    1.303335@0] hdmitx: system: get current mode: null
+[    1.303338@0] hdmitx: system: update physcial size: 1600 900
+[    1.303343@0] hdmitx: system: null not valid hdmi mode
+[    1.303367@0] hdmitx: hw: set audio
+[    1.303376@0] hdmitx: hw: hdmitx tx_aud_src = 0
+[    1.303391@0] hdmitx: fs = 0, cd = 4, tmds_clk = 0
+[    1.303396@0] hdmitx: hw: aud_n_para = 6144
+[    1.303406@0] hdmitx: hw: set channel status
+[    1.304542@1] PPMGRDRV: info: ppmgr_dev major:507
+[    1.306615@1] ionvideo-000: V4L2 device registered as video13
+[    1.306775@2] ionvideo-001: V4L2 device registered as video14
+[    1.307381@3] ionvideo-002: V4L2 device registered as video15
+[    1.307540@1] ionvideo-003: V4L2 device registered as video16
+[    1.307685@2] ionvideo-004: V4L2 device registered as video17
+[    1.308154@3] ionvideo-005: V4L2 device registered as video18
+[    1.308326@1] ionvideo-006: V4L2 device registered as video19
+[    1.308480@2] ionvideo-007: V4L2 device registered as video20
+[    1.308953@3] ionvideo-008: V4L2 device registered as video21
+[    1.308961@3] ionvid: info: Video Technology Magazine Ion Video
+[    1.308967@3] ionvid: info: Capture Board ver 1.0 successfully loaded
+[    1.309773@3] picdec: picdec_driver_probe called.
+[    1.310266@2] picdec: probe of picdec failed with error -22
+[    1.310954@3] videosync_create_instance dev_s ffffffc02f4dc000,dev_s->dev ffffffc0996db800
+[    1.310962@3] videosync_create_instance reg videosync.0
+[    1.311183@2] aml_vecm_init:module init
+[    1.311189@3] videosync_thread started
+[    1.311930@2] 
+[    1.311930@2]  VECM probe start
+[    1.312802@3] Can't find  detect_colorbar.
+[    1.312811@3] Can't find  detect_face.
+[    1.312816@3] Can't find  detect_corn.
+[    1.312822@3] Can't find  wb_sel.
+[    1.312828@3] hdr:Can't find  cfg_en_osd_100.
+[    1.312840@3] amlogic, vecm
+[    1.312848@3] vlock dt support: 1
+[    1.312854@3] vlock dt new_fsm: 0
+[    1.312859@3] vlock dt hwver: 0
+[    1.312865@3] vlock dt phlock_en: 0
+[    1.312872@3] Can't find  vlock_en.
+[    1.312878@3] Can't find  vlock_mode.
+[    1.312883@3] Can't find  vlock_pll_m_limit.
+[    1.312889@3] Can't find  vlock_line_limit.
+[    1.312918@3] param_config vlock_en:1 md=0x4
+[    1.312966@3] vlock: maxLine 524,maxPixel 1715
+[    1.312971@3] vlock_status_init vlock_en:1
+[    1.312978@3] pixel_probe: vpp probe func error!
+[    1.313068@3] aml_vecm_probe: ok
+[    1.313212@3] amdolby_vision_init:module init
+[    1.313953@3] 
+[    1.313953@3]  amdolby_vision probe start & ver: 20181220
+[    1.313963@3] 
+[    1.313963@3]  cpu_id=2 tvmode=0
+[    1.314305@1] dolby_vision_init_receiver(dvel)
+[    1.314331@1] dolby_vision_init_receiver: dvel
+[    1.315078@1] amdolby_vision_probe: ok
+[    1.315087@1] dovi disable in uboot
+[    1.315254@1] prime_sl module init
+[    1.316440@1] vm_init .
+[    1.317805@1] meson-mmc: mmc driver version: 3.02, 2017-05-15: New Emmc Host Controller
+[    1.319985@1] meson-mmc: >>>>>>>>hostbase ffffff800881b000, dmode 
+[    1.321143@1] meson-mmc: actual_clock :400000, HHI_nand: 0x80
+[    1.321152@1] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x1000033c
+[    1.358985@1] meson-mmc: meson_mmc_probe() : success!
+[    1.372360@3] meson-mmc: >>>>>>>>hostbase ffffff80088a5000, dmode 
+[    1.373035@3] meson-mmc: gpio_cd = 1ca
+[    1.410942@3] meson-mmc: meson_mmc_probe() : success!
+[    1.414671@2] meson-mmc: >>>>>>>>hostbase ffffff800892f000, dmode 
+[    1.415903@2] meson-mmc: actual_clock :400000, HHI_nand: 0x80
+[    1.415910@2] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x1000033c
+[    1.450222@0] clear:bb000000, free:bb000000, tick:749522 us
+[    1.450260@0] vout: refresh_tvout_mode: mode chang to 1080p60hz
+[    1.450266@0] vout: vmode set to 1080p60hz
+[    1.450316@0] fb: current vmode=invalid, cmd: 0x10000
+[    1.450328@0] hdmitx: hdmitx_set_current_vmode[4204]
+[    1.450334@0] hdmitx: system: recalc before 1080p60hz 60 1
+[    1.450341@0] hdmitx: system: recalc after 1080p60hz 60 1
+[    1.450357@0] hdmitx: system: get current mode: 1080p60hz
+[    1.450364@0] hdmitx: system: update physcial size: 1600 900
+[    1.452423@0] hdmitx: video: already init VIC = 0  Now VIC = 16
+[    1.452433@0] hdmitx: hw: div40: 0
+[    1.455162@2] meson-mmc: meson_mmc_probe() : success!
+[    1.455485@2] amlogic mtd driver init
+[    1.456787@2] aml_vrtc rtc: rtc core: registered aml_vrtc as rtc0
+[    1.457000@2] input: aml_vkeypad as /devices/platform/rtc/input/input2
+[    1.458701@2] cectx ff80023c.aocec: cec driver date:2019/12/01:finetune ARB time, cause cts 9.6.1
+[    1.458701@2] 
+[    1.464316@2] cectx ff80023c.aocec: compatible:amlogic, aocec-sm1
+[    1.469697@2] cectx ff80023c.aocec: cecb_ver:0x2
+[    1.474277@2] cectx ff80023c.aocec: line_reg:0x1
+[    1.478867@2] cectx ff80023c.aocec: line_bit:0xa
+[    1.480858@0] hdmitx: frac_rate = 0
+[    1.480866@0] hdmitx: config HPLL = 5940000 frac_rate = 0
+[    1.480924@0] hdmitx: HPLLv1: 0xdb3a04f7
+[    1.480927@0] hdmitx: config HPLL done
+[    1.480935@0] hdmitx: set_hpll_od3_clk_div[643] div = 6
+[    1.480943@0] hdmitx: j = 4  vid_clk_div = 1
+[    1.480957@0] hdmitx: set enc for VIC: 16
+[    1.483462@2] cectx ff80023c.aocec: ee_to_ao:0x1
+[    1.488223@2] input: cec_input as /devices/virtual/input/input3
+[    1.488666@2] cectx ff80023c.aocec: not find 'port_num'
+[    1.493263@2] cectx ff80023c.aocec: using cec:1
+[    1.496844@1] meson-aml-mmc ffe07000.emmc: divider requested rate 200000000 != actual rate 199999997: ret=0
+[    1.496850@1] meson-mmc: actual_clock :199999997, HHI_nand: 0x80
+[    1.496853@1] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x10000245
+[    1.496859@1] meson-mmc: Data 1 aligned delay is 0
+[    1.496865@1] meson-mmc: emmc: clk 199999997 tuning start
+[    1.497806@2] cectx ff80023c.aocec: no hdmirx regs
+[    1.501928@1] meson-mmc: emmc: adj_win: < 0 1 3 4 >
+[    1.501935@1] meson-mmc: step:4, delay1:0x4104104, delay2:0x4004104
+[    1.502529@2] cectx ff80023c.aocec: no hhi regs
+[    1.506881@1] meson-mmc: emmc: adj_win: < 0 1 3 4 >
+[    1.506886@1] meson-mmc: step:8, delay1:0x8208208, delay2:0x8008208
+[    1.507049@2] cectx ff80023c.aocec: not find 'arc_port_mask'
+[    1.513058@1] meson-mmc: emmc: adj_win: < 0 1 2 3 4 >
+[    1.513066@1] meson-mmc: step:12, delay1:0xc30c30c, delay2:0xc00c30c
+[    1.514000@2] irq cnt:2, a:38, b37
+[    1.514759@2] cectx ff80023c.aocec: wakeup_reason:0x0
+[    1.517784@2] cectx ff80023c.aocec: cev val1: 0x0;val2: 0x0
+[    1.518064@1] meson-mmc: emmc: adj_win: < 0 1 2 4 >
+[    1.518070@1] meson-mmc: left:3, right:0, mid:4, size:4
+[    1.518075@1] meson-mmc: step:0, delay1:0x0, delay2:0x0
+[    1.518082@1] meson-mmc: emmc: sd_emmc_regs->gclock=0x10000245,sd_emmc_regs->gadjust=0x2000
+[    1.518086@1] meson-mmc: delay1:0x0, delay2:0x0
+[    1.518836@1] emmc: new HS200 MMC card at address 0001
+[    1.518856@0] emmc: clock 199999997, 8-bit-bus-width
+[    1.518856@0]  
+[    1.518856@0] hdmitx: hw:  config hdmitx IP vic = 16 cd:4 cs: 2
+[    1.523264@2] cectx ff80023c.aocec: aml_cec_probe success end
+[    1.523408@1] mmcblk0: emmc:0001 AT2SAB 29.1 GiB 
+[    1.527645@1] mmcblk0boot0: emmc:0001 AT2SAB partition 1 4.00 MiB
+[    1.528948@0] hdmitx: video: Sink is HDMI device
+[    1.529006@0] hdmitx: hdmitx_set_drm_pkt: tf=1, cf=1, colormetry=0
+[    1.529104@0] hdmitx: hw: set audio
+[    1.529114@0] hdmitx: hw: hdmitx tx_aud_src = 0
+[    1.529130@0] hdmitx: fs = 0, cd = 4, tmds_clk = 148500
+[    1.529137@0] hdmitx: hw: aud_n_para = 6144
+[    1.529149@0] hdmitx: hw: set channel status
+[    1.529188@0] hdmitx: system: update rx hdr info 0
+[    1.529196@0] vout: new mode 1080p60hz set ok
+[    1.529203@0] fb: current vmode=1080p60hz, cmd: 0x20000
+[    1.529226@0] DOLBY: vout_notify_callback: VOUT_EVENT_MODE_CHANGE
+[    1.529233@0] vlock: event MODE_CHANGE
+[    1.529387@2] unifykey: storage in base: 0xffffffc005000000
+[    1.529393@2] unifykey: storage out base: 0xffffffc005040000
+[    1.529398@2] unifykey: storage block base: 0xffffffc005080000
+[    1.529404@2] unifykey: probe done!
+[    1.530074@2] unifykey: no efuse-version set, use default value: -1
+[    1.530079@2] unifykey: key unify config unifykey-num is 19
+[    1.530212@2] unifykey: key unify fact unifykey-num is 19
+[    1.530225@2] unifykey: unifykey_devno: 1f400000
+[    1.530896@2] unifykey: device unifykeys created ok
+[    1.530982@2] unifykey: aml_unifykeys_init done!
+[    1.531231@2] meson ts init
+[    1.531296@2] tsensor id: 0
+[    1.531447@2] r1p1_tsensor_read  valid cnt is 0
+[    1.531474@2] tsensor trim info: 0xfa008112!
+[    1.531481@2] tsensor hireboot: 0xc0ff2b10
+[    1.531590@2] meson ts init
+[    1.531614@2] tsensor id: 1
+[    1.531723@2] r1p1_tsensor_read  valid cnt is 0
+[    1.531741@2] tsensor trim info: 0xfa008165!
+[    1.531747@2] tsensor hireboot: 0xc0ff2b50
+[    1.531889@2] audio_dsp: [dsp]register dsp to char divece(257)
+[    1.531935@1] mmcblk0boot1: emmc:0001 AT2SAB partition 2 4.00 MiB
+[    1.532089@2] amaudio: amaudio: driver amaudio init!
+[    1.532647@1] mmcblk0rpmb: emmc:0001 AT2SAB partition 3 4.00 MiB
+[    1.534485@1] meson-mmc: Enter aml_emmc_partition_ops
+[    1.534636@2] amaudio: amaudio_init - amaudio: driver amaudio succuess!
+[    1.535585@1] meson-mmc: [mmc_read_partition_tbl] mmc read partition OK!
+[    1.535591@1] meson-mmc: add_emmc_partition
+[    1.536257@2] amlkaraoke init success!
+[    1.536374@1] meson-mmc: [mmcblk0p01]           bootloader  offset 0x000000000000, size 0x000000400000 
+[    1.536566@2] sysled: module init
+[    1.536857@1] meson-mmc: [mmcblk0p02]             reserved  offset 0x000002400000, size 0x000004000000 
+[    1.537009@2] meson_wdt ffd0f0d0.watchdog: start watchdog
+[    1.537016@2] meson_wdt ffd0f0d0.watchdog: creat work queue for watch dog
+[    1.537377@1] meson-mmc: [mmcblk0p03]                cache  offset 0x000006c00000, size 0x000020000000 
+[    1.538192@1] meson-mmc: [mmcblk0p04]                  env  offset 0x000027400000, size 0x000000800000 
+[    1.538552@2] meson_wdt ffd0f0d0.watchdog: AML Watchdog Timer probed done
+[    1.538990@1] meson-mmc: [mmcblk0p05]                 logo  offset 0x000028400000, size 0x000000800000 
+[    1.539522@1] meson-mmc: [mmcblk0p06]             recovery  offset 0x000029400000, size 0x000001800000 
+[    1.539859@2] amlogic rfkill init
+[    1.540126@2] enter bt_probe of_node
+[    1.540159@2] not get gpio_en
+[    1.540172@2] not get gpio_btwakeup
+[    1.540178@2] power on valid level is high
+[    1.540185@2] bt: power_on_pin_OD = 0;
+[    1.540192@2] bt: power_off_flag = 1;
+[    1.540198@2] dis power down = 0;
+[    1.540297@1] meson-mmc: [mmcblk0p07]                 misc  offset 0x00002b400000, size 0x000000800000 
+[    1.540926@1] meson-mmc: [mmcblk0p08]                 dtbo  offset 0x00002c400000, size 0x000000800000 
+[    1.541406@1] meson-mmc: [mmcblk0p09]             cri_data  offset 0x00002d400000, size 0x000000800000 
+[    1.541889@1] meson-mmc: [mmcblk0p10]                param  offset 0x00002e400000, size 0x000001000000 
+[    1.542386@1] meson-mmc: [mmcblk0p11]                 boot  offset 0x00002fc00000, size 0x000001000000 
+[    1.542525@1] meson-mmc: [mmcblk0p12]                  rsv  offset 0x000031400000, size 0x000001000000 
+[    1.542666@1] meson-mmc: [mmcblk0p13]             metadata  offset 0x000032c00000, size 0x000001000000 
+[    1.542806@1] meson-mmc: [mmcblk0p14]               vbmeta  offset 0x000034400000, size 0x000000200000 
+[    1.542993@1] meson-mmc: [mmcblk0p15]                  tee  offset 0x000034e00000, size 0x000002000000 
+[    1.543135@1] meson-mmc: [mmcblk0p16]               vendor  offset 0x000037600000, size 0x000014000000 
+[    1.543276@1] meson-mmc: [mmcblk0p17]                  odm  offset 0x00004be00000, size 0x000008000000 
+[    1.543416@1] meson-mmc: [mmcblk0p18]               system  offset 0x000054600000, size 0x000082200000 
+[    1.543553@1] meson-mmc: [mmcblk0p19]              product  offset 0x0000d7000000, size 0x000015e00000 
+[    1.543695@1] meson-mmc: [mmcblk0p20]                 data  offset 0x0000ed600000, size 0x00065aa00000 
+[    1.543725@1] card key: card_blk_probe.
+[    1.543733@1] emmc_key_init:182 emmc key lba_start:0x12020,lba_end:0x12220
+[    1.543741@1] emmc key: emmc_key_init:205 ok.
+[    1.543748@1] meson-mmc: amlmmc_dtb_init: register dtb chardev
+[    1.547852@1] meson-mmc: calc 45fae156, store 45fae156
+[    1.551912@1] meson-mmc: calc 45fae156, store 45fae156
+[    1.551919@1] meson-mmc: total valid 2
+[    1.552118@1] meson-mmc: amlmmc_dtb_init: register dtb chardev OK
+[    1.552171@1] meson-mmc: Exit aml_emmc_partition_ops OK.
+[    1.567268@2] request_irq error ret=-22
+[    1.567365@2] dev_pm_set_wake_irq failed: -22
+[    1.570950@2] dmc_monitor_probe
+[    1.571178@2] page_trace_module_init, create sysfs failed
+[    1.577106@2] defendkey ff630218.defendkey: Reserved memory is not enough!
+[    1.582081@2] defendkey: probe of ff630218.defendkey failed with error -22
+[    1.583220@2] bl40: bl40 probe
+[    1.584132@2] usbcore: registered new interface driver snd-usb-audio
+[    1.585757@2] aml_codec_T9015 ff632000.t9015: aml_T9015_audio_codec_probe
+[    1.585789@2] T9015 acodec used by auge, tdmout:1
+[    1.589280@2] asoc debug: aml_audio_controller_probe-130
+[    1.590056@2] aml_tdm_platform_probe, tdm ID = 1, lane_cnt = 8
+[    1.590180@2] TDM id 1 samesource_sel:3
+[    1.590201@2] snd_tdm ff660000.audiobus:tdm@1: lane_mask_out = 1, lane_oe_mask_out = 0
+[    1.590317@2] TDM id 1 output clk enable:1
+[    1.590348@2] aml_tdm_platform_probe(), share en = 1
+[    1.590355@2] No channel mask node Channel_Mask
+[    1.590382@2] TDM id 1 tuning clk enable:1
+[    1.590471@2] aml_tdm_platform_probe, tdm ID = 2, lane_cnt = 4
+[    1.590511@2] TDM id 2 i2s2hdmi:1
+[    1.590527@2] snd_tdm ff660000.audiobus:i2s2hdmi: lane_mask_out = f, lane_oe_mask_out = 0
+[    1.590583@2] snd_tdm ff660000.audiobus:i2s2hdmi: neither mclk_pad nor mclk2pad set
+[    1.590591@2] aml_tdm_platform_probe(), share en = 1
+[    1.590597@2] No channel mask node Channel_Mask
+[    1.591299@2] aml_spdif_platform_probe, spdif ID = 0
+[    1.591639@2] SPDIF id 0 asrc_id:0 auto_asrc:0
+[    1.591727@2] Spdif id 0 tuning clk enable:1
+[    1.591805@2] aml_spdif_platform_probe, register soc platform
+[    1.591859@2] aml_spdif_platform_probe, spdif ID = 1
+[    1.591961@2] aml_spdif_platform_probe, register soc platform
+[    1.592863@2] audio-ddr-manager ff660000.audiobus:ddr_manager: 0, irqs toddr 22, frddr 26
+[    1.592905@2] audio-ddr-manager ff660000.audiobus:ddr_manager: 1, irqs toddr 23, frddr 27
+[    1.592946@2] audio-ddr-manager ff660000.audiobus:ddr_manager: 2, irqs toddr 24, frddr 28
+[    1.592987@2] audio-ddr-manager ff660000.audiobus:ddr_manager: 3, irqs toddr 25, frddr 29
+[    1.593445@2] 	datain_src:4, datain_chnum:2, datain_chumask:3
+[    1.593452@2] 	datalb_src:1, datalb_chnum:2, datalb_chmask:3
+[    1.593457@2] 	datain_lane_mask:0x1, datalb_lane_mask:0x1
+[    1.593463@2] datalb_format: 1, chmask for lanes: 0x3
+[    1.593790@2] loopback_platform_probe, p_loopback->id:0 register soc platform
+[    1.594236@2] audiolocker_platform_probe
+[    1.595081@2] effect_platform_probe, line:569
+[    1.595211@2] eqdrc_clk_set, src pll:399999993, clk:199999997
+[    1.595223@2] effect_platform_probe 	 module:1, lane_mask:1, ch_mask:3
+[    1.596382@2] vad_platform_probe vad data source sel:4, level:1
+[    1.596572@2] input: vad_keypad as /devices/platform/soc/ff660000.audiobus/ff660000.audiobus:vad/input/input4
+[    1.598027@2] Register vad
+[    1.615021@3] meson-mmc: card IN
+[    1.719565@3] meson-mmc: normal card in
+[    1.807066@2] aml_dai_spdif_probe
+[    1.807090@2] aml_dai_spdif_probe
+[    1.807121@2] asoc-aml-card auge_sound: control 2:0:0:I2SIn CLK:0 is already present
+[    1.809245@2] snd_tdm ff660000.audiobus:i2s2hdmi: ASoC: Failed to add I2SIn CLK: -16
+[    1.816969@2] aml_dai_tdm_probe, failed add snd tdm controls
+[    1.822608@2] aml_dai_set_spdif_fmt , fmt 0x4000
+[    1.822756@2] aml_spdif_new spdif_b, clk continuous:0
+[    1.823372@2] asoc-aml-card auge_sound: dummy <-> SPDIF-B mapping ok
+[    1.823382@2] aml_dai_set_tdm_slot(), txmask(0x3), rxmask(0x3)
+[    1.823389@2] 	lanes_out_cnt(1), lanes_in_cnt(1)
+[    1.823395@2] 	lanes_lb_cnt(0)
+[    1.823400@2] 	slots(2), slot_width(32)
+[    1.823407@2] 	lanes_oe_out_cnt(0), lanes_oe_in_cnt(0)
+[    1.823428@2] asoc aml_dai_set_tdm_fmt, 0x4001, ffffffc02f577e18, id(1), clksel(1)
+[    1.823441@2] master_mode(1), binv(1), finv(1) out_skew(2), in_skew(3)
+[    1.823855@2] asoc-aml-card auge_sound: T9015-audio-hifi <-> TDM-B mapping ok
+[    1.823865@2] aml_dai_set_spdif_fmt , fmt 0x4000
+[    1.823994@2] aml_spdif_new spdif_a, clk continuous:0
+[    1.824127@2] asoc-aml-card auge_sound: dummy <-> SPDIF mapping ok
+[    1.824137@2] aml_dai_set_tdm_slot(), txmask(0x3), rxmask(0x3)
+[    1.824143@2] 	lanes_out_cnt(4), lanes_in_cnt(0)
+[    1.824149@2] 	lanes_lb_cnt(0)
+[    1.824154@2] 	slots(2), slot_width(32)
+[    1.824160@2] 	lanes_oe_out_cnt(0), lanes_oe_in_cnt(0)
+[    1.824172@2] asoc aml_dai_set_tdm_fmt, 0x4001, ffffffc02f5da418, id(2), clksel(2)
+[    1.824182@2] master_mode(1), binv(1), finv(1) out_skew(2), in_skew(3)
+[    1.824581@2] asoc-aml-card auge_sound: dummy <-> TDM-C mapping ok
+[    1.828607@2] snd_card_add_kcontrols card:ffffffc0997d7818
+[    1.828683@2] eq/drc v1 function enable
+[    1.828693@2] no node audio_effect for eq/drc info!
+[    1.828700@2] Failed to add audio effects v1 controls
+[    1.828929@2] GACT probability NOT on
+[    1.828945@2] Mirror/redirect action on
+[    1.828958@2] u32 classifier
+[    1.828962@2]     Actions configured
+[    1.828971@2] Netfilter messages via NETLINK v0.30.
+[    1.829211@2] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    1.829491@2] ctnetlink v0.93: registering with nfnetlink.
+[    1.829936@2] xt_time: kernel timezone is -0000
+[    1.830002@2] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    1.830440@2] IPv4 over IPsec tunneling driver
+[    1.831038@2] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.831300@2] arp_tables: arp_tables: (C) 2002 David S. Miller
+[    1.831348@2] Initializing XFRM netlink socket
+[    1.831915@2] NET: Registered protocol family 10
+[    1.833100@2] mip6: Mobile IPv6
+[    1.833133@2] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    1.833904@2] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.834870@2] NET: Registered protocol family 17
+[    1.834898@2] NET: Registered protocol family 15
+[    1.834935@2] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    1.835051@2] Bluetooth: RFCOMM TTY layer initialized
+[    1.835065@2] Bluetooth: RFCOMM socket layer initialized
+[    1.835091@2] Bluetooth: RFCOMM ver 1.11
+[    1.835105@2] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    1.835111@2] Bluetooth: BNEP filters: protocol multicast
+[    1.835125@2] Bluetooth: BNEP socket layer initialized
+[    1.835131@2] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.835143@2] Bluetooth: HIDP socket layer initialized
+[    1.835244@2] l2tp_core: L2TP core driver, V2.0
+[    1.835260@2] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.835266@2] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[    1.835291@2] l2tp_netlink: L2TP netlink interface
+[    1.835326@2] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[    1.835352@2] l2tp_debugfs: L2TP debugfs support
+[    1.835358@2] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[    1.835552@2] NET: Registered protocol family 35
+[    1.835759@2] Key type dns_resolver registered
+[    1.836673@2] Registered swp emulation handler
+[    1.836688@2] Registered cp15_barrier emulation handler
+[    1.836701@2] Registered setend emulation handler
+[    1.836737@2] disable EAS feature
+[    1.837393@1] registered taskstats version 1
+[    1.843002@3] meson-mmc: actual_clock :400000, HHI_nand: 0x80
+[    1.843012@3] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x1000033c
+[    1.851675@0] dwc3 ff500000.dwc3: Configuration mismatch. dr_mode forced to host
+[    1.854494@0] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    1.854516@0] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[    1.854905@0] xhci-hcd xhci-hcd.0.auto: hcc params 0x0228fe6c hci version 0x110 quirks 0x20010010
+[    1.854968@0] xhci-hcd xhci-hcd.0.auto: irq 15, io mem 0xff500000
+[    1.855756@2] hub 1-0:1.0: USB hub found
+[    1.855793@2] hub 1-0:1.0: 2 ports detected
+[    1.856249@2] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[    1.856264@2] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[    1.856338@2] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.856973@1] hub 2-0:1.0: USB hub found
+[    1.857009@1] hub 2-0:1.0: 1 port detected
+[    1.857850@1] aml_vrtc rtc: setting system clock to 2015-01-01 00:00:17 UTC (1420070417)
+[    1.858191@1] dwc_otg ff400000.dwc2_a: dwc_otg_driver_probe(ffffffc0c00d1c00)
+[    1.858238@1] dwc_otg: usb0: type: 2 speed: 0, config: 0, dma: 0, id: 0, phy: ffe09000, ctrl: 0
+[    1.858267@1] dwc_otg ff400000.dwc2_a: base=0xffffff8008d00000
+[    1.858276@1] dwc_otg ff400000.dwc2_a: dwc_otg_device=0xffffffc02f5d8800
+[    1.948849@3] meson-mmc: actual_clock :50000000, HHI_nand: 0x80
+[    1.948858@3] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x10000354
+[    1.948946@3] sd: new high speed SDXC card at address aaaa
+[    1.948955@3] sd: clock 50000000, 4-bit-bus-width
+[    1.948955@3]  
+[    1.949486@3] mmcblk1: sd:aaaa SC128 119 GiB 
+[    1.951305@3]  mmcblk1: p1 p2 p3 p4
+[    1.952070@3] meson-mmc: Enter aml_emmc_partition_ops
+[    1.958534@0] dwc_otg: Core Release: 3.30a
+[    1.958543@0] dwc_otg: Setting default values for core params
+[    1.958558@0] dwc_otg: curmode: 0, host_only: 0
+[    1.958583@0] dwc_otg ff400000.dwc2_a: DMA config: BURST_DEFAULT
+[    1.970905@0] dwc_otg: Using Buffer DMA mode
+[    1.970913@0] dwc_otg: OTG VER PARAM: 1, OTG VER FLAG: 1
+[    1.970920@0] dwc_otg: Working on port type = SLAVE
+[    1.970928@0] dwc_otg: Dedicated Tx FIFOs mode
+[    1.974223@0] meson_cdev probe
+[    1.974344@0] meson_cdev index: 0
+[    1.974527@0] meson_cdev index: 1
+[    1.974537@0] cpucore_cooling_register, max_cpu_core_num:4
+[    1.974666@0] meson_cdev index: 2
+[    1.974698@0] meson_cdev index: 3
+[    1.974742@0] find tzd id: 0
+[    1.974887@0] find tzd id: 0
+[    1.974929@0] meson_cdev probe done
+[    1.975161@0] gxbb_pm: enter meson_pm_probe!
+[    1.975172@0] no vddio3v3_en pin
+[    1.975191@0] pm-meson aml_pm: Can't get switch_clk81
+[    1.975280@0] gxbb_pm: meson_pm_probe done
+[    1.976015@0] ALSA device list:
+[    1.976021@0]   #0: AML-AUGESOUND
+[    1.978327@0] Freeing unused kernel memory: 5568K
+[    2.007806@0] vout: vmode set to 1080p60hz
+[    2.007817@0] vout: don't set the same mode as current, exit
+[    2.008115@0] fb: osd[0] enable: 1 (init)
+[    2.012519@0] fb: osd[1] enable: 0 (init)
+[    2.034839@0] vout: aml_tvout_mode_work: monitor stop
+[    2.046364@0] vfm_map_store:rm default
+[    2.046364@0] 
+[    2.046489@0] vfm_map_store:add default decoder ppmgr deinterlace amvideo
+[    2.046489@0] 
+[    2.054770@0] vout: vmode set to 1080i60hz
+[    2.054825@0] fb: current vmode=1080i60hz, cmd: 0x10000
+[    2.054834@0] vlock: event MODE_CHANGE_PRE 0
+[    2.054844@0] hdmitx: hdmitx_set_current_vmode[4204]
+[    2.054850@0] hdmitx: system: recalc before 1080i60hz 60 1
+[    2.054858@0] hdmitx: system: recalc after 1080i60hz 60 1
+[    2.054872@0] hdmitx: system: get current mode: 1080i60hz
+[    2.054877@0] hdmitx: system: update physcial size: 1600 900
+[    2.056937@0] hdmitx: video: already init VIC = 0  Now VIC = 5
+[    2.056945@0] hdmitx: video: rx edid only support RGB format
+[    2.056952@0] hdmitx: hw: div40: 0
+[    2.084863@0] hdmitx: frac_rate = 0
+[    2.084877@0] hdmitx: config HPLL = 5940000 frac_rate = 0
+[    2.084936@0] hdmitx: HPLLv1: 0xdb3a04f7
+[    2.084942@0] hdmitx: config HPLL done
+[    2.084954@0] hdmitx: set_hpll_od3_clk_div[643] div = 6
+[    2.084964@0] hdmitx: j = 3  vid_clk_div = 1
+[    2.084979@0] hdmitx: set enc for VIC: 5
+[    2.085002@0] hdmitx: system: irq 80000001 0
+[    2.126845@0] hdmitx: hw:  config hdmitx IP vic = 5 cd:4 cs: 0
+[    2.136947@0] hdmitx: video: Sink is HDMI device
+[    2.137045@0] hdmitx: hw: set audio
+[    2.137056@0] hdmitx: hw: hdmitx tx_aud_src = 0
+[    2.137076@0] hdmitx: fs = 0, cd = 4, tmds_clk = 74250
+[    2.137083@0] hdmitx: hw: aud_n_para = 6144
+[    2.137095@0] hdmitx: hw: set channel status
+[    2.137136@0] hdmitx: system: update rx hdr info 0
+[    2.137144@0] vout: new mode 1080i60hz set ok
+[    2.137152@0] fb: current vmode=1080i60hz, cmd: 0x20000
+[    2.137163@0] fb: outputmode changed to 1080i60hz, reset osd0, (0, 0, 0, 0) -> (0, 0, 1919, 1079)
+[    2.170341@0] fb: osd[0] enable: 1 (init)
+[    2.186850@0] hdmitx: [0x10000104]: 0x00000001
+[    2.186862@0] hdmitx: [0x10000180]: 0x000000ff
+[    2.186867@0] hdmitx: [0x10000181]: 0x000000ff
+[    2.186873@0] hdmitx: [0x10000182]: 0x00000003
+[    2.186879@0] hdmitx: [0x10000183]: 0x00000007
+[    2.186884@0] hdmitx: [0x10000184]: 0x0000003f
+[    2.186890@0] hdmitx: [0x10000185]: 0x00000002
+[    2.186898@0] hdmitx: [0x10000187]: 0x000000ff
+[    2.186904@0] hdmitx: [0x10000188]: 0x00000003
+[    2.187022@0] DOLBY: vout_notify_callback: VOUT_EVENT_MODE_CHANGE
+[    2.187030@0] vlock: event MODE_CHANGE
+[    2.354867@2] av out status: high
+[    2.927340@0] usb 2-1: new SuperSpeed USB device number 2 using xhci-hcd
+[    2.948949@0] usb-storage 2-1:1.0: USB Mass Storage device detected
+[    2.949620@0] usb-storage 2-1:1.0: Quirks match for vid 174c pid 55aa: 400000
+[    2.949717@0] scsi host0: usb-storage 2-1:1.0
+[    3.071135@2] usb 1-2: new high-speed USB device number 3 using xhci-hcd
+[    3.190717@0] vout: vmode set to 1080i60hz
+[    3.190725@0] vout: don't set the same mode as current, exit
+[    3.208503@0] EXT4-fs (mmcblk1p3): INFO: recovery required on readonly filesystem
+[    3.208513@0] EXT4-fs (mmcblk1p3): write access will be enabled during recovery
+[    3.232570@2] hub 1-2:1.0: USB hub found
+[    3.232622@2] hub 1-2:1.0: 4 ports detected
+[    3.518858@2] usb 1-2.3: new high-speed USB device number 4 using xhci-hcd
+[    3.648591@2] hub 1-2.3:1.0: USB hub found
+[    3.648646@2] hub 1-2.3:1.0: 4 ports detected
+[    3.673017@0] EXT4-fs (mmcblk1p3): orphan cleanup on readonly fs
+[    3.673274@0] EXT4-fs (mmcblk1p3): 1 orphan inode deleted
+[    3.673283@0] EXT4-fs (mmcblk1p3): recovery complete
+[    3.687577@3] EXT4-fs (mmcblk1p3): mounted filesystem with ordered data mode. Opts: (null)
+[    3.738285@3] EXT4-fs (mmcblk1p3): mounted filesystem with ordered data mode. Opts: (null)
+[    3.738972@0] vout: vmode set to 1080p60hz
+[    3.739020@0] fb: current vmode=1080p60hz, cmd: 0x10000
+[    3.739031@0] vlock: event MODE_CHANGE_PRE 0
+[    3.739041@0] hdmitx: hdmitx_set_current_vmode[4204]
+[    3.739047@0] hdmitx: system: recalc before 1080p60hz 60 1
+[    3.739054@0] hdmitx: system: recalc after 1080p60hz 60 1
+[    3.739068@0] hdmitx: system: get current mode: 1080p60hz
+[    3.739076@0] hdmitx: system: update physcial size: 1600 900
+[    3.741138@0] hdmitx: video: already init VIC = 0  Now VIC = 16
+[    3.741148@0] hdmitx: video: rx edid only support RGB format
+[    3.741155@0] hdmitx: hw: div40: 0
+[    3.768854@0] hdmitx: frac_rate = 0
+[    3.768866@0] hdmitx: config HPLL = 5940000 frac_rate = 0
+[    3.768927@0] hdmitx: HPLLv1: 0xdb3a04f7
+[    3.768933@0] hdmitx: config HPLL done
+[    3.768944@0] hdmitx: set_hpll_od3_clk_div[643] div = 6
+[    3.768955@0] hdmitx: j = 4  vid_clk_div = 1
+[    3.768971@0] hdmitx: set enc for VIC: 16
+[    3.768993@0] hdmitx: system: irq 80000001 0
+[    3.810852@0] hdmitx: hw:  config hdmitx IP vic = 16 cd:4 cs: 0
+[    3.820955@0] hdmitx: video: Sink is HDMI device
+[    3.821019@0] hdmitx: hw: set audio
+[    3.821031@0] hdmitx: hw: hdmitx tx_aud_src = 0
+[    3.821051@0] hdmitx: fs = 0, cd = 4, tmds_clk = 148500
+[    3.821057@0] hdmitx: hw: aud_n_para = 6144
+[    3.821069@0] hdmitx: hw: set channel status
+[    3.821107@0] hdmitx: system: update rx hdr info 0
+[    3.821114@0] vout: new mode 1080p60hz set ok
+[    3.821122@0] fb: current vmode=1080p60hz, cmd: 0x20000
+[    3.821134@0] fb: outputmode changed to 1080p60hz, reset osd0, (0, 0, 1919, 539) -> (0, 0, 1919, 1079)
+[    3.854350@0] fb: osd[0] enable: 1 (init)
+[    3.870853@0] hdmitx: [0x10000104]: 0x00000001
+[    3.870867@0] hdmitx: [0x10000180]: 0x000000ff
+[    3.870873@0] hdmitx: [0x10000181]: 0x000000ff
+[    3.870880@0] hdmitx: [0x10000182]: 0x00000003
+[    3.870885@0] hdmitx: [0x10000183]: 0x00000007
+[    3.870891@0] hdmitx: [0x10000184]: 0x0000003f
+[    3.870897@0] hdmitx: [0x10000185]: 0x00000002
+[    3.870903@0] hdmitx: [0x10000187]: 0x000000ff
+[    3.870909@0] hdmitx: [0x10000188]: 0x00000003
+[    3.871033@0] DOLBY: vout_notify_callback: VOUT_EVENT_MODE_CHANGE
+[    3.871041@0] vlock: event MODE_CHANGE
+[    3.934867@2] usb 1-2.3.2: new high-speed USB device number 5 using xhci-hcd
+[    3.956047@0] scsi 0:0:0:0: Direct-Access     Asmedia  ASM1153E         0    PQ: 0 ANSI: 6
+[    3.957112@0] sd 0:0:0:0: [sda] 625142448 512-byte logical blocks: (320 GB/298 GiB)
+[    3.957518@0] sd 0:0:0:0: [sda] Write Protect is off
+[    3.957526@0] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00
+[    3.957811@0] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.036563@2] usb 1-2.3.2: Unsupported device
+[    4.114861@2] usb 1-2.3.4: new full-speed USB device number 6 using xhci-hcd
+[    4.122847@3] lcd vlock_en=1, vlock_mode=0x4
+[    5.626920@0]  sda: sda1 < sda5 >
+[    5.648092@1] sd 0:0:0:0: [sda] Attached SCSI disk
+[    6.306304@0] EXT4-fs (mmcblk1p4): mounted filesystem with ordered data mode. Opts: (null)
+[    6.314717@0] UDF-fs: warning (device sda5): udf_fill_super: No partition found (2)
+[    6.406624@0] EXT4-fs (mmcblk1p2): recovery complete
+[    6.407633@0] EXT4-fs (mmcblk1p2): mounted filesystem with ordered data mode. Opts: (null)
+[    6.475799@3] EXT4-fs (mmcblk1p3): re-mounted. Opts: data=ordered
+[    6.852476@0] aml_tbs: loading out-of-tree module taints kernel.
+[    6.852684@0] aml_tbs: Unknown symbol dvb_usb_device_init (err 0)
+[    6.852692@0] aml_tbs: Unknown symbol dvb_usb_device_exit (err 0)
+[    6.886429@0] tbs5530: Unknown symbol dvb_usb_device_init (err 0)
+[    6.886439@0] tbs5530: Unknown symbol dvb_usb_device_exit (err 0)
+[    7.038756@0] udevd[418]: starting version 3.2.14
+[    7.083495@3] udevd[419]: starting eudev-3.2.14
+[    7.182312@2] amlvideo2.0 cma memory is c4800000 , size is  1800000
+[    7.182684@2] amlvideo2.0 cma memory release succeed
+[    7.185299@2] amlvideo2.1 cma memory is c4800000 , size is  1800000
+[    7.185712@2] amlvideo2.1 cma memory release succeed
+[    7.242038@3] udevd[432]: symlink '../rtc0' '/dev/misc/rtc.tmp-c251:0' failed: Not a directory
+[    7.323353@3] mali ffe40000.bifrost: Continuing without Mali regulator control
+[    7.323452@3] mali ffe40000.bifrost: max pp is 2
+[    7.323459@3] mali ffe40000.bifrost: set min pp to default 1
+[    7.323465@3] mali ffe40000.bifrost: min pp is 1
+[    7.323472@3] mali ffe40000.bifrost: set min clk default to 0
+[    7.323477@3] mali ffe40000.bifrost: min clk  is 0
+[    7.323506@3] mali ffe40000.bifrost: hiu io source  0xffffff8008f70000
+[    7.323534@3] mali ffe40000.bifrost: hiu io source  0xffffff8008f72000
+[    7.323542@3] mali ffe40000.bifrost: num of pp used most of time 1
+[    7.323548@3] mali ffe40000.bifrost: clock dvfs cfg table size is 6
+[    7.323669@3] mali ffe40000.bifrost: max clk set 4
+[    7.323675@3] mali ffe40000.bifrost: max clk  is 4
+[    7.323682@3] mali ffe40000.bifrost: turbo clk set to 5
+[    7.323688@3] mali ffe40000.bifrost: turbo clk  is 5
+[    7.323694@3] mali ffe40000.bifrost: default clk set to 4
+[    7.323701@3] mali ffe40000.bifrost: default clk  is 4
+[    7.323710@3] mali ffe40000.bifrost: ====================0====================
+[    7.323710@3] clk_freq= 285714285, clk_parent=fclk_div7, voltage=1150, keep_count=5, threshod=<0 76>, clk_sample=285
+[    7.323717@3] mali ffe40000.bifrost: ====================1====================
+[    7.323717@3] clk_freq= 400000000, clk_parent=fclk_div5, voltage=1150, keep_count=5, threshod=<152 207>, clk_sample=400
+[    7.323725@3] mali ffe40000.bifrost: ====================2====================
+[    7.323725@3] clk_freq= 500000000, clk_parent=fclk_div4, voltage=1150, keep_count=5, threshod=<38 194>, clk_sample=500
+[    7.323732@3] mali ffe40000.bifrost: ====================3====================
+[    7.323732@3] clk_freq= 666666666, clk_parent=fclk_div3, voltage=1150, keep_count=5, threshod=<150 203>, clk_sample=666
+[    7.323740@3] mali ffe40000.bifrost: ====================4====================
+[    7.323740@3] clk_freq= 846000000, clk_parent=  gp0_pll, voltage=1150, keep_count=5, threshod=<156 255>, clk_sample=846
+[    7.323747@3] mali ffe40000.bifrost: ====================5====================
+[    7.323747@3] clk_freq= 846000000, clk_parent=  gp0_pll, voltage=1150, keep_count=5, threshod=<156 255>, clk_sample=846
+[    7.323752@3] mali ffe40000.bifrost: clock dvfs table size is 6
+[    7.325207@3] mali_plat=ffffff8001f835c0
+[    7.325559@3] find tzd id: 0
+[    7.325616@3] gpu cooling register okay with err=0
+[    7.325806@3] find tzd id: 0
+[    7.325825@3] gpu core cooling register okay with err=0
+[    7.325864@3] shader_present=1, tiler_present=1, l2_present=1
+[    7.325948@3] Mali_pwr_on:gpu_irq : 200
+[    7.327043@1] hrtimer: interrupt took 19583 ns
+[    7.327722@1] mali ffe40000.bifrost: GPU identified as 0x3 arch 7.0.9 r0p0 status 0
+[    7.330267@1] mali ffe40000.bifrost: Probed as mali0
+[    7.870152@2] eth0: device MAC address 0c:55:32:01:7a:0a
+[    7.939050@3] efuse tx_amp = 51
+[    7.939301@3] set phy setup_amp = 3
+[    7.952758@3] meson6-dwmac ff3f0000.ethernet eth0: fail to init PTP.
+[    7.953108@3] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[    8.524302@3] ionvid: dbg: ionvideo open
+[    8.524404@3] ionvid: dbg: vidioc_close!!!!
+[    8.524418@3] ionvid: dbg: vidioc_close
+[    8.531407@2] ionvid: dbg: ionvideo open
+[    8.531448@0] ionvid: dbg: ionvideo open
+[    8.531511@2] ionvid: dbg: vidioc_close!!!!
+[    8.531518@0] ionvid: dbg: vidioc_close!!!!
+[    8.531524@2] ionvid: dbg: vidioc_close
+[    8.531532@0] ionvid: dbg: vidioc_close
+[    8.532545@2] ionvid: dbg: ionvideo open
+[    8.532546@3] ionvid: dbg: ionvideo open
+[    8.532552@1] ionvid: dbg: ionvideo open
+[    8.532646@2] ionvid: dbg: vidioc_close!!!!
+[    8.532647@1] ionvid: dbg: vidioc_close!!!!
+[    8.532648@3] ionvid: dbg: vidioc_close!!!!
+[    8.532659@3] ionvid: dbg: vidioc_close
+[    8.532660@1] ionvid: dbg: vidioc_close
+[    8.532661@2] ionvid: dbg: vidioc_close
+[    8.540377@1] ionvid: dbg: ionvideo open
+[    8.540495@1] ionvid: dbg: vidioc_close!!!!
+[    8.540511@1] ionvid: dbg: vidioc_close
+[    8.541828@2] ionvid: dbg: ionvideo open
+[    8.541928@2] ionvid: dbg: vidioc_close!!!!
+[    8.541941@2] ionvid: dbg: vidioc_close
+[    8.545379@3] ionvid: dbg: ionvideo open
+[    8.545479@3] ionvid: dbg: vidioc_close!!!!
+[    8.545493@3] ionvid: dbg: vidioc_close
+[    8.624491@3] FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    9.532456@2] input: XING WEI 2.4G USB USB Composite Device as /devices/platform/ff500000.dwc3/xhci-hcd.0.auto/usb1/1-2/1-2.3/1-2.3.4/1-2.3.4:1.2/0003:1915:1025.0001/input/input5
+[    9.591652@2] hid-generic 0003:1915:1025.0001: input,hidraw0: USB HID v1.10 Keyboard [XING WEI 2.4G USB USB Composite Device] on usb-xhci-hcd.0.auto-2.3.4/input2
+[    9.594109@2] input: XING WEI 2.4G USB USB Composite Device as /devices/platform/ff500000.dwc3/xhci-hcd.0.auto/usb1/1-2/1-2.3/1-2.3.4/1-2.3.4:1.3/0003:1915:1025.0002/input/input6
+[    9.653076@2] hid-generic 0003:1915:1025.0002: input,hidraw1: USB HID v1.10 Mouse [XING WEI 2.4G USB USB Composite Device] on usb-xhci-hcd.0.auto-2.3.4/input3
+[    9.663272@0] aml_tbs: Unknown symbol dvb_usb_device_init (err 0)
+[    9.663282@0] aml_tbs: Unknown symbol dvb_usb_device_exit (err 0)
+[    9.683899@0] tbs5530: Unknown symbol dvb_usb_device_init (err 0)
+[    9.683909@0] tbs5530: Unknown symbol dvb_usb_device_exit (err 0)
+[    9.813589@0] videograbber: module license 'Proprietary' taints kernel.
+[    9.813597@0] Disabling lock debugging due to kernel taint
+[    9.814202@3] videograbber:info: Device registered!
+[    9.836935@0] register clk_set_setting cpu[43]
+[    9.840505@3] Registered firmware driver success.
+[    9.841424@3] Try to load video/h264_enc.bin  ...
+[    9.846524@0] load firmware size : 76288, Name : video/h264_enc.bin.
+[    9.847152@0] Try to load video/video_ucode.bin  ...
+[    9.910208@0] load firmware size : 1404416, Name : video/video_ucode.bin.
+[    9.914752@0] Try to load video/video_ucode_old.bin  ...
+[    9.950305@0] load firmware size : 768768, Name : video/video_ucode_old.bin.
+[    9.993045@0] Amlogic A/V streaming port init
+[    9.997555@1] get gate demux control ok ffffffc09b066780
+[    9.997593@1] get gate parser_top control ok ffffffc0bedb2000
+[    9.997634@1] get gate vdec control ok ffffffc0bedb2080
+[    9.997672@1] get gate clk_81 control ok ffffffc0bedb2100
+[    9.997714@1] get gate clk_vdec_mux control ok ffffffc0bedb2180
+[    9.997762@1] get gate clk_hcodec_mux control ok ffffffc0bedb2200
+[    9.997815@1] get gate clk_hevc_mux control ok ffffffc0bedb2280
+[    9.997874@1] get gate clk_hevcb_mux control ok ffffffc0bedb2300
+[    9.997900@1] get gate ahbarb0 control ok ffffffc0bedb2380
+[    9.997912@1] get gate asyncfifo control failed           (null)
+[   10.003090@3] meson6-dwmac ff3f0000.ethernet eth0: Link is Up - 100Mbps/Full - flow control off
+[   10.003120@3] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   10.009595@0] DVB: astra_t2mi: native Enigma2 T2-MI companion loaded
+[   10.089995@0] aml_dvb_extern: no symbol version for module_layout
+[   10.093508@0] can't find tuner_num.
+[   10.093555@0] find dvb fe numbers 1.
+[   10.095068@0] Demod: get fe0_reset_gpio: 412.
+[   10.099317@0] find demod0, id 18, i2c_addr 0x69.
+[   10.103889@0] aml_dvb_extern_set_power: dvb power gpio is invalid.
+[   10.109919@0] aml_dvb_extern_probe: OK.
+[   10.110110@0] aml_dvb_extern_init: OK, version: V1.07.
+[   10.370202@0] aml dvb init
+[   10.370216@0] DVB: E2_DREAM_STOCK_STACK_V24: original-media mode register_tsync_callbackfunc=0xffffff800992dae0 tsdemux_pcrscr_get=0xffffff8002051968 tsdemux_tsync_func_init=0xffffff8002052f20 pause_video=0xffffff8009933814; external audio uses mirrored Enigma2 TSDEMUX_TAP
+[   10.371076@3] DVB: E2_AUDIO_TS_MIRROR: registered /dev/e2_audio_ts ring=770048 bytes; live=post-DSC PES, PVR=raw TS fallback
+[   10.372281@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.374497@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.382762@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.390611@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.398775@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.406573@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.414806@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.422598@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.430979@3] probe amlogic dvb driver
+[   10.430993@3] the demux           clock on, ref cnt: 1
+[   10.431004@3] the ahbarb0         clock on, ref cnt: 1
+[   10.431012@3] the parser_top      clock on, ref cnt: 1
+[   10.431023@3] DVB: ts0: serial
+[   10.431167@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.438635@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.446881@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.454665@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.462903@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.470699@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.478935@3] meson-g12a-pinctrl pinctrl@ff634480: function 'tsin_a_ao' not supported
+[   10.486732@3] meson-g12a-pinctrl pinctrl@ff634480: invalid function tsin_a_ao in map table
+[   10.495081@3] DVB: ts0_control: 0x320
+[   10.495089@3] DVB: ts0_invert: 0x0
+[   10.495097@3] DVB: ts1: parallel
+[   10.495139@3] DVB: ts1_control: 0x0
+[   10.495146@3] DVB: read error:ts2_control: 0x0
+[   10.495156@3] DVB: registering new adapter (amlogic-dvb)
+[   10.495165@3] DVB: DREAMONE_STANDALONE_V40: internal video0 disabled; waiting for dream_local_video.ko
+[   10.495451@1] DVB: DREAMONE_AV_ABI: registered audio0; video0 owner=dream_local_video.ko
+[   10.496238@1] demux0_irq irq num:40 
+[   10.501829@1] DVB: E2_OPENATV80_STC: timestamp_pcrscr_get=ffffff800992d260
+[   10.502273@2] DVB: demux init
+[   10.502527@3] demux1_irq irq num:61 
+[   10.502970@3] DVB: demux init
+[   10.503219@3] demux2_irq irq num:62 
+[   10.503894@2] DVB: demux init
+[   10.504192@0] dvr0_irq irq num:63 
+[   10.504255@0] DVB:++++async fifo 0 buf size 524288, flush size 262144
+[   10.505252@0] DVB: E2_ASYNCFIFO_ROUTE: fifo0 -> dmx0
+[   10.505261@0] dvr1_irq irq num:64 DVB: E2_ASYNCFIFO_ROUTE: fifo1 -> dmx1
+[   10.505739@0] DVB: E2_DVB_ROUTE: applying dmx0 -> ts1 live-DVB routing
+[   10.505803@0] DVB: demux0 smallsec buf disable
+[   10.505806@0] DVB: demux0 timeout disable
+[   10.505847@0] DVB: demux1 smallsec buf disable
+[   10.505849@0] DVB: demux1 timeout disable
+[   10.505890@0] DVB: demux2 smallsec buf disable
+[   10.505892@0] DVB: demux2 timeout disable
+[   10.505953@0] DVB: demux0 smallsec buf disable
+[   10.505954@0] DVB: demux0 timeout disable
+[   10.505993@0] DVB: demux1 smallsec buf disable
+[   10.505995@0] DVB: demux1 timeout disable
+[   10.506034@0] DVB: demux2 smallsec buf disable
+[   10.506035@0] DVB: demux2 timeout disable
+[   10.506111@0] DVB: demux0 smallsec buf disable
+[   10.506113@0] DVB: demux0 timeout disable
+[   10.506239@0] DVB: demux1 smallsec buf disable
+[   10.506242@0] DVB: demux1 timeout disable
+[   10.506299@0] DVB: demux2 smallsec buf disable
+[   10.506301@0] DVB: demux2 timeout disable
+[   10.506356@0] DVB: demux0 smallsec buf disable
+[   10.506358@0] DVB: demux0 timeout disable
+[   10.506376@0] DVB: E2_DSC_NORESET: DSC0 route dmx0->dmx0 no-reset=1
+[   10.506380@0] DVB: E2_CA_ROUTE_V2616: DSC0 source=dmx0 destination=dmx0 pvr=0 noreset=1 reason=default-routing
+[   10.506388@0] DVB: E2_DSC_NORESET: DSC1 route dmx0->dmx0 no-reset=1
+[   10.506391@0] DVB: E2_CA_ROUTE_V2616: DSC1 source=dmx0 destination=dmx0 pvr=0 noreset=1 reason=default-routing
+[   10.506396@0] DVB: E2_DVB_ROUTE: source=ts1 demux*=ts1 dvr0=ts ca/dsc*=dmx0
+[   10.511628@2] aml_tbs: Unknown symbol dvb_usb_device_init (err 0)
+[   10.511640@2] aml_tbs: Unknown symbol dvb_usb_device_exit (err 0)
+[   10.527786@3] AML DVB: Unable to find symbol aml_m88dm6k_attach()
+[   10.528269@3] Demod: attach demod0 [id 18] fail.
+[   10.532913@3] Demod: demod0 [id 18] had not attached.
+[   10.608126@0] aml_tbs: Unknown symbol dvb_usb_device_init (err 0)
+[   10.608139@0] aml_tbs: Unknown symbol dvb_usb_device_exit (err 0)
+[   10.709857@0] e2procfs: initializing Version 2.32-fbpage from hw_demux
+[   10.767982@0] e2procfs: video symbols vpp=no scaler=yes dispbuf=no cur_dispbuf=yes
+[   10.818211@0] e2procfs: OSD_ABI_FIX: using indexed OSD0 API signatures
+[   10.818223@0] e2procfs: OSD symbols - alpha: found, free_scale: found, axis: found
+[   10.844755@0] e2procfs: FB_PAGE_HANDOFF symbols fb=ffffff800ad4c610 pan=ffffff800956cf80 lock=ffffff800956d0d0 console=ffffff800910f300/ffffff8009110ec0
+[   10.844841@0] e2procfs: created nim_sockets successfully
+[   10.844849@0] e2procfs: Scanning for DVB frontends...
+[   10.844991@0] e2procfs: No DVB frontend found, using generic template
+[   10.845227@0] e2procfs: created comprehensive HDMI entries under /proc/stb/video/
+[   10.845273@0] e2procfs: created OSD directory
+[   10.845378@0] e2procfs: created /proc/video compatibility entries
+[   10.845393@0] e2procfs: created /proc/stb/video frame compatibility entries
+[   10.845449@0] e2procfs: created AVS directory
+[   10.845552@0] e2procfs: created enhanced audio control entries with volume/mute support
+[   10.866885@0] e2procfs: initialized successfully - Version 2.32-fbpage; Dream first-start fb0 page handoff enabled=1
+[   10.909935@0] amvdec_avs module init
+[   10.941085@0] amvdec_h264 module init
+[   10.985036@0] amvdec_h265 module init
+[   11.014163@0] ammvdec_h264 module init
+[   11.088292@0] amvdec_mmpeg12: disagrees about version of symbol decoder_do_frame_check
+[   11.088329@0] amvdec_mmpeg12: disagrees about version of symbol vdec_enable_input
+[   11.088357@0] amvdec_mmpeg12: disagrees about version of symbol vdec_prepare_input
+[   11.088371@0] amvdec_mmpeg12: disagrees about version of symbol vdec_sync_input
+[   11.088388@0] amvdec_mmpeg12: disagrees about version of symbol vdec_core_request
+[   11.088406@0] amvdec_mmpeg12: disagrees about version of symbol vdec_reset_core
+[   11.088471@0] amvdec_mmpeg12: disagrees about version of symbol vdec_core_release
+[   11.088522@0] amvdec_mmpeg12: disagrees about version of symbol vdec_core_finish_run
+[   11.088541@0] amvdec_mmpeg12: disagrees about version of symbol amstream_wakeup_userdata_poll
+[   11.088570@0] amvdec_mmpeg12: disagrees about version of symbol vdec_has_more_input
+[   11.088605@0] amvdec_mmpeg12: disagrees about version of symbol vdec_vframe_dirty
+[   11.088617@0] amvdec_mmpeg12: disagrees about version of symbol vdec_set_status
+[   11.088630@0] amvdec_mmpeg12: disagrees about version of symbol vdec_clean_input
+[   11.088671@0] amvdec_mmpeg12: disagrees about version of symbol vdec_wakeup_userdata_poll
+[   11.088683@0] amvdec_mmpeg12: disagrees about version of symbol amvdec_vdec_loadmc_buf_ex
+[   11.089185@0] ammvdec_mpeg12 module init
+[   11.107946@0] ammvdec_mpeg4_driver_init_module 
+[   11.205519@0] amvdec_vc1 module init
+[   11.231259@0] amvdec_vp9 module init
+[   11.249391@0] Triggered SDIO WiFi power on and bus rescan.
+[   11.249415@0] aml_wifi wifi: [extern_wifi_set_enable] WIFI  Disable! 482
+[   11.570861@0] aml_wifi wifi: [extern_wifi_set_enable] WIFI  Enable! 482
+[   11.896934@0] meson-mmc: sdio: resp_timeout,vstat:0x9dff0800,virqc:3fff
+[   11.897924@0] meson-mmc: sdio: err: wait for desc write back, bus_fsm:0x7
+[   11.905294@0] meson-aml-mmc ffe03000.sdio: card claims to support voltages below defined range
+[   11.926878@0] meson-mmc: actual_clock :400000, HHI_nand: 0x80
+[   11.926886@0] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x1000033c
+[   11.946422@0] meson-aml-mmc ffe03000.sdio: divider requested rate 200000000 != actual rate 199999997: ret=0
+[   11.946429@0] meson-mmc: actual_clock :199999997, HHI_nand: 0x80
+[   11.946435@0] meson-mmc: [meson_mmc_clk_set_rate_v3] after clock: 0x10000245
+[   11.946445@0] meson-mmc: Data 1 aligned delay is 0
+[   11.946453@0] meson-mmc: sdio: clk 199999997 tuning start
+[   11.951976@0] meson-mmc: sdio: adj_win: < 1 2 3 4 >
+[   11.951985@0] meson-mmc: step:4, delay1:0x4104104, delay2:0x4004104
+[   11.956264@0] meson-mmc: sdio: adj_win: < 2 3 4 >
+[   11.956275@0] meson-mmc: left:3, right:0, mid:4, size:4
+[   11.956281@0] meson-mmc: step:0, delay1:0x0, delay2:0x0
+[   11.956288@0] meson-mmc: sdio: sd_emmc_regs->gclock=0x10000245,sd_emmc_regs->gadjust=0x32000
+[   11.956294@0] meson-mmc: delay1:0x0, delay2:0x0
+[   11.957892@0] sdio: new ultra high speed SDR104 SDIO card at address 0001
+[   11.957900@1] sdio: clock 199999997, 4-bit-bus-width
+[   11.957900@1]  
+[   11.958265@1] meson-mmc: [sdio_reinit] finish
+[   12.589838@0] OpenVFD: Version: V1.3.0-e2-fd650-cig20-dual-clock
+[   12.589848@0] OpenVFD: vfd_gpio_clk:		Empty.
+[   12.589855@0] OpenVFD: vfd_gpio_dat:		Empty.
+[   12.589861@0] OpenVFD: vfd_gpio_stb:		Empty.
+[   12.589868@0] OpenVFD: vfd_gpio0:		#0 = 0x00; #1 = 0x00; #2 = 0xFF; 
+[   12.589874@0] OpenVFD: vfd_gpio1:		#0 = 0x00; #1 = 0x00; #2 = 0xFF; 
+[   12.589880@0] OpenVFD: vfd_gpio2:		#0 = 0x00; #1 = 0x00; #2 = 0xFF; 
+[   12.589887@0] OpenVFD: vfd_gpio3:		#0 = 0x00; #1 = 0x00; #2 = 0xFF; 
+[   12.589894@0] OpenVFD: vfd_gpio_protocol:	#0 = 0x00; #1 = 0x00; 
+[   12.589899@0] OpenVFD: vfd_chars:		Empty.
+[   12.589903@0] OpenVFD: vfd_dot_bits:		Empty.
+[   12.589909@0] OpenVFD: vfd_display_type:	Empty.
+[   12.589919@0] OpenVFD: Detected gpio chips:	periphs-banks, aobus-banks.
+[   12.589924@0] OpenVFD: Failed to verify VFD configuration file, attempt using device tree as fallback.
+[   12.593644@0] OpenVFD: openvfd_gpio_clk pin entry not found
+[   12.593650@0] OpenVFD: openvfd_gpio_dat pin entry not found
+[   12.593657@0] OpenVFD: openvfd_gpio_stb pin entry not found
+[   12.593662@0] OpenVFD: openvfd_gpio0 pin entry not found
+[   12.593668@0] OpenVFD: openvfd_gpio1 pin entry not found
+[   12.593674@0] OpenVFD: openvfd_gpio2 pin entry not found
+[   12.593680@0] OpenVFD: openvfd_gpio3 pin entry not found
+[   12.593687@0] OpenVFD: can't find openvfd_chars list, falling back to defaults.
+[   12.600731@0] OpenVFD: chars_prop =           (null)
+[   12.600739@0] OpenVFD: can't find openvfd_dot_bits list, falling back to defaults.
+[   12.608155@0] OpenVFD: dot_bits_prop =           (null)
+[   12.608171@0] OpenVFD: display.type = 0, display.controller = 0, pdata->dev->dtb_active.display.flags = 0x00
+[   12.608177@0] OpenVFD: can't request gpio of gpio_clk
+[   12.612973@0] openvfd: probe of openvfd failed with error -22
+[   12.657874@0] DREAM_LOCAL_VIDEO_V51_PROGRESS_GATED: native clocks APTS=ffffff800992cc34 VPTS=ffffff800992cc10
+[   12.658157@3] DREAM_LOCAL_VIDEO_V51_PROGRESS_GATED: registered standalone video0; v5.1 progress-gated native clock, 3s seek preroll; bootlogo proxied entirely to aml_dvb.c
+[   12.671318@2] tbs5530: Unknown symbol dvb_usb_device_init (err 0)
+[   12.671337@2] tbs5530: Unknown symbol dvb_usb_device_exit (err 0)
+[   13.011031@0] Fine tdm clk setting range (0~2000000), 12287994
+[   13.011592@0] Fine spdif sysclk setting range(0~2000000), 6143997
+[   13.018227@0] Error: parma_num = 0, band_id = 3
+[   13.018257@0] Error: parma_num = 1, band_id = 10377
+[   13.018279@0] Error: parma_num = 0, band_id = -64
+[   13.018312@0] Error: parma_num = 0, band_id = 0
+[   13.018638@0] id=0 set inskew=0
+[   16.288200@2] BT_RADIO going: on
+[   16.288207@2] AML_BT: going ON
+[   16.739717@0] meson_uart ffd24000.serial: ttyS1 use xtal(24M) 24000000 change 0 to 9600
+[   16.740189@0] meson_uart ffd24000.serial: ttyS1 use xtal(24M) 24000000 change 9600 to 115200
+[   16.834006@0] meson_uart ffd24000.serial: ttyS1 use xtal(24M) 24000000 change 115200 to 1500000
+[   17.380489@1] OpenVFD: Version: V1.3.0-e2-fd650-cig20-dual-clock
+[   17.380502@1] OpenVFD: vfd_gpio_clk:		#0 = 0x01; #1 = 0x06; #2 = 0x00; 
+[   17.380508@1] OpenVFD: vfd_gpio_dat:		#0 = 0x01; #1 = 0x07; #2 = 0x00; 
+[   17.380515@1] OpenVFD: vfd_gpio_stb:		#0 = 0x01; #1 = 0x04; #2 = 0x00; 
+[   17.380521@1] OpenVFD: vfd_gpio0:		#0 = 0x01; #1 = 0x08; #2 = 0x00; 
+[   17.380527@1] OpenVFD: vfd_gpio1:		#0 = 0x00; #1 = 0x41; #2 = 0x00; 
+[   17.380534@1] OpenVFD: vfd_gpio2:		#0 = 0x00; #1 = 0x40; #2 = 0x00; 
+[   17.380540@1] OpenVFD: vfd_gpio3:		#0 = 0x00; #1 = 0x00; #2 = 0xFF; 
+[   17.380546@1] OpenVFD: vfd_gpio_protocol:	#0 = 0x00; #1 = 0x00; 
+[   17.380552@1] OpenVFD: vfd_chars:		#0 = 0x02; #1 = 0x01; #2 = 0x02; #3 = 0x03; #4 = 0x04; 
+[   17.380561@1] OpenVFD: vfd_dot_bits:		#0 = 0x00; #1 = 0x01; #2 = 0x02; #3 = 0x05; #4 = 0x03; #5 = 0x04; #6 = 0x06; 
+[   17.380568@1] OpenVFD: vfd_display_type:	#0 = 0x00; #1 = 0x01; #2 = 0x00; #3 = 0x08; 
+[   17.380576@1] OpenVFD: Detected gpio chips:	periphs-banks, aobus-banks.
+[   17.380585@1] OpenVFD: "aobus-banks" chip found.	base = 496, pin count = 16, pin = 6, offset = 502
+[   17.380591@1] OpenVFD: "aobus-banks" chip found.	base = 496, pin count = 16, pin = 7, offset = 503
+[   17.380597@1] OpenVFD: "aobus-banks" chip found.	base = 496, pin count = 16, pin = 4, offset = 500
+[   17.380603@1] OpenVFD: "aobus-banks" chip found.	base = 496, pin count = 16, pin = 8, offset = 504
+[   17.380610@1] OpenVFD: "periphs-banks" chip found.	base = 410, pin count = 86, pin = 65, offset = 475
+[   17.380616@1] OpenVFD: "periphs-banks" chip found.	base = 410, pin count = 86, pin = 64, offset = 474
+[   17.380621@1] OpenVFD: Skipping vfd_gpio3 evaluation (0xFF)
+[   17.381001@3] OpenVFD: Select CIG20/PT6393 controller
+[   17.381130@3] OpenVFD: SW SPI 4-wire interface intialized (LSB mode)
+[   17.423144@3] OpenVFD: CIG20/PT6393 initialized: 11 chars, 13 RAM slots, 4-wire LSB SPI @ ~10kHz
+[   17.423220@3] OpenVFD: SW I2C interface intialized (address = 0x0000 (N/A), MSB mode, pull-ups off)
+[   17.425448@3] OpenVFD: Dual display enabled: primary CIG20/PT6393 + secondary FD650 clock (CLK gpio1=475, DAT gpio2=474)
+[   17.439520@0] Bluetooth: Non-link packet received in non-active state
+[   17.441931@0] Bluetooth: Out-of-order packet arrived (1 != 0)
+[   18.259860@0] DVB: E2_BOOTLOGO_HOLD: standalone video0 fd proxied into aml_dvb.c donor bootlogo path
+[   18.259874@0] DREAM_LOCAL_VIDEO_V51_PROGRESS_GATED: pre-first-live video0 fd=ffffffc0bb09e600 proxied to aml_dvb.c bootlogo path
+[   18.267019@0] DVB: DREAMONE_AV_ABI: VIDEO_SET_STREAMTYPE (0) native=0 isolated=1 ret=0
+[   18.267032@0] DVB: E2_BOOTLOGO_HOLD: aml_dvb.c VIDEO_SOURCE_MEMORY donor path
+[   18.267094@0] DVB: E2_VIDEO_PLANE: disable_video=0; axis controlled by e2procfs dst_*
+[   18.267566@0] DVB: E2_LOCAL_TIMER_V1: origin raw=0 current=0 origin=0
+[   18.267574@0] DVB: E2_LOCAL_VIDEO_CLOCK: anchor pts=0 state=1
+[   18.272060@0] the demux           clock on, ref cnt: 2
+[   18.272070@0] the parser_top      clock on, ref cnt: 2
+[   18.272156@0] the vdec            clock on, ref cnt: 1
+[   18.272184@0] the clk_vdec_mux    clock on, ref cnt: 1
+[   18.272292@0] vdec mux clock is 799999987 Hz
+[   18.272397@0] vdec_create instance ffffff800d267000, total 1
+[   18.272416@0] The fw has been loaded.
+[   18.272805@0] Video stbuf alloced at 00000000c4800000, secure = 0, size = 3145728
+[   18.272825@0] vdec_init, dev_name:ammvdec_mpeg12, vdec_type=VDEC_TYPE_STREAM_PARSER
+[   18.272830@0] vdec_init set vfm decoder ffffff800d267000
+[   18.273300@0] ammvdec_mpeg12 probe start.
+[   18.273341@0] E2_MPEG12_D1_ABI: provider=decoder use_vfm=1 native(provider/private/run_ready)=0x10b30/0x11cd8/0x11c90 stock=0x10b50/0x11cf8/0x11cb0
+[   18.273350@0] 0: ammvdec_mpeg12_probe, sysinfo: 0x0, tvp_flag = 0x0
+[   18.273359@0] decoder_bmmu_box_alloc_box, tvp_flags = 0
+[   18.273392@0] [LOCAL], the fw (mpeg12_multi) will be loaded.
+[   18.273485@0] di_receiver_event_fun: vframe provider reg ppmgr
+[   18.273532@0] DI: reg f
+[   18.274220@0] vdec_init, vf_provider_name = decoder
+[   18.274878@0] video first pts = 0
+[   18.274888@0] vdec_request_irq ffffff8002050458, parser
+[   18.275714@0] vdec->port_flag=0x102, port_flag=0x103
+[   18.275729@0] DVB: DREAMONE_LOCAL_FRAME_V13: started /dev/amstream_vbuf_sched format=MPEG1/2 vformat=0 module=amvdec_mmpeg12 blocking=0
+[   18.275741@0] video first checkin pts = 0
+[   18.275744@0] first check in vpts <0x0:0x0(0x0)> ok!
+[   18.276563@0] DVB: E2_LOCAL_VIDEO_FRAME: call=1 requested=139009 accepted=139009 pts=0 req_total=139009 acc_total=139009 partial=0 eagain=0
+[   18.276575@0] DVB: E2_BOOTLOGO_HOLD: armed by pre-first-service VIDEO_SET_FRAME accepted=139009 pts=0
+[   18.300728@2] video first pts = 1
+[   18.300857@3] DI: di_wr_cue_int:finish
+[   18.300862@3] di: di_init_buf -S
+[   18.300875@3] DI: di_init_buf:cma alloc req time: 4294685512 ms
+[   18.300889@3] di: di_init_buf -E
+[   18.301006@3] di_patch_post_update_mc_sw:0x0->0x2
+[   18.302238@2] 0: run_ready buf lelvel1e01
+[   18.305008@1] di_cma_alloc:alloc 10 buffer use 4 ms(4294685512~4294685516)
+[   18.310206@1] pre_de_buf_config:4294685520ms 1th source change: 0x0/0/0/0=>0x9000/1280/720/0
+[   18.320993@0] detect vout mode change!!!!!!!!!!!!
+[   18.321036@0] first toggle picture {1280,720} pts:0
+[   18.322304@2] 0: run_ready buf lelvel1e01
+[   18.337839@0] VIDEO: VsyncEnableVideoLayer
+[   18.342367@2] 0: run_ready buf lelvel1e01
+[   18.362417@2] 0: run_ready buf lelvel1e01
+[   18.382468@2] 0: run_ready buf lelvel1e01
+[   18.402521@2] 0: run_ready buf lelvel1e01
+[   18.422572@2] 0: run_ready buf lelvel1e01
+[   18.426692@0] DVB: E2_BOOTLOGO_HOLD: aml_dvb.c VIDEO_STOP preserved bootlogo local decoder/frame
+[   18.426703@0] DVB: E2_BOOTLOGO_HOLD: aml_dvb.c VIDEO_SOURCE_DEMUX preserved held .mvi decoder/frame
+[   18.426750@0] DVB: E2_BOOTLOGO_HOLD: standalone video0 release preserved held bootlogo in aml_dvb.c
+[   18.426757@0] DREAM_LOCAL_VIDEO_V51_PROGRESS_GATED: bootlogo proxy fd=ffffffc0bb09e600 released; hold remains entirely in aml_dvb.c if active
+[   18.442623@2] 0: run_ready buf lelvel1e01
+[   18.462669@2] 0: run_ready buf lelvel1e01
+[   18.482722@2] 0: run_ready buf lelvel1e01
+[   18.502782@2] 0: run_ready buf lelvel1e01
+[   18.522835@2] 0: run_ready buf lelvel1e01
+[   18.542888@2] 0: run_ready buf lelvel1e01
+[   18.562959@2] 0: run_ready buf lelvel1e01
+[   18.583021@2] 0: run_ready buf lelvel1e01
+[   18.603075@2] 0: run_ready buf lelvel1e01
+[   18.623121@2] 0: run_ready buf lelvel1e01
+[   18.643174@2] 0: run_ready buf lelvel1e01
+[   18.663222@2] 0: run_ready buf lelvel1e01
+[   18.683275@2] 0: run_ready buf lelvel1e01
+[   18.703329@2] 0: run_ready buf lelvel1e01
+[   18.723380@2] 0: run_ready buf lelvel1e01
+[   18.743443@2] 0: run_ready buf lelvel1e01
+[   18.763498@2] 0: run_ready buf lelvel1e01
+[   18.783564@2] 0: run_ready buf lelvel1e01
+[   18.803619@2] 0: run_ready buf lelvel1e01
+[   18.823674@2] 0: run_ready buf lelvel1e01
+[   18.843732@2] 0: run_ready buf lelvel1e01
+[   18.863793@2] 0: run_ready buf lelvel1e01
+[   18.883849@2] 0: run_ready buf lelvel1e01
+[   18.903909@2] 0: run_ready buf lelvel1e01
+[   18.923969@2] 0: run_ready buf lelvel1e01
+[   18.944021@2] 0: run_ready buf lelvel1e01
+[   18.964084@2] 0: run_ready buf lelvel1e01
+[   18.984136@2] 0: run_ready buf lelvel1e01
+[   19.004195@2] 0: run_ready buf lelvel1e01
+[   19.024257@2] 0: run_ready buf lelvel1e01
+[   19.044316@2] 0: run_ready buf lelvel1e01
+[   19.063446@1] enigma2.sh (2854): drop_caches: 3
+[   19.064376@2] 0: run_ready buf lelvel1e01
+[   19.084436@2] 0: run_ready buf lelvel1e01
+[   19.104487@2] 0: run_ready buf lelvel1e01
+[   19.124546@2] 0: run_ready buf lelvel1e01
+[   19.144600@2] 0: run_ready buf lelvel1e01
+[   19.164963@2] 0: run_ready buf lelvel1e01
+[   19.185321@2] 0: run_ready buf lelvel1e01
+[   19.205679@2] 0: run_ready buf lelvel1e01
+[   19.226038@2] 0: run_ready buf lelvel1e01
+[   19.246096@2] 0: run_ready buf lelvel1e01
+[   19.266152@2] 0: run_ready buf lelvel1e01
+[   19.286204@2] 0: run_ready buf lelvel1e01
+[   19.306261@2] 0: run_ready buf lelvel1e01
+[   19.326316@2] 0: run_ready buf lelvel1e01
+[   19.346366@2] 0: run_ready buf lelvel1e01
+[   19.366418@2] 0: run_ready buf lelvel1e01
+[   19.386472@2] 0: run_ready buf lelvel1e01
+[   19.406525@2] 0: run_ready buf lelvel1e01
+[   19.426575@2] 0: run_ready buf lelvel1e01
+[   19.446633@2] 0: run_ready buf lelvel1e01
+[   19.466686@2] 0: run_ready buf lelvel1e01
+[   19.486738@2] 0: run_ready buf lelvel1e01
+[   19.506788@2] 0: run_ready buf lelvel1e01
+[   19.526844@2] 0: run_ready buf lelvel1e01
+[   19.546896@2] 0: run_ready buf lelvel1e01
+[   19.566949@2] 0: run_ready buf lelvel1e01
+[   19.587018@2] 0: run_ready buf lelvel1e01
+[   19.607065@2] 0: run_ready buf lelvel1e01
+[   19.627116@2] 0: run_ready buf lelvel1e01
+[   19.647163@2] 0: run_ready buf lelvel1e01
+[   19.667216@2] 0: run_ready buf lelvel1e01
+[   19.687266@2] 0: run_ready buf lelvel1e01
+[   19.707316@2] 0: run_ready buf lelvel1e01
+[   19.727364@2] 0: run_ready buf lelvel1e01
+[   19.747416@2] 0: run_ready buf lelvel1e01
+[   19.767465@2] 0: run_ready buf lelvel1e01
+[   19.787514@2] 0: run_ready buf lelvel1e01
+[   19.807560@2] 0: run_ready buf lelvel1e01
+[   19.827606@2] 0: run_ready buf lelvel1e01
+[   19.847661@2] 0: run_ready buf lelvel1e01
+[   19.867714@2] 0: run_ready buf lelvel1e01
+[   19.887763@2] 0: run_ready buf lelvel1e01
+[   19.907812@2] 0: run_ready buf lelvel1e01
+[   19.927861@2] 0: run_ready buf lelvel1e01
+[   19.947920@2] 0: run_ready buf lelvel1e01
+[   19.967971@2] 0: run_ready buf lelvel1e01
+[   19.988025@2] 0: run_ready buf lelvel1e01
+[   20.008077@2] 0: run_ready buf lelvel1e01
+[   20.028135@2] 0: run_ready buf lelvel1e01
+[   20.048186@2] 0: run_ready buf lelvel1e01
+[   20.068253@2] 0: run_ready buf lelvel1e01
+[   20.088307@2] 0: run_ready buf lelvel1e01
+[   20.108364@2] 0: run_ready buf lelvel1e01
+[   20.128415@2] 0: run_ready buf lelvel1e01
+[   20.148472@2] 0: run_ready buf lelvel1e01
+[   20.168525@2] 0: run_ready buf lelvel1e01
+[   20.188577@2] 0: run_ready buf lelvel1e01
+[   20.208629@2] 0: run_ready buf lelvel1e01
+[   20.228682@2] 0: run_ready buf lelvel1e01
+[   20.248732@2] 0: run_ready buf lelvel1e01
+[   20.268785@2] 0: run_ready buf lelvel1e01
+[   20.288835@2] 0: run_ready buf lelvel1e01
+[   20.308891@2] 0: run_ready buf lelvel1e01
+[   20.328941@2] 0: run_ready buf lelvel1e01
+[   20.348990@2] 0: run_ready buf lelvel1e01
+[   20.369040@2] 0: run_ready buf lelvel1e01
+[   20.389097@2] 0: run_ready buf lelvel1e01
+[   20.409152@2] 0: run_ready buf lelvel1e01
+[   20.429202@2] 0: run_ready buf lelvel1e01
+[   20.449253@2] 0: run_ready buf lelvel1e01
+[   20.469302@2] 0: run_ready buf lelvel1e01
+[   20.489351@2] 0: run_ready buf lelvel1e01
+[   20.509413@2] 0: run_ready buf lelvel1e01
+[   20.529471@2] 0: run_ready buf lelvel1e01
+[   20.549523@2] 0: run_ready buf lelvel1e01
+[   20.569578@2] 0: run_ready buf lelvel1e01
+[   20.589631@2] 0: run_ready buf lelvel1e01
+[   20.609678@2] 0: run_ready buf lelvel1e01
+[   20.629733@2] 0: run_ready buf lelvel1e01
+[   20.649787@2] 0: run_ready buf lelvel1e01
+[   20.669843@2] 0: run_ready buf lelvel1e01
+[   20.689895@2] 0: run_ready buf lelvel1e01
+[   20.709950@2] 0: run_ready buf lelvel1e01
+[   20.730004@2] 0: run_ready buf lelvel1e01
+[   20.750067@2] 0: run_ready buf lelvel1e01
+[   20.770145@2] 0: run_ready buf lelvel1e01
+[   20.790218@2] 0: run_ready buf lelvel1e01
+[   20.806650@1] fb: malloc_osd_memory, cma:ffffff800afffe08
+[   20.806662@1] fb: malloc_osd_memory, 1248, base:0x00000000df800000, size:8388608
+[   20.806693@1] fb: use ion buffer for fb memory, fb_index=0
+[   20.806701@1] fb: OSD0 as afbcd mode,afbc_type=2
+[   20.810310@2] 0: run_ready buf lelvel1e01
+[   20.825478@2] meson-fb fb: create ion_client ffffffc0bbcbba80, handle=ffffffc0b6875500
+[   20.827820@2] meson-fb fb: ion memory(0): created fb at 0x00000000e8800000, size 75 MiB
+[   20.835817@2] 0: run_ready buf lelvel1e01
+[   20.835835@2] fb:  0, phy: 0x00000000e8800000, vir:0xffffff800d29f000, size=77312K
+[   20.835835@2] 
+[   20.835841@2] fb: Frame buffer memory assigned at
+[   20.835847@2] fb:  0, phy: 0x00000000e8800000, vir:0xffffff800d29f000, size=77312K
+[   20.835847@2] 
+[   20.835853@2] fb:  0, phy: 0x00000000e8800000, vir:0xffffff800d29f000, size=77312K
+[   20.835853@2] 
+[   20.835858@2] fb: logo_index=0,fb_index=0
+[   20.835864@2] fb: ---------------clear fb0 memory ffffff800d29f000
+[   20.849330@2] fb: osd[0] canvas.idx =0x40
+[   20.849340@2] fb: osd[0] canvas.addr=0xe8800000
+[   20.849346@2] fb: osd[0] canvas.width=7680
+[   20.849351@2] fb: osd[0] canvas.height=2160
+[   20.849356@2] fb: osd[0] frame.width=1920
+[   20.849361@2] fb: osd[0] frame.height=1080
+[   20.849366@2] fb: osd[0] out_addr_id =0x1
+[   20.854534@0] fb: command 0x23 not supported (enigma2)
+[   20.854591@0] fb: osd_release now.index=0,open_count=1
+[   20.855867@2] 0: run_ready buf lelvel1e01
+[   20.876230@2] 0: run_ready buf lelvel1e01
+[   20.883989@1] fb: command 0x40014621 not supported (enigma2)
+[   20.884050@1] fb: osd[0] canvas.idx =0x40
+[   20.884054@1] fb: osd[0] canvas.addr=0xe8800000
+[   20.884057@1] fb: osd[0] canvas.width=7680
+[   20.884059@1] fb: osd[0] canvas.height=3240
+[   20.884061@1] fb: osd[0] frame.width=1920
+[   20.884064@1] fb: osd[0] frame.height=1080
+[   20.884066@1] fb: osd[0] out_addr_id =0x1
+[   20.887846@0] fb: outputmode changed to 1080p60hz, reset osd0, (0, 0, 1919, 1079) -> (0, 0, 1919, 1079)
+[   20.896285@2] 0: run_ready buf lelvel1e01
+[   20.904491@0] fb: osd_update_disp_axis_hw:pan_data(0,0,1919,1079)
+[   20.904495@0] fb: osd_update_disp_axis_hw:dispdata(0,0,1919,1079)
+[   20.916333@2] 0: run_ready buf lelvel1e01
+[   20.936376@2] 0: run_ready buf lelvel1e01
+[   20.937809@0] fb: osd[0] enable: 1 (enigma2)
+[   20.956431@2] 0: run_ready buf lelvel1e01
+[   20.976486@2] 0: run_ready buf lelvel1e01
+[   20.996550@2] 0: run_ready buf lelvel1e01
+[   21.016602@2] 0: run_ready buf lelvel1e01
+[   21.036657@2] 0: run_ready buf lelvel1e01
+[   21.056717@2] 0: run_ready buf lelvel1e01
+[   21.076775@2] 0: run_ready buf lelvel1e01
+[   21.096832@2] 0: run_ready buf lelvel1e01
+[   21.116889@2] 0: run_ready buf lelvel1e01
+[   21.136951@2] 0: run_ready buf lelvel1e01
+[   21.157018@2] 0: run_ready buf lelvel1e01
+[   21.177085@2] 0: run_ready buf lelvel1e01
+[   21.194021@1] video_disable_store(0)
+[   21.194044@1] VID: VD1 on
+[   21.197145@2] 0: run_ready buf lelvel1e01
+[   21.217215@2] 0: run_ready buf lelvel1e01
+[   21.221165@0] VIDEO: VsyncEnableVideoLayer
+[   21.237287@2] 0: run_ready buf lelvel1e01
+[   21.257354@2] 0: run_ready buf lelvel1e01
+[   21.277408@2] 0: run_ready buf lelvel1e01
+[   21.297471@2] 0: run_ready buf lelvel1e01
+[   21.317539@2] 0: run_ready buf lelvel1e01
+[   21.337602@2] 0: run_ready buf lelvel1e01
+[   21.357669@2] 0: run_ready buf lelvel1e01
+[   21.377736@2] 0: run_ready buf lelvel1e01
+[   21.397790@2] 0: run_ready buf lelvel1e01
+[   21.417854@2] 0: run_ready buf lelvel1e01
+[   21.437913@2] 0: run_ready buf lelvel1e01
+[   21.457978@2] 0: run_ready buf lelvel1e01
+[   21.478046@2] 0: run_ready buf lelvel1e01
+[   21.498109@2] 0: run_ready buf lelvel1e01
+[   21.518171@2] 0: run_ready buf lelvel1e01
+[   21.538233@2] 0: run_ready buf lelvel1e01
+[   21.558298@2] 0: run_ready buf lelvel1e01
+[   21.578362@2] 0: run_ready buf lelvel1e01
+[   21.598413@2] 0: run_ready buf lelvel1e01
+[   21.618483@2] 0: run_ready buf lelvel1e01
+[   21.638840@2] 0: run_ready buf lelvel1e01
+[   21.658908@2] 0: run_ready buf lelvel1e01
+[   21.679268@2] 0: run_ready buf lelvel1e01
+[   21.699329@2] 0: run_ready buf lelvel1e01
+[   21.719396@2] 0: run_ready buf lelvel1e01
+[   21.739781@2] 0: run_ready buf lelvel1e01
+[   21.759844@2] 0: run_ready buf lelvel1e01
+[   21.779902@2] 0: run_ready buf lelvel1e01
+[   21.800268@2] 0: run_ready buf lelvel1e01
+[   21.820321@2] 0: run_ready buf lelvel1e01
+[   21.840376@2] 0: run_ready buf lelvel1e01
+[   21.860744@2] 0: run_ready buf lelvel1e01
+[   21.880804@2] 0: run_ready buf lelvel1e01
+[   21.900878@2] 0: run_ready buf lelvel1e01
+[   21.920930@2] 0: run_ready buf lelvel1e01
+[   21.940996@2] 0: run_ready buf lelvel1e01
+[   21.961043@2] 0: run_ready buf lelvel1e01
+[   21.981054@2] 0: run_ready buf lelvel1e01
+[   22.001054@2] 0: run_ready buf lelvel1e01
+[   22.021046@2] 0: run_ready buf lelvel1e01
+[   22.041039@2] 0: run_ready buf lelvel1e01
+[   22.061394@2] 0: run_ready buf lelvel1e01
+[   22.081389@2] 0: run_ready buf lelvel1e01
+[   22.101373@2] 0: run_ready buf lelvel1e01
+[   22.121368@2] 0: run_ready buf lelvel1e01
+[   22.141372@2] 0: run_ready buf lelvel1e01
+[   22.161733@2] 0: run_ready buf lelvel1e01
+[   22.181753@2] 0: run_ready buf lelvel1e01
+[   22.201742@2] 0: run_ready buf lelvel1e01
+[   22.221781@2] 0: run_ready buf lelvel1e01
+[   22.241788@2] 0: run_ready buf lelvel1e01
+[   22.261783@2] 0: run_ready buf lelvel1e01
+[   22.281796@2] 0: run_ready buf lelvel1e01
+[   22.301819@2] 0: run_ready buf lelvel1e01
+[   22.321799@2] 0: run_ready buf lelvel1e01
+[   22.341806@2] 0: run_ready buf lelvel1e01
+[   22.361821@2] 0: run_ready buf lelvel1e01
+[   22.382168@2] 0: run_ready buf lelvel1e01
+[   22.402518@2] 0: run_ready buf lelvel1e01
+[   22.422515@2] 0: run_ready buf lelvel1e01
+[   22.442866@2] 0: run_ready buf lelvel1e01
+[   22.462846@2] 0: run_ready buf lelvel1e01
+[   22.482831@2] 0: run_ready buf lelvel1e01
+[   22.502840@2] 0: run_ready buf lelvel1e01
+[   22.522828@2] 0: run_ready buf lelvel1e01
+[   22.542855@2] 0: run_ready buf lelvel1e01
+[   22.562853@2] 0: run_ready buf lelvel1e01
+[   22.582854@2] 0: run_ready buf lelvel1e01
+[   22.602840@2] 0: run_ready buf lelvel1e01
+[   22.622867@2] 0: run_ready buf lelvel1e01
+[   22.642883@2] 0: run_ready buf lelvel1e01
+[   22.662881@2] 0: run_ready buf lelvel1e01
+[   22.682879@2] 0: run_ready buf lelvel1e01
+[   22.702878@2] 0: run_ready buf lelvel1e01
+[   22.722877@2] 0: run_ready buf lelvel1e01
+[   22.742870@2] 0: run_ready buf lelvel1e01
+[   22.762877@2] 0: run_ready buf lelvel1e01
+[   22.782873@2] 0: run_ready buf lelvel1e01
+[   22.802882@2] 0: run_ready buf lelvel1e01
+[   22.822870@2] 0: run_ready buf lelvel1e01
+[   22.842902@2] 0: run_ready buf lelvel1e01
+[   22.862928@2] 0: run_ready buf lelvel1e01
+[   22.882932@2] 0: run_ready buf lelvel1e01
+[   22.902952@2] 0: run_ready buf lelvel1e01
+[   22.907518@0] e2procfs: FB_PAGE_HANDOFF applied: 1920x1080 virtual=1920x3240 yoffset 0 -> 1080
+[   22.922978@2] 0: run_ready buf lelvel1e01
+[   22.943006@2] 0: run_ready buf lelvel1e01
+[   22.963079@2] 0: run_ready buf lelvel1e01
+[   22.983174@2] 0: run_ready buf lelvel1e01
+[   23.003257@2] 0: run_ready buf lelvel1e01
+[   23.023547@2] 0: run_ready buf lelvel1e01
+[   23.043608@2] 0: run_ready buf lelvel1e01
+[   23.063678@2] 0: run_ready buf lelvel1e01
+[   23.083744@2] 0: run_ready buf lelvel1e01
+[   23.103819@2] 0: run_ready buf lelvel1e01
+[   23.123891@2] 0: run_ready buf lelvel1e01
+[   23.143969@2] 0: run_ready buf lelvel1e01
+[   23.164035@2] 0: run_ready buf lelvel1e01
+[   23.184105@2] 0: run_ready buf lelvel1e01
+[   23.204177@2] 0: run_ready buf lelvel1e01
+[   23.224252@2] 0: run_ready buf lelvel1e01
+[   23.244329@2] 0: run_ready buf lelvel1e01
+[   23.264387@2] 0: run_ready buf lelvel1e01
+[   23.284450@2] 0: run_ready buf lelvel1e01
+[   23.304509@2] 0: run_ready buf lelvel1e01
+[   23.324605@2] 0: run_ready buf lelvel1e01
+[   23.344674@2] 0: run_ready buf lelvel1e01
+[   23.364730@2] 0: run_ready buf lelvel1e01
+[   23.384807@2] 0: run_ready buf lelvel1e01
+[   23.405184@2] 0: run_ready buf lelvel1e01
+[   23.425555@2] 0: run_ready buf lelvel1e01
+[   23.445639@2] 0: run_ready buf lelvel1e01
+[   23.466041@2] 0: run_ready buf lelvel1e01
+[   23.486105@2] 0: run_ready buf lelvel1e01
+[   23.506171@2] 0: run_ready buf lelvel1e01
+[   23.526223@2] 0: run_ready buf lelvel1e01
+[   23.546273@2] 0: run_ready buf lelvel1e01
+[   23.566329@2] 0: run_ready buf lelvel1e01
+[   23.586378@2] 0: run_ready buf lelvel1e01
+[   23.606429@2] 0: run_ready buf lelvel1e01
+[   23.626479@2] 0: run_ready buf lelvel1e01
+[   23.646833@2] 0: run_ready buf lelvel1e01
+[   23.666890@2] 0: run_ready buf lelvel1e01
+[   23.687266@2] 0: run_ready buf lelvel1e01
+[   23.707320@2] 0: run_ready buf lelvel1e01
+[   23.727565@2] 0: run_ready buf lelvel1e01
+[   23.747623@2] 0: run_ready buf lelvel1e01
+[   23.767681@2] 0: run_ready buf lelvel1e01
+[   23.788040@2] 0: run_ready buf lelvel1e01
+[   23.808087@2] 0: run_ready buf lelvel1e01
+[   23.828138@2] 0: run_ready buf lelvel1e01
+[   23.848498@2] 0: run_ready buf lelvel1e01
+[   23.868560@2] 0: run_ready buf lelvel1e01
+[   23.888612@2] 0: run_ready buf lelvel1e01
+[   23.909030@2] 0: run_ready buf lelvel1e01
+[   23.929087@2] 0: run_ready buf lelvel1e01
+[   23.949486@2] 0: run_ready buf lelvel1e01
+[   23.969862@2] 0: run_ready buf lelvel1e01
+[   23.989936@2] 0: run_ready buf lelvel1e01
+[   24.010025@2] 0: run_ready buf lelvel1e01
+[   24.030077@2] 0: run_ready buf lelvel1e01
+[   24.050150@2] 0: run_ready buf lelvel1e01
+[   24.070209@2] 0: run_ready buf lelvel1e01
+[   24.090263@2] 0: run_ready buf lelvel1e01
+[   24.110354@2] 0: run_ready buf lelvel1e01
+[   24.130747@2] 0: run_ready buf lelvel1e01
+[   24.150807@2] 0: run_ready buf lelvel1e01
+[   24.171193@2] 0: run_ready buf lelvel1e01
+[   24.191574@2] 0: run_ready buf lelvel1e01
+[   24.211639@2] 0: run_ready buf lelvel1e01
+[   24.231754@0] 0: run_ready buf lelvel1e01
+[   24.251828@0] 0: run_ready buf lelvel1e01
+[   24.271890@0] 0: run_ready buf lelvel1e01
+[   24.291945@0] 0: run_ready buf lelvel1e01
+[   24.312002@0] 0: run_ready buf lelvel1e01
+[   24.332055@0] 0: run_ready buf lelvel1e01
+[   24.352109@0] 0: run_ready buf lelvel1e01
+[   24.372180@0] 0: run_ready buf lelvel1e01
+[   24.392236@0] 0: run_ready buf lelvel1e01
+[   24.412289@0] 0: run_ready buf lelvel1e01
+[   24.432350@0] 0: run_ready buf lelvel1e01
+[   24.452402@0] 0: run_ready buf lelvel1e01
+[   24.472462@0] 0: run_ready buf lelvel1e01
+[   24.492523@0] 0: run_ready buf lelvel1e01
+[   24.507529@0] nf_conntrack: default automatic helper assignment has been turned off for security reasons and CT-based  firewall rule not found. Use the iptables CT target to attach helpers instead.
+[   24.512587@0] 0: run_ready buf lelvel1e01
+[   24.532640@0] 0: run_ready buf lelvel1e01
+[   24.552711@0] 0: run_ready buf lelvel1e01
+[   24.572771@0] 0: run_ready buf lelvel1e01
+[   24.592831@0] 0: run_ready buf lelvel1e01
+[   24.612895@0] 0: run_ready buf lelvel1e01
+[   24.632949@0] 0: run_ready buf lelvel1e01
+[   24.653003@0] 0: run_ready buf lelvel1e01
+[   24.673051@0] 0: run_ready buf lelvel1e01
+[   24.693104@0] 0: run_ready buf lelvel1e01
+[   24.713161@0] 0: run_ready buf lelvel1e01
+[   24.733225@0] 0: run_ready buf lelvel1e01
+[   24.753277@0] 0: run_ready buf lelvel1e01
+[   24.773355@0] 0: run_ready buf lelvel1e01
+[   24.793410@0] 0: run_ready buf lelvel1e01
+[   24.813466@0] 0: run_ready buf lelvel1e01
+[   24.833536@0] 0: run_ready buf lelvel1e01
+[   24.853594@0] 0: run_ready buf lelvel1e01
+[   24.873667@0] 0: run_ready buf lelvel1e01
+[   24.893723@0] 0: run_ready buf lelvel1e01
+[   24.913786@0] 0: run_ready buf lelvel1e01
+[   24.933849@0] 0: run_ready buf lelvel1e01
+[   24.953906@0] 0: run_ready buf lelvel1e01
+[   24.973979@0] 0: run_ready buf lelvel1e01
+[   24.994052@0] 0: run_ready buf lelvel1e01
+[   25.014106@0] 0: run_ready buf lelvel1e01
+[   25.034163@0] 0: run_ready buf lelvel1e01
+[   25.054218@0] 0: run_ready buf lelvel1e01
+[   25.074291@0] 0: run_ready buf lelvel1e01
+[   25.094344@0] 0: run_ready buf lelvel1e01
+[   25.114401@0] 0: run_ready buf lelvel1e01
+[   25.134472@0] 0: run_ready buf lelvel1e01
+[   25.154532@0] 0: run_ready buf lelvel1e01
+[   25.174588@0] 0: run_ready buf lelvel1e01
+[   25.194656@0] 0: run_ready buf lelvel1e01
+[   25.214719@0] 0: run_ready buf lelvel1e01
+[   25.234775@0] 0: run_ready buf lelvel1e01
+[   25.254832@0] 0: run_ready buf lelvel1e01
+[   25.274884@0] 0: run_ready buf lelvel1e01
+[   25.294959@0] 0: run_ready buf lelvel1e01
+[   25.315026@0] 0: run_ready buf lelvel1e01
+[   25.335097@0] 0: run_ready buf lelvel1e01
+[   25.355180@0] 0: run_ready buf lelvel1e01
+[   25.375238@0] 0: run_ready buf lelvel1e01
+[   25.395302@0] 0: run_ready buf lelvel1e01
+[   25.415359@0] 0: run_ready buf lelvel1e01
+[   25.435447@0] 0: run_ready buf lelvel1e01
+[   25.455509@0] 0: run_ready buf lelvel1e01
+[   25.475571@0] 0: run_ready buf lelvel1e01
+[   25.495632@0] 0: run_ready buf lelvel1e01
+[   25.515684@0] 0: run_ready buf lelvel1e01
+[   25.535746@0] 0: run_ready buf lelvel1e01
+[   25.555809@0] 0: run_ready buf lelvel1e01
+[   25.575864@0] 0: run_ready buf lelvel1e01
+[   25.595924@0] 0: run_ready buf lelvel1e01
+[   25.615979@0] 0: run_ready buf lelvel1e01
+[   25.636031@0] 0: run_ready buf lelvel1e01
+[   25.656095@0] 0: run_ready buf lelvel1e01
+[   25.676160@0] 0: run_ready buf lelvel1e01
+[   25.696222@0] 0: run_ready buf lelvel1e01
+[   25.716286@0] 0: run_ready buf lelvel1e01
+[   25.736345@0] 0: run_ready buf lelvel1e01
+[   25.756405@0] 0: run_ready buf lelvel1e01
+[   25.776471@0] 0: run_ready buf lelvel1e01
+[   25.796537@0] 0: run_ready buf lelvel1e01
+[   25.816601@0] 0: run_ready buf lelvel1e01
+[   25.836664@0] 0: run_ready buf lelvel1e01
+[   25.856724@0] 0: run_ready buf lelvel1e01
+[   25.876788@0] 0: run_ready buf lelvel1e01
+[   25.896841@0] 0: run_ready buf lelvel1e01
+[   25.916896@0] 0: run_ready buf lelvel1e01
+[   25.936952@0] 0: run_ready buf lelvel1e01
+[   25.957012@0] 0: run_ready buf lelvel1e01
+[   25.977072@0] 0: run_ready buf lelvel1e01
+[   25.997121@0] 0: run_ready buf lelvel1e01
+[   26.017172@0] 0: run_ready buf lelvel1e01
+[   26.037228@0] 0: run_ready buf lelvel1e01
+[   26.057282@0] 0: run_ready buf lelvel1e01
+[   26.077330@0] 0: run_ready buf lelvel1e01
+[   26.097389@0] 0: run_ready buf lelvel1e01
+[   26.117450@0] 0: run_ready buf lelvel1e01
+[   26.137512@0] 0: run_ready buf lelvel1e01
+[   26.157567@0] 0: run_ready buf lelvel1e01
+[   26.177622@0] 0: run_ready buf lelvel1e01
+[   26.197677@0] 0: run_ready buf lelvel1e01
+[   26.217729@0] 0: run_ready buf lelvel1e01
+[   26.237861@0] 0: run_ready buf lelvel1e01
+[   26.257923@0] 0: run_ready buf lelvel1e01
+[   26.277981@0] 0: run_ready buf lelvel1e01
+[   26.298031@0] 0: run_ready buf lelvel1e01
+[   26.318085@0] 0: run_ready buf lelvel1e01
+[   26.338159@0] 0: run_ready buf lelvel1e01
+[   26.358224@0] 0: run_ready buf lelvel1e01
+[   26.378302@0] 0: run_ready buf lelvel1e01
+[   26.398358@0] 0: run_ready buf lelvel1e01
+[   26.418426@0] 0: run_ready buf lelvel1e01
+[   26.438487@0] 0: run_ready buf lelvel1e01
+[   26.458559@0] 0: run_ready buf lelvel1e01
+[   26.478625@0] 0: run_ready buf lelvel1e01
+[   26.498685@0] 0: run_ready buf lelvel1e01
+[   26.518754@0] 0: run_ready buf lelvel1e01
+[   26.538803@0] 0: run_ready buf lelvel1e01
+[   26.558859@0] 0: run_ready buf lelvel1e01
+[   26.578912@0] 0: run_ready buf lelvel1e01
+[   26.598976@0] 0: run_ready buf lelvel1e01
+[   26.619029@0] 0: run_ready buf lelvel1e01
+[   26.639084@0] 0: run_ready buf lelvel1e01
+[   26.659141@0] 0: run_ready buf lelvel1e01
+[   26.679198@0] 0: run_ready buf lelvel1e01
+[   26.699259@0] 0: run_ready buf lelvel1e01
+[   26.719331@0] 0: run_ready buf lelvel1e01
+[   26.739391@0] 0: run_ready buf lelvel1e01
+[   26.759477@0] 0: run_ready buf lelvel1e01
+[   26.779535@0] 0: run_ready buf lelvel1e01
+[   26.799678@0] 0: run_ready buf lelvel1e01
+[   26.819743@0] 0: run_ready buf lelvel1e01
+[   26.839810@0] 0: run_ready buf lelvel1e01
+[   26.859884@0] 0: run_ready buf lelvel1e01
+[   26.879942@0] 0: run_ready buf lelvel1e01
+[   26.900006@0] 0: run_ready buf lelvel1e01
+[   26.920079@0] 0: run_ready buf lelvel1e01
+[   26.940149@0] 0: run_ready buf lelvel1e01
+[   26.960208@0] 0: run_ready buf lelvel1e01
+[   26.980265@0] 0: run_ready buf lelvel1e01
+[   27.000327@0] 0: run_ready buf lelvel1e01
+[   27.020397@0] 0: run_ready buf lelvel1e01
+[   27.040476@0] 0: run_ready buf lelvel1e01
+[   27.060533@0] 0: run_ready buf lelvel1e01
+[   27.080595@0] 0: run_ready buf lelvel1e01
+[   27.100648@0] 0: run_ready buf lelvel1e01
+[   27.120703@0] 0: run_ready buf lelvel1e01
+[   27.140783@0] 0: run_ready buf lelvel1e01
+[   27.160839@0] 0: run_ready buf lelvel1e01
+[   27.180893@0] 0: run_ready buf lelvel1e01
+[   27.200947@0] 0: run_ready buf lelvel1e01
+[   27.221158@0] 0: run_ready buf lelvel1e01
+[   27.241225@0] 0: run_ready buf lelvel1e01
+[   27.261292@0] 0: run_ready buf lelvel1e01
+[   27.281342@0] 0: run_ready buf lelvel1e01
+[   27.301397@0] 0: run_ready buf lelvel1e01
+[   27.321447@0] 0: run_ready buf lelvel1e01
+[   27.341509@0] 0: run_ready buf lelvel1e01
+[   27.361562@0] 0: run_ready buf lelvel1e01
+[   27.381633@0] 0: run_ready buf lelvel1e01
+[   27.401692@0] 0: run_ready buf lelvel1e01
+[   27.421753@0] 0: run_ready buf lelvel1e01
+[   27.441826@0] 0: run_ready buf lelvel1e01
+[   27.461897@0] 0: run_ready buf lelvel1e01
+[   27.481953@0] 0: run_ready buf lelvel1e01
+[   27.502026@0] 0: run_ready buf lelvel1e01
+[   27.522119@0] 0: run_ready buf lelvel1e01
+[   27.542181@0] 0: run_ready buf lelvel1e01
+[   27.562242@0] 0: run_ready buf lelvel1e01
+[   27.582309@0] 0: run_ready buf lelvel1e01
+[   27.602359@0] 0: run_ready buf lelvel1e01
+[   27.622413@0] 0: run_ready buf lelvel1e01
+[   27.642472@0] 0: run_ready buf lelvel1e01
+[   27.662541@0] 0: run_ready buf lelvel1e01
+[   27.682602@0] 0: run_ready buf lelvel1e01
+[   27.702676@0] 0: run_ready buf lelvel1e01
+[   27.722739@0] 0: run_ready buf lelvel1e01
+[   27.742797@0] 0: run_ready buf lelvel1e01
+[   27.762851@0] 0: run_ready buf lelvel1e01
+[   27.782908@0] 0: run_ready buf lelvel1e01
+[   27.802959@0] 0: run_ready buf lelvel1e01
+[   27.823024@0] 0: run_ready buf lelvel1e01
+[   27.843089@0] 0: run_ready buf lelvel1e01
+[   27.863158@0] 0: run_ready buf lelvel1e01
+[   27.883209@0] 0: run_ready buf lelvel1e01
+[   27.903264@0] 0: run_ready buf lelvel1e01
+[   27.923328@0] 0: run_ready buf lelvel1e01
+[   27.943388@0] 0: run_ready buf lelvel1e01
+[   27.963448@0] 0: run_ready buf lelvel1e01
+[   27.983736@0] 0: run_ready buf lelvel1e01
+[   28.003794@0] 0: run_ready buf lelvel1e01
+[   28.023851@0] 0: run_ready buf lelvel1e01
+[   28.043914@0] 0: run_ready buf lelvel1e01
+[   28.063986@0] 0: run_ready buf lelvel1e01
+[   28.084041@0] 0: run_ready buf lelvel1e01
+[   28.104093@0] 0: run_ready buf lelvel1e01
+[   28.124148@0] 0: run_ready buf lelvel1e01
+[   28.144203@0] 0: run_ready buf lelvel1e01
+[   28.164269@0] 0: run_ready buf lelvel1e01
+[   28.184333@0] 0: run_ready buf lelvel1e01
+[   28.204532@0] 0: run_ready buf lelvel1e01
+[   28.224611@0] 0: run_ready buf lelvel1e01
+[   28.244664@0] 0: run_ready buf lelvel1e01
+[   28.264715@0] 0: run_ready buf lelvel1e01
+[   28.284764@0] 0: run_ready buf lelvel1e01
+[   28.304816@0] 0: run_ready buf lelvel1e01
+[   28.324866@0] 0: run_ready buf lelvel1e01
+[   28.344919@0] 0: run_ready buf lelvel1e01
+[   28.364972@0] 0: run_ready buf lelvel1e01
+[   28.385026@0] 0: run_ready buf lelvel1e01
+[   28.405080@0] 0: run_ready buf lelvel1e01
+[   28.425134@0] 0: run_ready buf lelvel1e01
+[   28.445191@0] 0: run_ready buf lelvel1e01
+[   28.465251@0] 0: run_ready buf lelvel1e01
+[   28.485306@0] 0: run_ready buf lelvel1e01
+[   28.505365@0] 0: run_ready buf lelvel1e01
+[   28.525422@0] 0: run_ready buf lelvel1e01
+[   28.545498@0] 0: run_ready buf lelvel1e01
+[   28.565560@0] 0: run_ready buf lelvel1e01
+[   28.585621@0] 0: run_ready buf lelvel1e01
+[   28.605689@0] 0: run_ready buf lelvel1e01
+[   28.625758@0] 0: run_ready buf lelvel1e01
+[   28.645815@0] 0: run_ready buf lelvel1e01
+[   28.665864@0] 0: run_ready buf lelvel1e01
+[   28.685919@0] 0: run_ready buf lelvel1e01
+[   28.705974@0] 0: run_ready buf lelvel1e01
+[   28.726031@0] 0: run_ready buf lelvel1e01
+[   28.746094@0] 0: run_ready buf lelvel1e01
+[   28.766165@0] 0: run_ready buf lelvel1e01
+[   28.786244@0] 0: run_ready buf lelvel1e01
+[   28.806335@0] 0: run_ready buf lelvel1e01
+[   28.826434@0] 0: run_ready buf lelvel1e01
+[   28.846499@0] 0: run_ready buf lelvel1e01
+[   28.866554@0] 0: run_ready buf lelvel1e01
+[   28.886602@0] 0: run_ready buf lelvel1e01
+[   28.906647@0] 0: run_ready buf lelvel1e01
+[   28.926697@0] 0: run_ready buf lelvel1e01
+[   28.946746@0] 0: run_ready buf lelvel1e01
+[   28.953162@2] hdmitx: hdmitx: config: hdr10-2
+[   28.953462@2] hdmitx: hdmitx: config: hlg-2
+[   28.955476@2] audio_dsp: buf=0
+[   28.955489@2] audio_dsp: IEC958_mode_raw=0
+[   28.957230@2] audio_dsp: buf=0
+[   28.957243@2] audio_dsp: IEC958_mode_raw=0
+[   28.957296@2] audio_dsp: IEC958_mode_codec= 0, IEC958 type 2 CH PCM
+[   28.957302@2] audio_dsp: last mode 0,now 0
+[   28.957310@2] e2procfs: AC3 output mode=downmix digital_raw=0
+[   28.957996@2] audio_dsp: buf=0
+[   28.958006@2] audio_dsp: IEC958_mode_raw=0
+[   28.958041@2] audio_dsp: IEC958_mode_codec= 0, IEC958 type 2 CH PCM
+[   28.958048@2] audio_dsp: last mode 0,now 0
+[   28.958055@2] e2procfs: AAC output mode=downmix digital_raw=0
+[   28.958678@2] audio_dsp: buf=0
+[   28.958687@2] audio_dsp: IEC958_mode_raw=0
+[   28.958720@2] audio_dsp: IEC958_mode_codec= 0, IEC958 type 2 CH PCM
+[   28.958727@2] audio_dsp: last mode 0,now 0
+[   28.958735@2] e2procfs: AAC+ output mode=downmix digital_raw=0
+[   28.960168@2] vout: vmode set to 1080p50hz
+[   28.960274@2] fb: current vmode=1080p50hz, cmd: 0x10000
+[   28.960283@2] vlock: event MODE_CHANGE_PRE 0
+[   28.960295@2] hdmitx: hdmitx_set_current_vmode[4204]
+[   28.960305@2] hdmitx: system: recalc before 1080p50hz 50 1
+[   28.960314@2] hdmitx: system: recalc after 1080p50hz 50 1
+[   28.960328@2] hdmitx: system: get current mode: 1080p50hz
+[   28.960334@2] hdmitx: system: update physcial size: 1600 900
+[   28.962407@2] hdmitx: video: already init VIC = 0  Now VIC = 31
+[   28.962418@2] hdmitx: video: rx edid only support RGB format
+[   28.962426@2] hdmitx: hw: div40: 0
+[   28.966792@0] 0: run_ready buf lelvel1e01
+[   28.986840@0] 0: run_ready buf lelvel1e01
+[   28.989566@2] hdmitx: this mode doesn't have frac_rate
+[   28.989575@2] hdmitx: frac_rate = 0
+[   28.989587@2] hdmitx: config HPLL = 5940000 frac_rate = 0
+[   28.989649@2] hdmitx: HPLLv1: 0xdb3a04f7
+[   28.989655@2] hdmitx: config HPLL done
+[   28.989666@2] hdmitx: set_hpll_od3_clk_div[643] div = 6
+[   28.989676@2] hdmitx: j = 4  vid_clk_div = 1
+[   28.989691@2] hdmitx: set enc for VIC: 31
+[   28.989717@0] hdmitx: system: irq 80000001 0
+[   29.006888@0] 0: run_ready buf lelvel1e01
+[   29.026931@0] 0: run_ready buf lelvel1e01
+[   29.031866@2] hdmitx: hw:  config hdmitx IP vic = 31 cd:4 cs: 0
+[   29.041974@2] hdmitx: video: Sink is HDMI device
+[   29.042010@2] hdmitx: hw: set audio
+[   29.042020@2] hdmitx: hw: hdmitx tx_aud_src = 0
+[   29.042037@2] hdmitx: fs = 0, cd = 4, tmds_clk = 148500
+[   29.042045@2] hdmitx: hw: aud_n_para = 6144
+[   29.042057@2] hdmitx: hw: set channel status
+[   29.042091@2] hdmitx: system: update rx hdr info 0
+[   29.042100@2] vout: new mode 1080p50hz set ok
+[   29.042106@2] fb: current vmode=1080p50hz, cmd: 0x20000
+[   29.042117@2] fb: outputmode changed to 1080p50hz, reset osd0, (0, 0, 1919, 1079) -> (0, 0, 1919, 1079)
+[   29.046977@0] 0: run_ready buf lelvel1e01
+[   29.062199@0] fb: osd_update_disp_axis_hw:pan_data(0,2160,1919,3239)
+[   29.062211@0] fb: osd_update_disp_axis_hw:dispdata(0,0,1919,1079)
+[   29.067036@0] 0: run_ready buf lelvel1e01
+[   29.087083@0] 0: run_ready buf lelvel1e01
+[   29.091576@2] hdmitx: [0x10000104]: 0x00000001
+[   29.091590@2] hdmitx: [0x10000180]: 0x000000ff
+[   29.091598@2] hdmitx: [0x10000181]: 0x000000ff
+[   29.091605@2] hdmitx: [0x10000182]: 0x00000003
+[   29.091610@2] hdmitx: [0x10000183]: 0x00000007
+[   29.091617@2] hdmitx: [0x10000184]: 0x0000003f
+[   29.091622@2] hdmitx: [0x10000185]: 0x00000002
+[   29.091629@2] hdmitx: [0x10000187]: 0x000000ff
+[   29.091634@2] hdmitx: [0x10000188]: 0x00000003
+[   29.102142@3] fb: osd[0] enable: 1 (enigma2)
+[   29.107133@0] 0: run_ready buf lelvel1e01
+[   29.122160@0] fb: osd_update_disp_axis_hw:pan_data(0,2160,1919,3239)
+[   29.122164@0] fb: osd_update_disp_axis_hw:dispdata(0,0,1919,1079)
+[   29.127173@0] 0: run_ready buf lelvel1e01
+[   29.142159@0] DOLBY: vout_notify_callback: VOUT_EVENT_MODE_CHANGE
+[   29.142167@0] vlock: event MODE_CHANGE
+[   29.147221@0] 0: run_ready buf lelvel1e01
+[   29.167276@0] 0: run_ready buf lelvel1e01
+[   29.187325@0] 0: run_ready buf lelvel1e01
+[   29.207375@0] 0: run_ready buf lelvel1e01
+[   29.227430@0] 0: run_ready buf lelvel1e01
+[   29.247497@0] 0: run_ready buf lelvel1e01
+[   29.267586@0] 0: run_ready buf lelvel1e01
+[   29.287645@0] 0: run_ready buf lelvel1e01
+[   29.307707@0] 0: run_ready buf lelvel1e01
+[   29.327776@0] 0: run_ready buf lelvel1e01
+[   29.347838@0] 0: run_ready buf lelvel1e01
+[   29.367908@0] 0: run_ready buf lelvel1e01
+[   29.387968@0] 0: run_ready buf lelvel1e01
+[   29.408026@0] 0: run_ready buf lelvel1e01
+[   29.428087@0] 0: run_ready buf lelvel1e01
+[   29.448142@0] 0: run_ready buf lelvel1e01
+[   29.468202@0] 0: run_ready buf lelvel1e01
+[   29.488264@0] 0: run_ready buf lelvel1e01
+[   29.508320@0] 0: run_ready buf lelvel1e01
+[   29.528379@0] 0: run_ready buf lelvel1e01
+[   29.548429@0] 0: run_ready buf lelvel1e01
+[   29.568481@0] 0: run_ready buf lelvel1e01
+[   29.588538@0] 0: run_ready buf lelvel1e01
+[   29.608593@0] 0: run_ready buf lelvel1e01
+[   29.628646@0] 0: run_ready buf lelvel1e01
+[   29.648707@0] 0: run_ready buf lelvel1e01
+[   29.668764@0] 0: run_ready buf lelvel1e01
+[   29.688822@0] 0: run_ready buf lelvel1e01
+[   29.708884@0] 0: run_ready buf lelvel1e01
+[   29.728940@0] 0: run_ready buf lelvel1e01
+[   29.748996@0] 0: run_ready buf lelvel1e01
+[   29.769052@0] 0: run_ready buf lelvel1e01
+[   29.789106@0] 0: run_ready buf lelvel1e01
+[   29.809162@0] 0: run_ready buf lelvel1e01
+[   29.829214@0] 0: run_ready buf lelvel1e01
+[   29.849270@0] 0: run_ready buf lelvel1e01
+[   29.869326@0] 0: run_ready buf lelvel1e01
+[   29.889385@0] 0: run_ready buf lelvel1e01
+[   29.909441@0] 0: run_ready buf lelvel1e01
+[   29.929491@0] 0: run_ready buf lelvel1e01
+[   29.949545@0] 0: run_ready buf lelvel1e01
+[   29.969603@0] 0: run_ready buf lelvel1e01
+[   29.989656@0] 0: run_ready buf lelvel1e01
+[   30.009719@0] 0: run_ready buf lelvel1e01
+[   30.029786@0] 0: run_ready buf lelvel1e01
+[   30.049850@0] 0: run_ready buf lelvel1e01
+[   30.069903@0] 0: run_ready buf lelvel1e01
+[   30.089971@0] 0: run_ready buf lelvel1e01
+[   30.110030@0] 0: run_ready buf lelvel1e01
+[   30.130099@0] 0: run_ready buf lelvel1e01
+[   30.150167@0] 0: run_ready buf lelvel1e01
+[   30.170229@0] 0: run_ready buf lelvel1e01
+[   30.190307@0] 0: run_ready buf lelvel1e01
+[   30.210374@0] 0: run_ready buf lelvel1e01
+[   30.230449@0] 0: run_ready buf lelvel1e01
+[   30.250545@0] 0: run_ready buf lelvel1e01
+[   30.270621@0] 0: run_ready buf lelvel1e01
+[   30.290705@0] 0: run_ready buf lelvel1e01
+[   30.310768@0] 0: run_ready buf lelvel1e01
+[   30.330858@0] 0: run_ready buf lelvel1e01
+[   30.350950@0] 0: run_ready buf lelvel1e01
+[   30.371040@0] 0: run_ready buf lelvel1e01
+[   30.391116@0] 0: run_ready buf lelvel1e01
+[   30.411183@0] 0: run_ready buf lelvel1e01
+[   30.431259@0] 0: run_ready buf lelvel1e01
+[   30.451326@0] 0: run_ready buf lelvel1e01
+[   30.471395@0] 0: run_ready buf lelvel1e01
+[   30.491473@0] 0: run_ready buf lelvel1e01
+[   30.511550@0] 0: run_ready buf lelvel1e01
+[   30.531632@0] 0: run_ready buf lelvel1e01
+[   30.551688@0] 0: run_ready buf lelvel1e01
+[   30.571741@0] 0: run_ready buf lelvel1e01
+[   30.591801@0] 0: run_ready buf lelvel1e01
+[   30.611856@0] 0: run_ready buf lelvel1e01
+[   30.631905@0] 0: run_ready buf lelvel1e01
+[   30.651958@0] 0: run_ready buf lelvel1e01
+[   30.672010@0] 0: run_ready buf lelvel1e01
+[   30.692070@0] 0: run_ready buf lelvel1e01
+[   30.712124@0] 0: run_ready buf lelvel1e01
+[   30.732181@0] 0: run_ready buf lelvel1e01
+[   30.752239@0] 0: run_ready buf lelvel1e01
+[   30.772299@0] 0: run_ready buf lelvel1e01
+[   30.792353@0] 0: run_ready buf lelvel1e01
+[   30.812405@0] 0: run_ready buf lelvel1e01
+[   30.832462@0] 0: run_ready buf lelvel1e01
+[   30.852524@0] 0: run_ready buf lelvel1e01
+[   30.872587@0] 0: run_ready buf lelvel1e01
+[   30.892636@0] 0: run_ready buf lelvel1e01
+[   30.912706@0] 0: run_ready buf lelvel1e01
+[   30.932762@0] 0: run_ready buf lelvel1e01
+[   30.952817@0] 0: run_ready buf lelvel1e01
+[   30.972884@0] 0: run_ready buf lelvel1e01
+[   30.992954@0] 0: run_ready buf lelvel1e01
+[   31.013009@0] 0: run_ready buf lelvel1e01
+[   31.033068@0] 0: run_ready buf lelvel1e01
+[   31.053124@0] 0: run_ready buf lelvel1e01
+[   31.073200@0] 0: run_ready buf lelvel1e01
+[   31.093267@0] 0: run_ready buf lelvel1e01
+[   31.113328@0] 0: run_ready buf lelvel1e01
+[   31.133401@0] 0: run_ready buf lelvel1e01
+[   31.153461@0] 0: run_ready buf lelvel1e01
+[   31.173521@0] 0: run_ready buf lelvel1e01
+[   31.193583@0] 0: run_ready buf lelvel1e01
+[   31.213655@0] 0: run_ready buf lelvel1e01
+[   31.233709@0] 0: run_ready buf lelvel1e01
+[   31.253763@0] 0: run_ready buf lelvel1e01
+[   31.273824@0] 0: run_ready buf lelvel1e01
+[   31.293884@0] 0: run_ready buf lelvel1e01
+[   31.313945@0] 0: run_ready buf lelvel1e01
+[   31.333997@0] 0: run_ready buf lelvel1e01
+[   31.354054@0] 0: run_ready buf lelvel1e01
+[   31.374111@0] 0: run_ready buf lelvel1e01
+[   31.394164@0] 0: run_ready buf lelvel1e01
+[   31.414214@0] 0: run_ready buf lelvel1e01
+[   31.434268@0] 0: run_ready buf lelvel1e01
+[   31.454325@0] 0: run_ready buf lelvel1e01
+[   31.474388@0] 0: run_ready buf lelvel1e01
+[   31.494464@0] 0: run_ready buf lelvel1e01
+[   31.514539@0] 0: run_ready buf lelvel1e01
+[   31.534613@0] 0: run_ready buf lelvel1e01
+[   31.554681@0] 0: run_ready buf lelvel1e01
+[   31.574734@0] 0: run_ready buf lelvel1e01
+[   31.594793@0] 0: run_ready buf lelvel1e01
+[   31.614884@0] 0: run_ready buf lelvel1e01
+[   31.634956@0] 0: run_ready buf lelvel1e01
+[   31.655020@0] 0: run_ready buf lelvel1e01
+[   31.675076@0] 0: run_ready buf lelvel1e01
+[   31.695136@0] 0: run_ready buf lelvel1e01
+[   31.715195@0] 0: run_ready buf lelvel1e01
+[   31.735255@0] 0: run_ready buf lelvel1e01
+[   31.755315@0] 0: run_ready buf lelvel1e01
+[   31.775387@0] 0: run_ready buf lelvel1e01
+[   31.795446@0] 0: run_ready buf lelvel1e01
+[   31.815508@0] 0: run_ready buf lelvel1e01
+[   31.835574@0] 0: run_ready buf lelvel1e01
+[   31.855655@0] 0: run_ready buf lelvel1e01
+[   31.875710@0] 0: run_ready buf lelvel1e01
+[   31.895770@0] 0: run_ready buf lelvel1e01
+[   31.915831@0] 0: run_ready buf lelvel1e01
+[   31.935890@0] 0: run_ready buf lelvel1e01
+[   31.955948@0] 0: run_ready buf lelvel1e01
+[   31.976007@0] 0: run_ready buf lelvel1e01
+[   31.996069@0] 0: run_ready buf lelvel1e01
+[   32.016129@0] 0: run_ready buf lelvel1e01
+[   32.036201@0] 0: run_ready buf lelvel1e01
+[   32.056266@0] 0: run_ready buf lelvel1e01
+[   32.076346@0] 0: run_ready buf lelvel1e01
+[   32.096405@0] 0: run_ready buf lelvel1e01
+[   32.116472@0] 0: run_ready buf lelvel1e01
+[   32.136549@0] 0: run_ready buf lelvel1e01
+[   32.156625@0] 0: run_ready buf lelvel1e01
+[   32.176691@0] 0: run_ready buf lelvel1e01
+[   32.196751@0] 0: run_ready buf lelvel1e01
+[   32.216824@0] 0: run_ready buf lelvel1e01
+[   32.236891@0] 0: run_ready buf lelvel1e01
+[   32.256952@0] 0: run_ready buf lelvel1e01
+[   32.277004@0] 0: run_ready buf lelvel1e01
+[   32.297053@0] 0: run_ready buf lelvel1e01
+[   32.317109@0] 0: run_ready buf lelvel1e01
+[   32.337163@0] 0: run_ready buf lelvel1e01
+[   32.357217@0] 0: run_ready buf lelvel1e01
+[   32.377269@0] 0: run_ready buf lelvel1e01
+[   32.397328@0] 0: run_ready buf lelvel1e01
+[   32.417385@0] 0: run_ready buf lelvel1e01
+[   32.437442@0] 0: run_ready buf lelvel1e01
+[   32.457499@0] 0: run_ready buf lelvel1e01
+[   32.477554@0] 0: run_ready buf lelvel1e01
+[   32.497610@0] 0: run_ready buf lelvel1e01
+[   32.517667@0] 0: run_ready buf lelvel1e01
+[   32.537718@0] 0: run_ready buf lelvel1e01
+[   32.557772@0] 0: run_ready buf lelvel1e01
+[   32.577820@0] 0: run_ready buf lelvel1e01
+[   32.597878@0] 0: run_ready buf lelvel1e01
+[   32.617938@0] 0: run_ready buf lelvel1e01
+[   32.638013@0] 0: run_ready buf lelvel1e01
+[   32.658066@0] 0: run_ready buf lelvel1e01
+[   32.678130@0] 0: run_ready buf lelvel1e01
+[   32.698177@0] 0: run_ready buf lelvel1e01
+[   32.718228@0] 0: run_ready buf lelvel1e01
+[   32.738274@0] 0: run_ready buf lelvel1e01
+[   32.758325@0] 0: run_ready buf lelvel1e01
+[   32.778375@0] 0: run_ready buf lelvel1e01
+[   32.798421@0] 0: run_ready buf lelvel1e01
+[   32.818483@0] 0: run_ready buf lelvel1e01
+[   32.838549@0] 0: run_ready buf lelvel1e01
+[   32.858628@0] 0: run_ready buf lelvel1e01
+[   32.878709@0] 0: run_ready buf lelvel1e01
+[   32.898772@0] 0: run_ready buf lelvel1e01
+[   32.918846@0] 0: run_ready buf lelvel1e01
+[   32.938916@0] 0: run_ready buf lelvel1e01
+[   32.958989@0] 0: run_ready buf lelvel1e01
+[   32.979063@0] 0: run_ready buf lelvel1e01
+[   32.999117@0] 0: run_ready buf lelvel1e01
+[   33.019172@0] 0: run_ready buf lelvel1e01
+[   33.039237@0] 0: run_ready buf lelvel1e01
+[   33.059339@0] 0: run_ready buf lelvel1e01
+[   33.079400@0] 0: run_ready buf lelvel1e01
+[   33.099463@0] 0: run_ready buf lelvel1e01
+[   33.119521@0] 0: run_ready buf lelvel1e01
+[   33.139588@0] 0: run_ready buf lelvel1e01
+[   33.159671@0] 0: run_ready buf lelvel1e01
+[   33.179762@0] 0: run_ready buf lelvel1e01
+[   33.199817@0] 0: run_ready buf lelvel1e01
+[   33.219872@0] 0: run_ready buf lelvel1e01
+[   33.239933@0] 0: run_ready buf lelvel1e01
+[   33.259987@0] 0: run_ready buf lelvel1e01
+[   33.280049@0] 0: run_ready buf lelvel1e01
+[   33.300105@0] 0: run_ready buf lelvel1e01
+[   33.320156@0] 0: run_ready buf lelvel1e01
+[   33.340207@0] 0: run_ready buf lelvel1e01
+[   33.360261@0] 0: run_ready buf lelvel1e01
+[   33.380315@0] 0: run_ready buf lelvel1e01
+[   33.400364@0] 0: run_ready buf lelvel1e01
+[   33.420427@0] 0: run_ready buf lelvel1e01
+[   33.440487@0] 0: run_ready buf lelvel1e01
+[   33.460542@0] 0: run_ready buf lelvel1e01
+[   33.480603@0] 0: run_ready buf lelvel1e01
+[   33.500659@0] 0: run_ready buf lelvel1e01
+[   33.520719@0] 0: run_ready buf lelvel1e01
+[   33.540780@0] 0: run_ready buf lelvel1e01
+[   33.560840@0] 0: run_ready buf lelvel1e01
+[   33.580897@0] 0: run_ready buf lelvel1e01
+[   33.600953@0] 0: run_ready buf lelvel1e01
+[   33.621013@0] 0: run_ready buf lelvel1e01
+[   33.641063@0] 0: run_ready buf lelvel1e01
+[   33.661119@0] 0: run_ready buf lelvel1e01
+[   33.681173@0] 0: run_ready buf lelvel1e01
+[   33.701225@0] 0: run_ready buf lelvel1e01
+[   33.721282@0] 0: run_ready buf lelvel1e01
+[   33.741346@0] 0: run_ready buf lelvel1e01
+[   33.760357@2] 
+[   33.760357@2] [amvideo..] saturation_post:0 hue_post:0 mab:1000000
+[   33.761407@0] 0: run_ready buf lelvel1e01
+[   33.781471@0] 0: run_ready buf lelvel1e01
+[   33.801526@0] 0: run_ready buf lelvel1e01
+[   33.821608@0] 0: run_ready buf lelvel1e01
+[   33.841675@0] 0: run_ready buf lelvel1e01
+[   33.861731@0] 0: run_ready buf lelvel1e01
+[   33.881794@0] 0: run_ready buf lelvel1e01
+[   33.901853@0] 0: run_ready buf lelvel1e01
+[   33.921909@0] 0: run_ready buf lelvel1e01
+[   33.941956@0] 0: run_ready buf lelvel1e01
+[   33.962222@0] 0: run_ready buf lelvel1e01
+[   33.982285@0] 0: run_ready buf lelvel1e01
+[   34.002339@0] 0: run_ready buf lelvel1e01
+[   34.022412@0] 0: run_ready buf lelvel1e01
+[   34.042465@0] 0: run_ready buf lelvel1e01
+[   34.062520@0] 0: run_ready buf lelvel1e01
+[   34.082601@0] 0: run_ready buf lelvel1e01
+[   34.102669@0] 0: run_ready buf lelvel1e01
+[   34.122738@0] 0: run_ready buf lelvel1e01
+[   34.142793@0] 0: run_ready buf lelvel1e01
+[   34.162857@0] 0: run_ready buf lelvel1e01
+[   34.182917@0] 0: run_ready buf lelvel1e01
+[   34.202996@0] 0: run_ready buf lelvel1e01
+[   34.223057@0] 0: run_ready buf lelvel1e01
+[   34.243125@0] 0: run_ready buf lelvel1e01
+[   34.263188@0] 0: run_ready buf lelvel1e01
+[   34.283264@0] 0: run_ready buf lelvel1e01
+[   34.303317@0] 0: run_ready buf lelvel1e01
+[   34.323425@0] 0: run_ready buf lelvel1e01
+[   34.343487@0] 0: run_ready buf lelvel1e01
+[   34.352935@2] OpenVFD: brightness = 6
+[   34.363540@0] 0: run_ready buf lelvel1e01
+[   34.383591@0] 0: run_ready buf lelvel1e01
+[   34.394469@0] OpenVFD: CIG20 signal=0% level=0 slot12=0x0000\n
+[   34.403647@0] 0: run_ready buf lelvel1e01
+[   34.423691@0] 0: run_ready buf lelvel1e01
+[   34.443798@0] 0: run_ready buf lelvel1e01
+[   34.463857@0] 0: run_ready buf lelvel1e01
+[   34.483921@0] 0: run_ready buf lelvel1e01
+[   34.503986@0] 0: run_ready buf lelvel1e01
+[   34.524055@0] 0: run_ready buf lelvel1e01
+[   34.544115@0] 0: run_ready buf lelvel1e01
+[   34.564190@0] 0: run_ready buf lelvel1e01
+[   34.584251@0] 0: run_ready buf lelvel1e01
+[   34.604318@0] 0: run_ready buf lelvel1e01
+[   34.624379@0] 0: run_ready buf lelvel1e01
+[   34.644444@0] 0: run_ready buf lelvel1e01
+[   34.664507@0] 0: run_ready buf lelvel1e01
+[   34.684591@0] 0: run_ready buf lelvel1e01
+[   34.704680@0] 0: run_ready buf lelvel1e01
+[   34.724746@0] 0: run_ready buf lelvel1e01
+[   34.744808@0] 0: run_ready buf lelvel1e01
+[   34.764877@0] 0: run_ready buf lelvel1e01
+[   34.784943@0] 0: run_ready buf lelvel1e01
+[   34.805012@0] 0: run_ready buf lelvel1e01
+[   34.825076@0] 0: run_ready buf lelvel1e01
+[   34.845141@0] 0: run_ready buf lelvel1e01
+[   34.865204@0] 0: run_ready buf lelvel1e01
+[   34.885264@0] 0: run_ready buf lelvel1e01
+[   34.905326@0] 0: run_ready buf lelvel1e01
+[   34.925392@0] 0: run_ready buf lelvel1e01
+[   34.945449@0] 0: run_ready buf lelvel1e01
+[   34.965509@0] 0: run_ready buf lelvel1e01
+[   34.985568@0] 0: run_ready buf lelvel1e01
+[   35.005643@0] 0: run_ready buf lelvel1e01
+[   35.025700@0] 0: run_ready buf lelvel1e01
+[   35.045762@0] 0: run_ready buf lelvel1e01
+[   35.065828@0] 0: run_ready buf lelvel1e01
+[   35.085890@0] 0: run_ready buf lelvel1e01
+[   35.106010@0] 0: run_ready buf lelvel1e01
+[   35.126067@0] 0: run_ready buf lelvel1e01
+[   35.146128@0] 0: run_ready buf lelvel1e01
+[   35.166187@0] 0: run_ready buf lelvel1e01
+[   35.186246@0] 0: run_ready buf lelvel1e01
+[   35.206306@0] 0: run_ready buf lelvel1e01
+[   35.226367@0] 0: run_ready buf lelvel1e01
+[   35.246428@0] 0: run_ready buf lelvel1e01
+[   35.266486@0] 0: run_ready buf lelvel1e01
+[   35.286546@0] 0: run_ready buf lelvel1e01
+[   35.306620@0] 0: run_ready buf lelvel1e01
+[   35.326691@0] 0: run_ready buf lelvel1e01
+[   35.346761@0] 0: run_ready buf lelvel1e01
+[   35.366838@0] 0: run_ready buf lelvel1e01
+[   35.386907@0] 0: run_ready buf lelvel1e01
+[   35.406989@0] 0: run_ready buf lelvel1e01
+[   35.427066@0] 0: run_ready buf lelvel1e01
+[   35.447127@0] 0: run_ready buf lelvel1e01
+[   35.467188@0] 0: run_ready buf lelvel1e01
+[   35.487258@0] 0: run_ready buf lelvel1e01
+[   35.507325@0] 0: run_ready buf lelvel1e01
+[   35.527394@0] 0: run_ready buf lelvel1e01
+[   35.547461@0] 0: run_ready buf lelvel1e01
+[   35.567526@0] 0: run_ready buf lelvel1e01
+[   35.587585@0] 0: run_ready buf lelvel1e01
+[   35.607640@0] 0: run_ready buf lelvel1e01
+[   35.627700@0] 0: run_ready buf lelvel1e01
+[   35.647752@0] 0: run_ready buf lelvel1e01
+[   35.667844@0] 0: run_ready buf lelvel1e01
+[   35.687904@0] 0: run_ready buf lelvel1e01
+[   35.707967@0] 0: run_ready buf lelvel1e01
+[   35.728037@0] 0: run_ready buf lelvel1e01
+[   35.748105@0] 0: run_ready buf lelvel1e01
+[   35.748147@0] OpenVFD: CIG20 signal=0% level=0 slot12=0x0000\n
+[   35.768174@0] 0: run_ready buf lelvel1e01
+[   35.788245@0] 0: run_ready buf lelvel1e01
+[   35.808318@0] 0: run_ready buf lelvel1e01
+[   35.828380@0] 0: run_ready buf lelvel1e01
+[   35.848447@0] 0: run_ready buf lelvel1e01
+[   35.868508@0] 0: run_ready buf lelvel1e01
+[   35.888566@0] 0: run_ready buf lelvel1e01
+[   35.908623@0] 0: run_ready buf lelvel1e01
+[   35.928681@0] 0: run_ready buf lelvel1e01
+[   35.948742@0] 0: run_ready buf lelvel1e01
+[   35.968800@0] 0: run_ready buf lelvel1e01
+[   35.988858@0] 0: run_ready buf lelvel1e01
+[   36.008913@0] 0: run_ready buf lelvel1e01
+[   36.028968@0] 0: run_ready buf lelvel1e01
+[   36.049024@0] 0: run_ready buf lelvel1e01
+[   36.069086@0] 0: run_ready buf lelvel1e01
+[   36.089149@0] 0: run_ready buf lelvel1e01
+[   36.109209@0] 0: run_ready buf lelvel1e01
+[   36.129285@0] 0: run_ready buf lelvel1e01
+[   36.149363@0] 0: run_ready buf lelvel1e01
+[   36.169436@0] 0: run_ready buf lelvel1e01
+[   36.189511@0] 0: run_ready buf lelvel1e01
+[   36.209575@0] 0: run_ready buf lelvel1e01
+[   36.229641@0] 0: run_ready buf lelvel1e01
+[   36.249703@0] 0: run_ready buf lelvel1e01
+[   36.269762@0] 0: run_ready buf lelvel1e01
+[   36.282136@2] video_disable_store(0)
+[   36.282157@2] VID: VD1 on
+[   36.289837@0] 0: run_ready buf lelvel1e01
+[   36.309917@0] 0: run_ready buf lelvel1e01
+[   36.322192@0] VIDEO: VsyncEnableVideoLayer
+[   36.329997@0] 0: run_ready buf lelvel1e01
+[   36.350058@0] 0: run_ready buf lelvel1e01
+[   36.370117@0] 0: run_ready buf lelvel1e01
+[   36.390174@0] 0: run_ready buf lelvel1e01
+[   36.410237@0] 0: run_ready buf lelvel1e01
+[   36.430291@0] 0: run_ready buf lelvel1e01
+[   36.450349@0] 0: run_ready buf lelvel1e01
+[   36.470403@0] 0: run_ready buf lelvel1e01
+[   36.490455@0] 0: run_ready buf lelvel1e01
+[   36.510497@0] 0: run_ready buf lelvel1e01
+[   36.530555@0] 0: run_ready buf lelvel1e01
+[   36.550607@0] 0: run_ready buf lelvel1e01
+[   36.570669@0] 0: run_ready buf lelvel1e01
+[   36.590734@0] 0: run_ready buf lelvel1e01
+[   36.610802@0] 0: run_ready buf lelvel1e01
+[   36.630878@0] 0: run_ready buf lelvel1e01
+[   36.650937@0] 0: run_ready buf lelvel1e01
+[   36.670994@0] 0: run_ready buf lelvel1e01
+[   36.691046@0] 0: run_ready buf lelvel1e01
+[   36.711093@0] 0: run_ready buf lelvel1e01
+[   36.731138@0] 0: run_ready buf lelvel1e01
+[   36.751177@0] 0: run_ready buf lelvel1e01
+[   36.771214@0] 0: run_ready buf lelvel1e01
+[   36.791260@0] 0: run_ready buf lelvel1e01
+[   36.811322@0] 0: run_ready buf lelvel1e01
+[   36.831382@0] 0: run_ready buf lelvel1e01
+[   36.851444@0] 0: run_ready buf lelvel1e01
+[   36.871499@0] 0: run_ready buf lelvel1e01
+[   36.891546@0] 0: run_ready buf lelvel1e01
+[   36.911599@0] 0: run_ready buf lelvel1e01
+[   36.931651@0] 0: run_ready buf lelvel1e01
+[   36.951700@0] 0: run_ready buf lelvel1e01
+[   36.971744@0] 0: run_ready buf lelvel1e01
+[   36.991789@0] 0: run_ready buf lelvel1e01
+[   37.011847@0] 0: run_ready buf lelvel1e01
+[   37.031895@0] 0: run_ready buf lelvel1e01
+[   37.051938@0] 0: run_ready buf lelvel1e01
+[   37.071981@0] 0: run_ready buf lelvel1e01
+[   37.092028@0] 0: run_ready buf lelvel1e01
+[   37.112074@0] 0: run_ready buf lelvel1e01
+[   37.132140@0] 0: run_ready buf lelvel1e01
+[   37.152195@0] 0: run_ready buf lelvel1e01
+[   37.172235@0] 0: run_ready buf lelvel1e01
+[   37.192279@0] 0: run_ready buf lelvel1e01
+[   37.212324@0] 0: run_ready buf lelvel1e01
+[   37.232368@0] 0: run_ready buf lelvel1e01
+[   37.252433@0] 0: run_ready buf lelvel1e01
+[   37.272484@0] 0: run_ready buf lelvel1e01
+[   37.292541@0] 0: run_ready buf lelvel1e01
+[   37.312597@0] 0: run_ready buf lelvel1e01
+[   37.332641@0] 0: run_ready buf lelvel1e01
+[   37.352690@0] 0: run_ready buf lelvel1e01
+[   37.372734@0] 0: run_ready buf lelvel1e01
+[   37.392777@0] 0: run_ready buf lelvel1e01
+[   37.412842@0] 0: run_ready buf lelvel1e01
+[   37.432905@0] 0: run_ready buf lelvel1e01
+[   37.452976@0] 0: run_ready buf lelvel1e01
+[   37.473032@0] 0: run_ready buf lelvel1e01
+[   37.493078@0] 0: run_ready buf lelvel1e01
+[   37.513125@0] 0: run_ready buf lelvel1e01
+[   37.533177@0] 0: run_ready buf lelvel1e01
+[   37.553227@0] 0: run_ready buf lelvel1e01
+[   37.573289@0] 0: run_ready buf lelvel1e01
+[   37.593354@0] 0: run_ready buf lelvel1e01
+[   37.613411@0] 0: run_ready buf lelvel1e01
+[   37.633470@0] 0: run_ready buf lelvel1e01
+[   37.653523@0] 0: run_ready buf lelvel1e01
+[   37.673573@0] 0: run_ready buf lelvel1e01
+[   37.693620@0] 0: run_ready buf lelvel1e01
+[   37.713667@0] 0: run_ready buf lelvel1e01
+[   37.733712@0] 0: run_ready buf lelvel1e01
+[   37.753754@0] 0: run_ready buf lelvel1e01
+[   37.773797@0] 0: run_ready buf lelvel1e01
+[   37.793846@0] 0: run_ready buf lelvel1e01
+[   37.813912@0] 0: run_ready buf lelvel1e01
+[   37.833971@0] 0: run_ready buf lelvel1e01
+[   37.854019@0] 0: run_ready buf lelvel1e01
+[   37.874063@0] 0: run_ready buf lelvel1e01
+[   37.894108@0] 0: run_ready buf lelvel1e01
+[   37.914162@0] 0: run_ready buf lelvel1e01
+[   37.934217@0] 0: run_ready buf lelvel1e01
+[   37.954305@0] 0: run_ready buf lelvel1e01
+[   37.974363@0] 0: run_ready buf lelvel1e01
+[   37.994419@0] 0: run_ready buf lelvel1e01
+[   38.014464@0] 0: run_ready buf lelvel1e01
+[   38.034511@0] 0: run_ready buf lelvel1e01
+[   38.054555@0] 0: run_ready buf lelvel1e01
+[   38.074602@0] 0: run_ready buf lelvel1e01
+[   38.094650@0] 0: run_ready buf lelvel1e01
+[   38.114689@0] 0: run_ready buf lelvel1e01
+[   38.134761@0] 0: run_ready buf lelvel1e01
+[   38.154822@0] 0: run_ready buf lelvel1e01
+[   38.174869@0] 0: run_ready buf lelvel1e01
+[   38.194914@0] 0: run_ready buf lelvel1e01
+[   38.214957@0] 0: run_ready buf lelvel1e01
+[   38.234999@0] 0: run_ready buf lelvel1e01
+[   38.255070@0] 0: run_ready buf lelvel1e01
+[   38.275119@0] 0: run_ready buf lelvel1e01
+[   38.295167@0] 0: run_ready buf lelvel1e01
+[   38.315207@0] 0: run_ready buf lelvel1e01
+[   38.335248@0] 0: run_ready buf lelvel1e01
+[   38.355285@0] 0: run_ready buf lelvel1e01
+[   38.375330@0] 0: run_ready buf lelvel1e01
+[   38.395367@0] 0: run_ready buf lelvel1e01
+[   38.415424@0] 0: run_ready buf lelvel1e01
+[   38.435482@0] 0: run_ready buf lelvel1e01
+[   38.455536@0] 0: run_ready buf lelvel1e01
+[   38.475582@0] 0: run_ready buf lelvel1e01
+[   38.495622@0] 0: run_ready buf lelvel1e01
+[   38.515661@0] 0: run_ready buf lelvel1e01
+[   38.535710@0] 0: run_ready buf lelvel1e01
+[   38.555758@0] 0: run_ready buf lelvel1e01
+[   38.575830@0] 0: run_ready buf lelvel1e01
+[   38.595937@0] 0: run_ready buf lelvel1e01
+[   38.615987@0] 0: run_ready buf lelvel1e01
+[   38.636042@0] 0: run_ready buf lelvel1e01
+[   38.656096@0] 0: run_ready buf lelvel1e01
+[   38.676143@0] 0: run_ready buf lelvel1e01
+[   38.696182@0] 0: run_ready buf lelvel1e01
+[   38.716224@0] 0: run_ready buf lelvel1e01
+[   38.736258@0] 0: run_ready buf lelvel1e01
+[   38.756300@0] 0: run_ready buf lelvel1e01
+[   38.776336@0] 0: run_ready buf lelvel1e01
+[   38.796382@0] 0: run_ready buf lelvel1e01
+[   38.816447@0] 0: run_ready buf lelvel1e01
+[   38.836492@0] 0: run_ready buf lelvel1e01
+[   38.856537@0] 0: run_ready buf lelvel1e01
+[   38.876577@0] 0: run_ready buf lelvel1e01
+[   38.896619@0] 0: run_ready buf lelvel1e01
+[   38.916676@0] 0: run_ready buf lelvel1e01
+[   38.936726@0] 0: run_ready buf lelvel1e01
+[   38.956774@0] 0: run_ready buf lelvel1e01
+[   38.976838@0] 0: run_ready buf lelvel1e01
+[   38.996891@0] 0: run_ready buf lelvel1e01
+[   39.016934@0] 0: run_ready buf lelvel1e01
+[   39.036983@0] 0: run_ready buf lelvel1e01
+[   39.057032@0] 0: run_ready buf lelvel1e01
+[   39.077079@0] 0: run_ready buf lelvel1e01
+[   39.097128@0] 0: run_ready buf lelvel1e01
+[   39.117174@0] 0: run_ready buf lelvel1e01
+[   39.137213@0] 0: run_ready buf lelvel1e01
+[   39.157272@0] 0: run_ready buf lelvel1e01
+[   39.177327@0] 0: run_ready buf lelvel1e01
+[   39.197368@0] 0: run_ready buf lelvel1e01
+[   39.217408@0] 0: run_ready buf lelvel1e01
+[   39.237447@0] 0: run_ready buf lelvel1e01
+[   39.257508@0] 0: run_ready buf lelvel1e01
+[   39.277559@0] 0: run_ready buf lelvel1e01
+[   39.297607@0] 0: run_ready buf lelvel1e01
+[   39.317652@0] 0: run_ready buf lelvel1e01
+[   39.337717@0] 0: run_ready buf lelvel1e01
+[   39.357781@0] 0: run_ready buf lelvel1e01
+[   39.377842@0] 0: run_ready buf lelvel1e01
+[   39.397889@0] 0: run_ready buf lelvel1e01
+[   39.417951@0] 0: run_ready buf lelvel1e01
+[   39.438012@0] 0: run_ready buf lelvel1e01
+[   39.458086@0] 0: run_ready buf lelvel1e01
+[   39.478160@0] 0: run_ready buf lelvel1e01
+[   39.498241@0] 0: run_ready buf lelvel1e01
+[   39.518306@0] 0: run_ready buf lelvel1e01
+[   39.538376@0] 0: run_ready buf lelvel1e01
+[   39.558443@0] 0: run_ready buf lelvel1e01
+[   39.578509@0] 0: run_ready buf lelvel1e01
+[   39.598568@0] 0: run_ready buf lelvel1e01
+[   39.618632@0] 0: run_ready buf lelvel1e01
+[   39.638694@0] 0: run_ready buf lelvel1e01
+[   39.658773@0] 0: run_ready buf lelvel1e01
+[   39.678833@0] 0: run_ready buf lelvel1e01
+[   39.698889@0] 0: run_ready buf lelvel1e01
+[   39.718970@0] 0: run_ready buf lelvel1e01
+[   39.739043@0] 0: run_ready buf lelvel1e01
+[   39.759123@0] 0: run_ready buf lelvel1e01
+[   39.779188@0] 0: run_ready buf lelvel1e01
+[   39.799242@0] 0: run_ready buf lelvel1e01
+[   39.819305@0] 0: run_ready buf lelvel1e01
+[   39.839358@0] 0: run_ready buf lelvel1e01
+[   39.859401@0] 0: run_ready buf lelvel1e01
+[   39.879441@0] 0: run_ready buf lelvel1e01
+[   39.899484@0] 0: run_ready buf lelvel1e01
+[   39.919543@0] 0: run_ready buf lelvel1e01
+[   39.939599@0] 0: run_ready buf lelvel1e01
+[   39.959651@0] 0: run_ready buf lelvel1e01
+[   39.979699@0] 0: run_ready buf lelvel1e01
+[   39.999743@0] 0: run_ready buf lelvel1e01
+[   40.019787@0] 0: run_ready buf lelvel1e01
+[   40.039832@0] 0: run_ready buf lelvel1e01
+[   40.059871@0] 0: run_ready buf lelvel1e01
+[   40.079918@0] 0: run_ready buf lelvel1e01
+[   40.099976@0] 0: run_ready buf lelvel1e01
+[   40.120275@0] 0: run_ready buf lelvel1e01
+[   40.140319@0] 0: run_ready buf lelvel1e01
+[   40.160383@0] 0: run_ready buf lelvel1e01
+[   40.180434@0] 0: run_ready buf lelvel1e01
+[   40.200481@0] 0: run_ready buf lelvel1e01
+[   40.220526@0] 0: run_ready buf lelvel1e01
+[   40.240572@0] 0: run_ready buf lelvel1e01
+[   40.260638@0] 0: run_ready buf lelvel1e01
+[   40.280689@0] 0: run_ready buf lelvel1e01
+[   40.300737@0] 0: run_ready buf lelvel1e01
+[   40.321083@0] 0: run_ready buf lelvel1e01
+[   40.341427@0] 0: run_ready buf lelvel1e01
+[   40.361764@0] 0: run_ready buf lelvel1e01
+[   40.381813@0] 0: run_ready buf lelvel1e01
+[   40.401860@0] 0: run_ready buf lelvel1e01
+[   40.422385@0] 0: run_ready buf lelvel1e01
+[   40.442474@0] 0: run_ready buf lelvel1e01
+[   40.462536@0] 0: run_ready buf lelvel1e01
+[   40.482586@0] 0: run_ready buf lelvel1e01
+[   40.502640@0] 0: run_ready buf lelvel1e01
+[   40.522693@0] 0: run_ready buf lelvel1e01
+[   40.542744@0] 0: run_ready buf lelvel1e01
+[   40.562804@0] 0: run_ready buf lelvel1e01
+[   40.582879@0] 0: run_ready buf lelvel1e01
+[   40.602962@0] 0: run_ready buf lelvel1e01
+[   40.623015@0] 0: run_ready buf lelvel1e01
+[   40.643064@0] 0: run_ready buf lelvel1e01
+[   40.663131@0] 0: run_ready buf lelvel1e01
+[   40.683197@0] 0: run_ready buf lelvel1e01
+[   40.703258@0] 0: run_ready buf lelvel1e01
+[   40.723307@0] 0: run_ready buf lelvel1e01
+[   40.743363@0] 0: run_ready buf lelvel1e01
+[   40.763406@0] 0: run_ready buf lelvel1e01
+[   40.783468@0] 0: run_ready buf lelvel1e01
+[   40.803521@0] 0: run_ready buf lelvel1e01
+[   40.823578@0] 0: run_ready buf lelvel1e01
+[   40.843639@0] 0: run_ready buf lelvel1e01
+[   40.863683@0] 0: run_ready buf lelvel1e01
+[   40.883720@0] 0: run_ready buf lelvel1e01
+[   40.903788@0] 0: run_ready buf lelvel1e01
+[   40.923847@0] 0: run_ready buf lelvel1e01
+[   40.943903@0] 0: run_ready buf lelvel1e01
+[   40.963957@0] 0: run_ready buf lelvel1e01
+[   40.984036@0] 0: run_ready buf lelvel1e01
+[   41.004081@0] 0: run_ready buf lelvel1e01
+[   41.024126@0] 0: run_ready buf lelvel1e01
+[   41.044168@0] 0: run_ready buf lelvel1e01
+[   41.064208@0] 0: run_ready buf lelvel1e01
+[   41.084257@0] 0: run_ready buf lelvel1e01
+[   41.104301@0] 0: run_ready buf lelvel1e01
+[   41.124347@0] 0: run_ready buf lelvel1e01
+[   41.144392@0] 0: run_ready buf lelvel1e01
+[   41.164461@0] 0: run_ready buf lelvel1e01
+[   41.184534@0] 0: run_ready buf lelvel1e01
+[   41.204587@0] 0: run_ready buf lelvel1e01
+[   41.224629@0] 0: run_ready buf lelvel1e01
+[   41.244676@0] 0: run_ready buf lelvel1e01
+[   41.264733@0] 0: run_ready buf lelvel1e01
+[   41.284781@0] 0: run_ready buf lelvel1e01
+[   41.304831@0] 0: run_ready buf lelvel1e01
+[   41.324876@0] 0: run_ready buf lelvel1e01
+[   41.344917@0] 0: run_ready buf lelvel1e01
+[   41.364961@0] 0: run_ready buf lelvel1e01
+[   41.385019@0] 0: run_ready buf lelvel1e01
+[   41.405071@0] 0: run_ready buf lelvel1e01
+[   41.425127@0] 0: run_ready buf lelvel1e01
+[   41.445174@0] 0: run_ready buf lelvel1e01
+[   41.465236@0] 0: run_ready buf lelvel1e01
+[   41.485285@0] 0: run_ready buf lelvel1e01
+[   41.505339@0] 0: run_ready buf lelvel1e01
+[   41.525387@0] 0: run_ready buf lelvel1e01
+[   41.545436@0] 0: run_ready buf lelvel1e01
+[   41.565492@0] 0: run_ready buf lelvel1e01
+[   41.585591@0] 0: run_ready buf lelvel1e01
+[   41.605664@0] 0: run_ready buf lelvel1e01
+[   41.625725@0] 0: run_ready buf lelvel1e01
+[   41.645794@0] 0: run_ready buf lelvel1e01
+[   41.665852@0] 0: run_ready buf lelvel1e01
+[   41.685910@0] 0: run_ready buf lelvel1e01
+[   41.705954@0] 0: run_ready buf lelvel1e01
+[   41.726003@0] 0: run_ready buf lelvel1e01
+[   41.746048@0] 0: run_ready buf lelvel1e01
+[   41.766087@0] 0: run_ready buf lelvel1e01
+[   41.786146@0] 0: run_ready buf lelvel1e01
+[   41.806219@0] 0: run_ready buf lelvel1e01
+[   41.826276@0] 0: run_ready buf lelvel1e01
+[   41.846336@0] 0: run_ready buf lelvel1e01
+[   41.866380@0] 0: run_ready buf lelvel1e01
+[   41.886428@0] 0: run_ready buf lelvel1e01
+[   41.906475@0] 0: run_ready buf lelvel1e01
+[   41.926532@0] 0: run_ready buf lelvel1e01
+[   41.946583@0] 0: run_ready buf lelvel1e01
+[   41.966625@0] 0: run_ready buf lelvel1e01
+[   41.986675@0] 0: run_ready buf lelvel1e01
+[   42.006720@0] 0: run_ready buf lelvel1e01
+[   42.026760@0] 0: run_ready buf lelvel1e01
+[   42.046808@0] 0: run_ready buf lelvel1e01
+[   42.066855@0] 0: run_ready buf lelvel1e01
+[   42.086911@0] 0: run_ready buf lelvel1e01
+[   42.106962@0] 0: run_ready buf lelvel1e01
+[   42.127010@0] 0: run_ready buf lelvel1e01
+[   42.147058@0] 0: run_ready buf lelvel1e01
+[   42.167108@0] 0: run_ready buf lelvel1e01
+[   42.187179@0] 0: run_ready buf lelvel1e01
+[   42.207232@0] 0: run_ready buf lelvel1e01
+[   42.227282@0] 0: run_ready buf lelvel1e01
+[   42.247330@0] 0: run_ready buf lelvel1e01
+[   42.267371@0] 0: run_ready buf lelvel1e01
+[   42.287418@0] 0: run_ready buf lelvel1e01
+[   42.307460@0] 0: run_ready buf lelvel1e01
+[   42.327502@0] 0: run_ready buf lelvel1e01
+[   42.347540@0] 0: run_ready buf lelvel1e01
+[   42.367582@0] 0: run_ready buf lelvel1e01
+[   42.387627@0] 0: run_ready buf lelvel1e01
+[   42.407680@0] 0: run_ready buf lelvel1e01
+[   42.427732@0] 0: run_ready buf lelvel1e01
+[   42.447777@0] 0: run_ready buf lelvel1e01
+[   42.467835@0] 0: run_ready buf lelvel1e01
+[   42.487883@0] 0: run_ready buf lelvel1e01
+[   42.507929@0] 0: run_ready buf lelvel1e01
+[   42.527971@0] 0: run_ready buf lelvel1e01
+[   42.548019@0] 0: run_ready buf lelvel1e01
+[   42.568092@0] 0: run_ready buf lelvel1e01
+[   42.588140@0] 0: run_ready buf lelvel1e01
+[   42.608190@0] 0: run_ready buf lelvel1e01
+[   42.628230@0] 0: run_ready buf lelvel1e01
+[   42.648281@0] 0: run_ready buf lelvel1e01
+[   42.668331@0] 0: run_ready buf lelvel1e01
+[   42.688404@0] 0: run_ready buf lelvel1e01
+[   42.708477@0] 0: run_ready buf lelvel1e01
+[   42.728543@0] 0: run_ready buf lelvel1e01
+[   42.748600@0] 0: run_ready buf lelvel1e01
+[   42.768666@0] 0: run_ready buf lelvel1e01
+[   42.788721@0] 0: run_ready buf lelvel1e01
+[   42.808787@0] 0: run_ready buf lelvel1e01
+[   42.828842@0] 0: run_ready buf lelvel1e01
+[   42.848889@0] 0: run_ready buf lelvel1e01
+[   42.868932@0] 0: run_ready buf lelvel1e01
+[   42.888970@0] 0: run_ready buf lelvel1e01
+[   42.909033@0] 0: run_ready buf lelvel1e01
+[   42.929095@0] 0: run_ready buf lelvel1e01
+[   42.949140@0] 0: run_ready buf lelvel1e01
+[   42.969188@0] 0: run_ready buf lelvel1e01
+[   42.989234@0] 0: run_ready buf lelvel1e01
+[   43.009275@0] 0: run_ready buf lelvel1e01
+[   43.029315@0] 0: run_ready buf lelvel1e01
+[   43.049353@0] 0: run_ready buf lelvel1e01
+[   43.069396@0] 0: run_ready buf lelvel1e01
+[   43.089447@0] 0: run_ready buf lelvel1e01
+[   43.109487@0] 0: run_ready buf lelvel1e01
+[   43.129525@0] 0: run_ready buf lelvel1e01
+[   43.149576@0] 0: run_ready buf lelvel1e01
+[   43.169625@0] 0: run_ready buf lelvel1e01
+[   43.189693@0] 0: run_ready buf lelvel1e01
+[   43.209745@0] 0: run_ready buf lelvel1e01
+[   43.229796@0] 0: run_ready buf lelvel1e01
+[   43.249842@0] 0: run_ready buf lelvel1e01
+[   43.269885@0] 0: run_ready buf lelvel1e01
+[   43.289936@0] 0: run_ready buf lelvel1e01
+[   43.309984@0] 0: run_ready buf lelvel1e01
+[   43.330027@0] 0: run_ready buf lelvel1e01
+[   43.350069@0] 0: run_ready buf lelvel1e01
+[   43.370110@0] 0: run_ready buf lelvel1e01
+[   43.390158@0] 0: run_ready buf lelvel1e01
+[   43.410212@0] 0: run_ready buf lelvel1e01
+[   43.430267@0] 0: run_ready buf lelvel1e01
+[   43.450314@0] 0: run_ready buf lelvel1e01
+[   43.470372@0] 0: run_ready buf lelvel1e01
+[   43.490422@0] 0: run_ready buf lelvel1e01
+[   43.510465@0] 0: run_ready buf lelvel1e01
+[   43.530510@0] 0: run_ready buf lelvel1e01
+[   43.550555@0] 0: run_ready buf lelvel1e01
+[   43.570608@0] 0: run_ready buf lelvel1e01
+[   43.590666@0] 0: run_ready buf lelvel1e01
+[   43.610717@0] 0: run_ready buf lelvel1e01
+[   43.630781@0] 0: run_ready buf lelvel1e01
+[   43.650843@0] 0: run_ready buf lelvel1e01
+[   43.670930@0] 0: run_ready buf lelvel1e01
+[   43.691001@0] 0: run_ready buf lelvel1e01
+[   43.711066@0] 0: run_ready buf lelvel1e01
+[   43.731129@0] 0: run_ready buf lelvel1e01
+[   43.751194@0] 0: run_ready buf lelvel1e01
+[   43.771259@0] 0: run_ready buf lelvel1e01
+[   43.791339@0] 0: run_ready buf lelvel1e01
+[   43.811411@0] 0: run_ready buf lelvel1e01
+[   43.831471@0] 0: run_ready buf lelvel1e01
+[   43.851548@0] 0: run_ready buf lelvel1e01
+[   43.871617@0] 0: run_ready buf lelvel1e01
+[   43.891682@0] 0: run_ready buf lelvel1e01
+[   43.911751@0] 0: run_ready buf lelvel1e01
+[   43.931813@0] 0: run_ready buf lelvel1e01
+[   43.951857@0] 0: run_ready buf lelvel1e01
+[   43.971900@0] 0: run_ready buf lelvel1e01
+[   43.991938@0] 0: run_ready buf lelvel1e01
+[   44.011974@0] 0: run_ready buf lelvel1e01
+[   44.032029@0] 0: run_ready buf lelvel1e01
+[   44.052105@0] 0: run_ready buf lelvel1e01
+[   44.072152@0] 0: run_ready buf lelvel1e01
+[   44.092199@0] 0: run_ready buf lelvel1e01
+[   44.112243@0] 0: run_ready buf lelvel1e01
+[   44.132282@0] 0: run_ready buf lelvel1e01
+[   44.152317@0] 0: run_ready buf lelvel1e01
+[   44.172353@0] 0: run_ready buf lelvel1e01
+[   44.192422@0] 0: run_ready buf lelvel1e01
+[   44.212478@0] 0: run_ready buf lelvel1e01
+[   44.232522@0] 0: run_ready buf lelvel1e01
+[   44.252567@0] 0: run_ready buf lelvel1e01
+[   44.272610@0] 0: run_ready buf lelvel1e01
+[   44.292659@0] 0: run_ready buf lelvel1e01
+[   44.312700@0] 0: run_ready buf lelvel1e01
+[   44.332740@0] 0: run_ready buf lelvel1e01
+[   44.352779@0] 0: run_ready buf lelvel1e01
+[   44.372815@0] 0: run_ready buf lelvel1e01
+[   44.392858@0] 0: run_ready buf lelvel1e01
+[   44.412911@0] 0: run_ready buf lelvel1e01
+[   44.432961@0] 0: run_ready buf lelvel1e01
+[   44.453008@0] 0: run_ready buf lelvel1e01
+[   44.473061@0] 0: run_ready buf lelvel1e01
+[   44.493105@0] 0: run_ready buf lelvel1e01
+[   44.513146@0] 0: run_ready buf lelvel1e01
+[   44.533185@0] 0: run_ready buf lelvel1e01
+[   44.553231@0] 0: run_ready buf lelvel1e01
+[   44.573287@0] 0: run_ready buf lelvel1e01
+[   44.593339@0] 0: run_ready buf lelvel1e01
+[   44.613386@0] 0: run_ready buf lelvel1e01
+[   44.633426@0] 0: run_ready buf lelvel1e01
+[   44.653466@0] 0: run_ready buf lelvel1e01
+[   44.673504@0] 0: run_ready buf lelvel1e01
+[   44.693541@0] 0: run_ready buf lelvel1e01
+[   44.713577@0] 0: run_ready buf lelvel1e01
+[   44.733618@0] 0: run_ready buf lelvel1e01
+[   44.753658@0] 0: run_ready buf lelvel1e01
+[   44.773695@0] 0: run_ready buf lelvel1e01
+[   44.793738@0] 0: run_ready buf lelvel1e01
+[   44.813801@0] 0: run_ready buf lelvel1e01
+[   44.833866@0] 0: run_ready buf lelvel1e01
+[   44.853929@0] 0: run_ready buf lelvel1e01
+[   44.873992@0] 0: run_ready buf lelvel1e01
+[   44.894051@0] 0: run_ready buf lelvel1e01
+[   44.914116@0] 0: run_ready buf lelvel1e01
+[   44.934176@0] 0: run_ready buf lelvel1e01
+[   44.954236@0] 0: run_ready buf lelvel1e01
+[   44.974283@0] 0: run_ready buf lelvel1e01
+[   44.994325@0] 0: run_ready buf lelvel1e01
+[   45.014365@0] 0: run_ready buf lelvel1e01
+[   45.034407@0] 0: run_ready buf lelvel1e01
+[   45.054446@0] 0: run_ready buf lelvel1e01
+[   45.074486@0] 0: run_ready buf lelvel1e01
+[   45.094530@0] 0: run_ready buf lelvel1e01
+[   45.114570@0] 0: run_ready buf lelvel1e01
+[   45.134608@0] 0: run_ready buf lelvel1e01
+[   45.154643@0] 0: run_ready buf lelvel1e01
+[   45.174680@0] 0: run_ready buf lelvel1e01
+[   45.194716@0] 0: run_ready buf lelvel1e01
+[   45.214782@0] 0: run_ready buf lelvel1e01
+[   45.234839@0] 0: run_ready buf lelvel1e01
+[   45.254890@0] 0: run_ready buf lelvel1e01
+[   45.274931@0] 0: run_ready buf lelvel1e01
+[   45.294977@0] 0: run_ready buf lelvel1e01
+[   45.315022@0] 0: run_ready buf lelvel1e01
+[   45.335062@0] 0: run_ready buf lelvel1e01
+[   45.355102@0] 0: run_ready buf lelvel1e01
+[   45.375148@0] 0: run_ready buf lelvel1e01
+[   45.395190@0] 0: run_ready buf lelvel1e01
+[   45.415243@0] 0: run_ready buf lelvel1e01
+[   45.435295@0] 0: run_ready buf lelvel1e01
+[   45.455346@0] 0: run_ready buf lelvel1e01
+[   45.475398@0] 0: run_ready buf lelvel1e01
+[   45.495439@0] 0: run_ready buf lelvel1e01
+[   45.515480@0] 0: run_ready buf lelvel1e01
+[   45.535543@0] 0: run_ready buf lelvel1e01
+[   45.555599@0] 0: run_ready buf lelvel1e01
+[   45.575657@0] 0: run_ready buf lelvel1e01
+[   45.595708@0] 0: run_ready buf lelvel1e01
+[   45.615762@0] 0: run_ready buf lelvel1e01
+[   45.635809@0] 0: run_ready buf lelvel1e01
+[   45.655853@0] 0: run_ready buf lelvel1e01
+[   45.675894@0] 0: run_ready buf lelvel1e01
+[   45.695935@0] 0: run_ready buf lelvel1e01
+[   45.715971@0] 0: run_ready buf lelvel1e01
+[   45.736020@0] 0: run_ready buf lelvel1e01
+[   45.756068@0] 0: run_ready buf lelvel1e01
+[   45.776108@0] 0: run_ready buf lelvel1e01
+[   45.796175@0] 0: run_ready buf lelvel1e01
+[   45.816238@0] 0: run_ready buf lelvel1e01
+[   45.836293@0] 0: run_ready buf lelvel1e01
+[   45.854539@0] video_disable_store(0)
+[   45.854565@0] VID: VD1 on
+[   45.856359@0] 0: run_ready buf lelvel1e01
+[   45.876424@0] 0: run_ready buf lelvel1e01
+[   45.882195@0] VIDEO: VsyncEnableVideoLayer
+[   45.896497@0] 0: run_ready buf lelvel1e01
+[   45.916560@0] 0: run_ready buf lelvel1e01
+[   45.936633@0] 0: run_ready buf lelvel1e01
+[   45.956699@0] 0: run_ready buf lelvel1e01
+[   45.976752@0] 0: run_ready buf lelvel1e01
+[   45.996797@0] 0: run_ready buf lelvel1e01
+[   46.016838@0] 0: run_ready buf lelvel1e01
+[   46.036875@0] 0: run_ready buf lelvel1e01
+[   46.056928@0] 0: run_ready buf lelvel1e01
+[   46.076981@0] 0: run_ready buf lelvel1e01
+[   46.097028@0] 0: run_ready buf lelvel1e01
+[   46.117068@0] 0: run_ready buf lelvel1e01
+[   46.137105@0] 0: run_ready buf lelvel1e01
+[   46.157146@0] 0: run_ready buf lelvel1e01
+[   46.177185@0] 0: run_ready buf lelvel1e01
+[   46.197223@0] 0: run_ready buf lelvel1e01
+[   46.217281@0] 0: run_ready buf lelvel1e01
+[   46.237334@0] 0: run_ready buf lelvel1e01
+[   46.257383@0] 0: run_ready buf lelvel1e01
+[   46.277446@0] 0: run_ready buf lelvel1e01
+[   46.297502@0] 0: run_ready buf lelvel1e01
+[   46.317552@0] 0: run_ready buf lelvel1e01
+[   46.337595@0] 0: run_ready buf lelvel1e01
+[   46.357634@0] 0: run_ready buf lelvel1e01
+[   46.377674@0] 0: run_ready buf lelvel1e01
+[   46.397718@0] 0: run_ready buf lelvel1e01
+[   46.417772@0] 0: run_ready buf lelvel1e01
+[   46.437829@0] 0: run_ready buf lelvel1e01
+[   46.457886@0] 0: run_ready buf lelvel1e01
+[   46.477946@0] 0: run_ready buf lelvel1e01
+[   46.497996@0] 0: run_ready buf lelvel1e01
+[   46.518040@0] 0: run_ready buf lelvel1e01
+[   46.538084@0] 0: run_ready buf lelvel1e01
+[   46.558128@0] 0: run_ready buf lelvel1e01
+[   46.578186@0] 0: run_ready buf lelvel1e01
+[   46.598236@0] 0: run_ready buf lelvel1e01
+[   46.618302@0] 0: run_ready buf lelvel1e01
+[   46.638357@0] 0: run_ready buf lelvel1e01
+[   46.658406@0] 0: run_ready buf lelvel1e01
+[   46.678451@0] 0: run_ready buf lelvel1e01
+[   46.698505@0] 0: run_ready buf lelvel1e01
+[   46.718556@0] 0: run_ready buf lelvel1e01
+[   46.738596@0] 0: run_ready buf lelvel1e01
+[   46.758638@0] 0: run_ready buf lelvel1e01
+[   46.778685@0] 0: run_ready buf lelvel1e01
+[   46.798730@0] 0: run_ready buf lelvel1e01
+[   46.818791@0] 0: run_ready buf lelvel1e01
+[   46.838845@0] 0: run_ready buf lelvel1e01
+[   46.858893@0] 0: run_ready buf lelvel1e01
+[   46.878937@0] 0: run_ready buf lelvel1e01
+[   46.888981@0] video_disable_store(0)
+[   46.889006@0] VID: VD1 on
+[   46.899013@0] 0: run_ready buf lelvel1e01
+[   46.919079@0] 0: run_ready buf lelvel1e01
+[   46.922190@0] VIDEO: VsyncEnableVideoLayer
+[   46.939142@0] 0: run_ready buf lelvel1e01
+[   46.959196@0] 0: run_ready buf lelvel1e01
+[   46.979242@0] 0: run_ready buf lelvel1e01
+[   46.999288@0] 0: run_ready buf lelvel1e01
+[   47.019333@0] 0: run_ready buf lelvel1e01
+[   47.039395@0] 0: run_ready buf lelvel1e01
+[   47.059443@0] 0: run_ready buf lelvel1e01
+[   47.079493@0] 0: run_ready buf lelvel1e01
+[   47.099550@0] 0: run_ready buf lelvel1e01
+[   47.119599@0] 0: run_ready buf lelvel1e01
+[   47.139640@0] 0: run_ready buf lelvel1e01
+[   47.159680@0] 0: run_ready buf lelvel1e01
+[   47.179718@0] 0: run_ready buf lelvel1e01
+[   47.199757@0] 0: run_ready buf lelvel1e01
+[   47.219825@0] 0: run_ready buf lelvel1e01
+[   47.239891@0] 0: run_ready buf lelvel1e01
+[   47.259949@0] 0: run_ready buf lelvel1e01
+[   47.279998@0] 0: run_ready buf lelvel1e01
+[   47.300045@0] 0: run_ready buf lelvel1e01
+[   47.320094@0] 0: run_ready buf lelvel1e01
+[   47.340135@0] 0: run_ready buf lelvel1e01
+[   47.360175@0] 0: run_ready buf lelvel1e01
+[   47.380250@0] 0: run_ready buf lelvel1e01
+[   47.400294@0] 0: run_ready buf lelvel1e01
+[   47.420350@0] 0: run_ready buf lelvel1e01
+[   47.440409@0] 0: run_ready buf lelvel1e01
+[   47.460467@0] 0: run_ready buf lelvel1e01
+[   47.480521@0] 0: run_ready buf lelvel1e01
+[   47.500568@0] 0: run_ready buf lelvel1e01
+[   47.520610@0] 0: run_ready buf lelvel1e01
+[   47.540651@0] 0: run_ready buf lelvel1e01
+[   47.560700@0] 0: run_ready buf lelvel1e01
+[   47.580759@0] 0: run_ready buf lelvel1e01
+[   47.600808@0] 0: run_ready buf lelvel1e01
+[   47.620855@0] 0: run_ready buf lelvel1e01
+[   47.640899@0] 0: run_ready buf lelvel1e01
+[   47.660949@0] 0: run_ready buf lelvel1e01
+[   47.680990@0] 0: run_ready buf lelvel1e01
+[   47.701050@0] 0: run_ready buf lelvel1e01
+[   47.721103@0] 0: run_ready buf lelvel1e01
+[   47.741152@0] 0: run_ready buf lelvel1e01
+[   47.761193@0] 0: run_ready buf lelvel1e01
+[   47.777927@0] video_disable_store(0)
+[   47.777953@0] VID: VD1 on
+[   47.781266@0] 0: run_ready buf lelvel1e01
+[   47.801331@0] 0: run_ready buf lelvel1e01
+[   47.802594@0] VIDEO: VsyncEnableVideoLayer
+[   47.821395@0] 0: run_ready buf lelvel1e01
+[   47.841455@0] 0: run_ready buf lelvel1e01
+[   47.861501@0] 0: run_ready buf lelvel1e01
+[   47.881542@0] 0: run_ready buf lelvel1e01
+[   47.901584@0] 0: run_ready buf lelvel1e01
+[   47.921639@0] 0: run_ready buf lelvel1e01
+[   47.941694@0] 0: run_ready buf lelvel1e01
+[   47.961751@0] 0: run_ready buf lelvel1e01
+[   47.981798@0] 0: run_ready buf lelvel1e01
+[   48.001849@0] 0: run_ready buf lelvel1e01
+[   48.021903@0] 0: run_ready buf lelvel1e01
+[   48.041948@0] 0: run_ready buf lelvel1e01
+[   48.062128@0] 0: run_ready buf lelvel1e01
+[   48.082178@0] 0: run_ready buf lelvel1e01
+[   48.102310@0] 0: run_ready buf lelvel1e01
+[   48.122358@0] 0: run_ready buf lelvel1e01
+[   48.142401@0] 0: run_ready buf lelvel1e01
+[   48.162442@0] 0: run_ready buf lelvel1e01
+[   48.182492@0] 0: run_ready buf lelvel1e01
+[   48.202541@0] 0: run_ready buf lelvel1e01
+[   48.222590@0] 0: run_ready buf lelvel1e01
+[   48.242648@0] 0: run_ready buf lelvel1e01
+[   48.262699@0] 0: run_ready buf lelvel1e01
+[   48.282756@0] 0: run_ready buf lelvel1e01
+[   48.302807@0] 0: run_ready buf lelvel1e01
+[   48.322853@0] 0: run_ready buf lelvel1e01
+[   48.342979@0] 0: run_ready buf lelvel1e01
+[   48.345274@0] video_disable_store(0)
+[   48.345297@0] VID: VD1 on
+[   48.363044@0] 0: run_ready buf lelvel1e01
+[   48.382189@0] VIDEO: VsyncEnableVideoLayer
+[   48.383104@0] 0: run_ready buf lelvel1e01
+[   48.403170@0] 0: run_ready buf lelvel1e01
+[   48.423230@0] 0: run_ready buf lelvel1e01
+[   48.443289@0] 0: run_ready buf lelvel1e01
+[   48.463343@0] 0: run_ready buf lelvel1e01
+[   48.483388@0] 0: run_ready buf lelvel1e01
+[   48.503432@0] 0: run_ready buf lelvel1e01
+[   48.523471@0] 0: run_ready buf lelvel1e01
+[   48.543538@0] 0: run_ready buf lelvel1e01
+[   48.563596@0] 0: run_ready buf lelvel1e01
+[   48.583667@0] 0: run_ready buf lelvel1e01
+[   48.603724@0] 0: run_ready buf lelvel1e01
+[   48.623778@0] 0: run_ready buf lelvel1e01
+[   48.643822@0] 0: run_ready buf lelvel1e01
+[   48.658522@0] video_disable_store(0)
+[   48.658549@0] VID: VD1 on
+[   48.663910@0] 0: run_ready buf lelvel1e01
+[   48.682195@0] VIDEO: VsyncEnableVideoLayer
+[   48.683991@0] 0: run_ready buf lelvel1e01
+[   48.704084@0] 0: run_ready buf lelvel1e01
+[   48.724150@0] 0: run_ready buf lelvel1e01
+[   48.744199@0] 0: run_ready buf lelvel1e01
+[   48.764254@0] 0: run_ready buf lelvel1e01
+[   48.784328@0] 0: run_ready buf lelvel1e01
+[   48.804404@0] 0: run_ready buf lelvel1e01
+[   48.824469@0] 0: run_ready buf lelvel1e01
+[   48.844522@0] 0: run_ready buf lelvel1e01
+[   48.864571@0] 0: run_ready buf lelvel1e01
+[   48.884616@0] 0: run_ready buf lelvel1e01
+[   48.904674@0] 0: run_ready buf lelvel1e01
+[   48.924727@0] 0: run_ready buf lelvel1e01
+[   48.944783@0] 0: run_ready buf lelvel1e01
+[   48.964834@0] 0: run_ready buf lelvel1e01
+[   48.984879@0] 0: run_ready buf lelvel1e01
+[   49.004925@0] 0: run_ready buf lelvel1e01
+[   49.024969@0] 0: run_ready buf lelvel1e01
+[   49.045010@0] 0: run_ready buf lelvel1e01
+[   49.065065@0] 0: run_ready buf lelvel1e01
+[   49.085118@0] 0: run_ready buf lelvel1e01
+[   49.105169@0] 0: run_ready buf lelvel1e01
+[   49.125213@0] 0: run_ready buf lelvel1e01
+[   49.145257@0] 0: run_ready buf lelvel1e01
+[   49.165314@0] 0: run_ready buf lelvel1e01
+[   49.185364@0] 0: run_ready buf lelvel1e01
+[   49.205408@0] 0: run_ready buf lelvel1e01
+[   49.225453@0] 0: run_ready buf lelvel1e01
+[   49.245525@0] 0: run_ready buf lelvel1e01
+[   49.265577@0] 0: run_ready buf lelvel1e01
+[   49.285628@0] 0: run_ready buf lelvel1e01
+[   49.305678@0] 0: run_ready buf lelvel1e01
+[   49.325718@0] 0: run_ready buf lelvel1e01
+[   49.345774@0] 0: run_ready buf lelvel1e01
+[   49.365824@0] 0: run_ready buf lelvel1e01
+[   49.385873@0] 0: run_ready buf lelvel1e01
+[   49.405930@0] 0: run_ready buf lelvel1e01
+[   49.425996@0] 0: run_ready buf lelvel1e01
+[   49.446057@0] 0: run_ready buf lelvel1e01
+[   49.466118@0] 0: run_ready buf lelvel1e01
+[   49.486169@0] 0: run_ready buf lelvel1e01
+[   49.506222@0] 0: run_ready buf lelvel1e01
+[   49.526270@0] 0: run_ready buf lelvel1e01
+[   49.546318@0] 0: run_ready buf lelvel1e01
+[   49.566363@0] 0: run_ready buf lelvel1e01
+[   49.586413@0] 0: run_ready buf lelvel1e01
+[   49.606466@0] 0: run_ready buf lelvel1e01
+[   49.626511@0] 0: run_ready buf lelvel1e01
+[   49.646555@0] 0: run_ready buf lelvel1e01
+[   49.666617@0] 0: run_ready buf lelvel1e01
+[   49.686678@0] 0: run_ready buf lelvel1e01
+[   49.706730@0] 0: run_ready buf lelvel1e01
+[   49.726778@0] 0: run_ready buf lelvel1e01
+[   49.746822@0] 0: run_ready buf lelvel1e01
+[   49.766874@0] 0: run_ready buf lelvel1e01
+[   49.786924@0] 0: run_ready buf lelvel1e01
+[   49.806988@0] 0: run_ready buf lelvel1e01
+[   49.827053@0] 0: run_ready buf lelvel1e01
+[   49.847103@0] 0: run_ready buf lelvel1e01
+[   49.867146@0] 0: run_ready buf lelvel1e01
+[   49.887188@0] 0: run_ready buf lelvel1e01
+[   49.907245@0] 0: run_ready buf lelvel1e01
+[   49.927298@0] 0: run_ready buf lelvel1e01
+[   49.947354@0] 0: run_ready buf lelvel1e01
+[   49.967400@0] 0: run_ready buf lelvel1e01
+[   49.987445@0] 0: run_ready buf lelvel1e01
+[   50.007490@0] 0: run_ready buf lelvel1e01
+[   50.027537@0] 0: run_ready buf lelvel1e01
+[   50.047576@0] 0: run_ready buf lelvel1e01
+[   50.067616@0] 0: run_ready buf lelvel1e01
+[   50.087661@0] 0: run_ready buf lelvel1e01
+[   50.107707@0] 0: run_ready buf lelvel1e01
+[   50.127754@0] 0: run_ready buf lelvel1e01
+[   50.147800@0] 0: run_ready buf lelvel1e01
+[   50.167841@0] 0: run_ready buf lelvel1e01
+[   50.187879@0] 0: run_ready buf lelvel1e01
+[   50.207919@0] 0: run_ready buf lelvel1e01
+[   50.227960@0] 0: run_ready buf lelvel1e01
+[   50.248029@0] 0: run_ready buf lelvel1e01
+[   50.268094@0] 0: run_ready buf lelvel1e01
+[   50.288146@0] 0: run_ready buf lelvel1e01
+[   50.308194@0] 0: run_ready buf lelvel1e01
+[   50.328243@0] 0: run_ready buf lelvel1e01
+[   50.348289@0] 0: run_ready buf lelvel1e01
+[   50.368361@0] 0: run_ready buf lelvel1e01
+[   50.388409@0] 0: run_ready buf lelvel1e01
+[   50.408459@0] 0: run_ready buf lelvel1e01
+[   50.428510@0] 0: run_ready buf lelvel1e01
+[   50.448558@0] 0: run_ready buf lelvel1e01
+[   50.468616@0] 0: run_ready buf lelvel1e01
+[   50.488659@0] 0: run_ready buf lelvel1e01
+[   50.508698@0] 0: run_ready buf lelvel1e01
+[   50.528741@0] 0: run_ready buf lelvel1e01
+[   50.548786@0] 0: run_ready buf lelvel1e01
+[   50.568831@0] 0: run_ready buf lelvel1e01
+[   50.588887@0] 0: run_ready buf lelvel1e01
+[   50.608933@0] 0: run_ready buf lelvel1e01
+[   50.628975@0] 0: run_ready buf lelvel1e01
+[   50.649018@0] 0: run_ready buf lelvel1e01
+[   50.669075@0] 0: run_ready buf lelvel1e01
+[   50.689124@0] 0: run_ready buf lelvel1e01
+[   50.709167@0] 0: run_ready buf lelvel1e01
+[   50.729208@0] 0: run_ready buf lelvel1e01
+[   50.749248@0] 0: run_ready buf lelvel1e01
+[   50.769303@0] 0: run_ready buf lelvel1e01
+[   50.789362@0] 0: run_ready buf lelvel1e01
+[   50.809426@0] 0: run_ready buf lelvel1e01
+[   50.829480@0] 0: run_ready buf lelvel1e01
+[   50.849523@0] 0: run_ready buf lelvel1e01
+[   50.869578@0] 0: run_ready buf lelvel1e01
+[   50.889635@0] 0: run_ready buf lelvel1e01
+[   50.909698@0] 0: run_ready buf lelvel1e01
+[   50.929766@0] 0: run_ready buf lelvel1e01
+[   50.949829@0] 0: run_ready buf lelvel1e01
+[   50.969895@0] 0: run_ready buf lelvel1e01
+[   50.989958@0] 0: run_ready buf lelvel1e01
+[   51.010029@0] 0: run_ready buf lelvel1e01
+[   51.030113@0] 0: run_ready buf lelvel1e01
+[   51.050177@0] 0: run_ready buf lelvel1e01
+[   51.070230@0] 0: run_ready buf lelvel1e01
+[   51.090290@0] 0: run_ready buf lelvel1e01
+[   51.110338@0] 0: run_ready buf lelvel1e01
+[   51.130381@0] 0: run_ready buf lelvel1e01
+[   51.150428@0] 0: run_ready buf lelvel1e01
+[   51.170466@0] 0: run_ready buf lelvel1e01
+[   51.190505@0] 0: run_ready buf lelvel1e01
+[   51.210545@0] 0: run_ready buf lelvel1e01
+[   51.230583@0] 0: run_ready buf lelvel1e01
+[   51.250634@0] 0: run_ready buf lelvel1e01
+[   51.270694@0] 0: run_ready buf lelvel1e01
+[   51.290750@0] 0: run_ready buf lelvel1e01
+[   51.310795@0] 0: run_ready buf lelvel1e01
+[   51.330840@0] 0: run_ready buf lelvel1e01
+[   51.350880@0] 0: run_ready buf lelvel1e01
+[   51.370922@0] 0: run_ready buf lelvel1e01
+[   51.390966@0] 0: run_ready buf lelvel1e01
+[   51.411019@0] 0: run_ready buf lelvel1e01
+[   51.431070@0] 0: run_ready buf lelvel1e01
+[   51.451119@0] 0: run_ready buf lelvel1e01
+[   51.471182@0] 0: run_ready buf lelvel1e01
+[   51.491234@0] 0: run_ready buf lelvel1e01
+[   51.511285@0] 0: run_ready buf lelvel1e01
+[   51.531331@0] 0: run_ready buf lelvel1e01
+[   51.551376@0] 0: run_ready buf lelvel1e01
+[   51.571428@0] 0: run_ready buf lelvel1e01
+[   51.591481@0] 0: run_ready buf lelvel1e01
+[   51.611535@0] 0: run_ready buf lelvel1e01
+[   51.631577@0] 0: run_ready buf lelvel1e01
+[   51.651614@0] 0: run_ready buf lelvel1e01
+[   51.671666@0] 0: run_ready buf lelvel1e01
+[   51.691715@0] 0: run_ready buf lelvel1e01
+[   51.711758@0] 0: run_ready buf lelvel1e01
+[   51.731799@0] 0: run_ready buf lelvel1e01
+[   51.751839@0] 0: run_ready buf lelvel1e01
+[   51.771878@0] 0: run_ready buf lelvel1e01
+[   51.791930@0] 0: run_ready buf lelvel1e01
+[   51.811993@0] 0: run_ready buf lelvel1e01
+[   51.832046@0] 0: run_ready buf lelvel1e01
+[   51.852093@0] 0: run_ready buf lelvel1e01
+[   51.872136@0] 0: run_ready buf lelvel1e01
+[   51.892178@0] 0: run_ready buf lelvel1e01
+[   51.912233@0] 0: run_ready buf lelvel1e01
+[   51.932299@0] 0: run_ready buf lelvel1e01
+[   51.952353@0] 0: run_ready buf lelvel1e01
+[   51.972425@0] 0: run_ready buf lelvel1e01
+[   51.992477@0] 0: run_ready buf lelvel1e01
+[   52.012519@0] 0: run_ready buf lelvel1e01
+[   52.032563@0] 0: run_ready buf lelvel1e01
+[   52.052606@0] 0: run_ready buf lelvel1e01
+[   52.072649@0] 0: run_ready buf lelvel1e01
+[   52.092698@0] 0: run_ready buf lelvel1e01
+[   52.112741@0] 0: run_ready buf lelvel1e01
+[   52.132781@0] 0: run_ready buf lelvel1e01
+[   52.152818@0] 0: run_ready buf lelvel1e01
+[   52.172855@0] 0: run_ready buf lelvel1e01
+[   52.192896@0] 0: run_ready buf lelvel1e01
+[   52.212937@0] 0: run_ready buf lelvel1e01
+[   52.232977@0] 0: run_ready buf lelvel1e01
+[   52.253024@0] 0: run_ready buf lelvel1e01
+[   52.273085@0] 0: run_ready buf lelvel1e01
+[   52.293138@0] 0: run_ready buf lelvel1e01
+[   52.313187@0] 0: run_ready buf lelvel1e01
+[   52.333234@0] 0: run_ready buf lelvel1e01
+[   52.353278@0] 0: run_ready buf lelvel1e01
+[   52.373316@0] 0: run_ready buf lelvel1e01
+[   52.393363@0] 0: run_ready buf lelvel1e01
+[   52.413420@0] 0: run_ready buf lelvel1e01
+[   52.433479@0] 0: run_ready buf lelvel1e01
+[   52.453537@0] 0: run_ready buf lelvel1e01
+[   52.473586@0] 0: run_ready buf lelvel1e01
+[   52.493632@0] 0: run_ready buf lelvel1e01
+[   52.513678@0] 0: run_ready buf lelvel1e01
+[   52.533724@0] 0: run_ready buf lelvel1e01
+[   52.553771@0] 0: run_ready buf lelvel1e01
+[   52.573827@0] 0: run_ready buf lelvel1e01
+[   52.593885@0] 0: run_ready buf lelvel1e01
+[   52.613931@0] 0: run_ready buf lelvel1e01
+[   52.633974@0] 0: run_ready buf lelvel1e01
+[   52.654017@0] 0: run_ready buf lelvel1e01
