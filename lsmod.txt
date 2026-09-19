@@ -1,0 +1,37 @@
+Module                  Size  Used by
+openvfd               208896  1
+cxd2878                53248  0
+dream_local_video      40960  0
+8822cs               2781184  0
+8723ds               1744896  0
+wifi_dummy             16384  0
+amvdec_vp9            122880  0
+amvdec_vc1             69632  0
+amvdec_real            45056  0
+amvdec_ports          221184  0
+amvdec_mpeg4           65536  0
+amvdec_mpeg12         110592  0
+amvdec_mmpeg4          40960  0
+amvdec_mmpeg12         40960  0
+amvdec_mmjpeg          28672  0
+amvdec_mjpeg           40960  0
+amvdec_mh264          163840  0
+amvdec_h265           151552  0
+amvdec_h264mvc         53248  0
+amvdec_h264           151552  0
+amvdec_avs             69632  0
+amvdec_avs2           208896  0
+e2procfs              143360  0
+m88rs6060              86016  1
+aml_tbs                16384  1
+aml_hardware_dmx     2510848  31 e2procfs,dream_local_video
+aml_dvb_extern        126976  1 aml_hardware_dmx
+astra_t2mi           1585152  2 m88rs6060,aml_hardware_dmx
+stream_input          188416  14 amvdec_h265,amvdec_mh264,amvdec_h264mvc,amvdec_ports,amvdec_real,amvdec_vp9,aml_hardware_dmx,amvdec_h264,amvdec_avs2,amvdec_mpeg12,amvdec_avs,amvdec_mmpeg12
+decoder_common        196608  18 amvdec_h265,amvdec_mjpeg,amvdec_mh264,amvdec_mmpeg4,amvdec_h264mvc,amvdec_mmjpeg,amvdec_ports,amvdec_real,stream_input,amvdec_vp9,aml_hardware_dmx,amvdec_h264,amvdec_avs2,amvdec_mpeg12,amvdec_avs,amvdec_vc1,amvdec_mmpeg12,amvdec_mpeg4
+firmware               28672  17 amvdec_h265,amvdec_mjpeg,amvdec_mh264,amvdec_mmpeg4,amvdec_h264mvc,amvdec_mmjpeg,decoder_common,amvdec_real,stream_input,amvdec_vp9,amvdec_h264,amvdec_avs2,amvdec_mpeg12,amvdec_avs,amvdec_vc1,amvdec_mmpeg12,amvdec_mpeg4
+media_clock            45056  12 amvdec_h265,amvdec_mh264,decoder_common,amvdec_ports,firmware,stream_input,amvdec_vp9,aml_hardware_dmx,amvdec_h264,amvdec_avs2,amvdec_mpeg12,amvdec_avs
+videograbber           16384  0
+mali_kbase            569344  0
+tbs5530                20480  0
+dvb_usb                32768  1 tbs5530
